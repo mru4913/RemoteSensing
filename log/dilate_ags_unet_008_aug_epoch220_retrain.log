@@ -1,0 +1,1772 @@
+INFO:2020-11-21 13:43:24,576:Start logging...
+INFO:2020-11-21 13:43:24,576:Namespace(batch_size=16, concat=False, cuda_device='2', deep=False, img_aug=True, load='./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth', log_num=10, loss='ce', lr=0.0001, model='dilate_ags_unet', momentum=0.9, name='dilate_ags_unet_008_aug_epoch220_retrain', no_cuda=False, no_valid=False, num_class=17, num_epochs=260, optimizer='adamw', parallel=False, pretrained=False, save_model=True, scheduler='cosr', seed=4, train_file_path='/home/caixh/project/segmentation/baseline/data/train_list_19k.txt', valid_file_path='/home/caixh/project/segmentation/baseline/data/valid_list_1k.txt', weight_decay=1e-06)
+INFO:2020-11-21 13:43:31,408:Loading state from ./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth
+
+INFO:2020-11-21 13:43:31,607:Loading completed...
+INFO:2020-11-21 13:43:31,609:Engine starts......
+
+INFO:2020-11-21 13:44:17,654:Start logging...
+INFO:2020-11-21 13:44:17,654:Namespace(batch_size=16, concat=False, cuda_device='2', deep=False, img_aug=True, load='./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth', log_num=10, loss='ce', lr=0.0001, model='dilate_ags_unet', momentum=0.9, name='dilate_ags_unet_008_aug_epoch220_retrain', no_cuda=False, no_valid=False, num_class=17, num_epochs=260, optimizer='adamw', parallel=False, pretrained=False, save_model=True, scheduler='cosr', seed=4, train_file_path='/home/caixh/project/segmentation/baseline/data/train_list_19k.txt', valid_file_path='/home/caixh/project/segmentation/baseline/data/valid_list_1k.txt', weight_decay=1e-06)
+INFO:2020-11-21 13:44:23,776:Loading state from ./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth
+
+INFO:2020-11-21 13:44:24,004:Loading completed...
+INFO:2020-11-21 13:44:24,007:Engine starts......
+
+INFO:2020-11-21 13:48:22,533:[Train] Epoch: 1 [batch: 618/6188 (09.99%)] Average loss: 0.3349  Average accuracy: 0.8806 lr: 0.0001000000
+INFO:2020-11-21 13:48:23,343:[Valid] Average loss: 0.4433 Average accuracy: 0.8555
+INFO:2020-11-21 13:48:23,603:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain_best.pth
+INFO:2020-11-21 13:52:29,290:[Train] Epoch: 1 [batch: 1236/6188 (19.97%)] Average loss: 0.3354  Average accuracy: 0.8800 lr: 0.0001000000
+INFO:2020-11-21 13:52:30,095:[Valid] Average loss: 0.4853 Average accuracy: 0.8428
+INFO:2020-11-21 13:53:36,411:Start logging...
+INFO:2020-11-21 13:53:36,412:Namespace(batch_size=16, concat=False, cuda_device='2', deep=False, img_aug=True, load='./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth', log_num=10, loss='ce', lr=0.0001, model='dilate_ags_unet', momentum=0.9, name='dilate_ags_unet_008_aug_epoch220_retrain', no_cuda=False, no_valid=False, num_class=17, num_epochs=260, optimizer='adamw', parallel=False, pretrained=False, save_model=True, scheduler='cosr', seed=4, train_file_path='/home/caixh/project/segmentation/baseline/data/train_list_19k.txt', valid_file_path='/home/caixh/project/segmentation/baseline/data/valid_list_1k.txt', weight_decay=1e-06)
+INFO:2020-11-21 13:53:42,576:Loading state from ./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth
+
+INFO:2020-11-21 13:53:42,772:Loading completed...
+INFO:2020-11-21 13:53:42,774:Engine starts......
+
+INFO:2020-11-21 13:54:42,928:Start logging...
+INFO:2020-11-21 13:54:42,928:Namespace(batch_size=16, concat=False, cuda_device='2', deep=False, img_aug=True, load='./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth', log_num=10, loss='ce', lr=0.0001, model='dilate_ags_unet', momentum=0.9, name='dilate_ags_unet_008_aug_epoch220_retrain', no_cuda=False, no_valid=False, num_class=17, num_epochs=260, optimizer='sgd', parallel=False, pretrained=False, save_model=True, scheduler='cosr', seed=4, train_file_path='/home/caixh/project/segmentation/baseline/data/train_list_19k.txt', valid_file_path='/home/caixh/project/segmentation/baseline/data/valid_list_1k.txt', weight_decay=1e-06)
+INFO:2020-11-21 13:54:49,198:Loading state from ./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth
+
+INFO:2020-11-21 13:54:49,407:Loading completed...
+INFO:2020-11-21 13:54:49,409:Engine starts......
+
+INFO:2020-11-21 13:58:34,481:[Train] Epoch: 1 [batch: 618/6188 (09.99%)] Average loss: 0.3254  Average accuracy: 0.8852 lr: 0.0001000000
+INFO:2020-11-21 13:58:35,293:[Valid] Average loss: 0.4424 Average accuracy: 0.8607
+INFO:2020-11-21 13:58:35,695:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain_best.pth
+INFO:2020-11-21 14:02:20,264:[Train] Epoch: 1 [batch: 1236/6188 (19.97%)] Average loss: 0.3193  Average accuracy: 0.8869 lr: 0.0001000000
+INFO:2020-11-21 14:02:21,074:[Valid] Average loss: 0.5116 Average accuracy: 0.8432
+INFO:2020-11-21 14:06:05,592:[Train] Epoch: 1 [batch: 1854/6188 (29.96%)] Average loss: 0.3233  Average accuracy: 0.8855 lr: 0.0001000000
+INFO:2020-11-21 14:06:06,416:[Valid] Average loss: 0.4475 Average accuracy: 0.8573
+INFO:2020-11-21 14:09:50,077:[Train] Epoch: 1 [batch: 2472/6188 (39.95%)] Average loss: 0.3287  Average accuracy: 0.8836 lr: 0.0001000000
+INFO:2020-11-21 14:09:50,889:[Valid] Average loss: 0.5182 Average accuracy: 0.8433
+INFO:2020-11-21 14:13:34,252:[Train] Epoch: 1 [batch: 3090/6188 (49.94%)] Average loss: 0.3198  Average accuracy: 0.8865 lr: 0.0001000000
+INFO:2020-11-21 14:13:35,055:[Valid] Average loss: 0.6430 Average accuracy: 0.8364
+INFO:2020-11-21 14:17:17,772:[Train] Epoch: 1 [batch: 3708/6188 (59.92%)] Average loss: 0.3193  Average accuracy: 0.8859 lr: 0.0001000000
+INFO:2020-11-21 14:17:18,594:[Valid] Average loss: 0.4735 Average accuracy: 0.8421
+INFO:2020-11-21 14:21:01,832:[Train] Epoch: 1 [batch: 4326/6188 (69.91%)] Average loss: 0.3234  Average accuracy: 0.8853 lr: 0.0001000000
+INFO:2020-11-21 14:21:02,642:[Valid] Average loss: 0.4980 Average accuracy: 0.8636
+INFO:2020-11-21 14:21:03,445:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain_best.pth
+INFO:2020-11-21 14:24:47,381:[Train] Epoch: 1 [batch: 4944/6188 (79.90%)] Average loss: 0.3175  Average accuracy: 0.8867 lr: 0.0001000000
+INFO:2020-11-21 14:24:48,196:[Valid] Average loss: 0.4067 Average accuracy: 0.8585
+INFO:2020-11-21 14:28:32,553:[Train] Epoch: 1 [batch: 5562/6188 (89.88%)] Average loss: 0.3209  Average accuracy: 0.8858 lr: 0.0001000000
+INFO:2020-11-21 14:28:33,372:[Valid] Average loss: 0.4153 Average accuracy: 0.8579
+INFO:2020-11-21 14:32:17,363:[Train] Epoch: 1 [batch: 6180/6188 (99.87%)] Average loss: 0.3146  Average accuracy: 0.8870 lr: 0.0001000000
+INFO:2020-11-21 14:32:18,311:[Valid] Average loss: 0.5417 Average accuracy: 0.8463
+INFO:2020-11-21 14:32:21,433:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 14:32:21,436:Updating...Current learning rate: [0.0001]
+
+INFO:2020-11-21 14:36:04,622:[Train] Epoch: 2 [batch: 618/6188 (09.99%)] Average loss: 0.3160  Average accuracy: 0.8864 lr: 0.0001000000
+INFO:2020-11-21 14:36:04,708:Starting over on the validation set.
+
+INFO:2020-11-21 14:36:05,770:[Valid] Average loss: 0.4045 Average accuracy: 0.8698
+INFO:2020-11-21 14:36:06,190:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain_best.pth
+INFO:2020-11-21 14:39:49,003:[Train] Epoch: 2 [batch: 1236/6188 (19.97%)] Average loss: 0.3211  Average accuracy: 0.8864 lr: 0.0001000000
+INFO:2020-11-21 14:39:49,821:[Valid] Average loss: 0.5555 Average accuracy: 0.8431
+INFO:2020-11-21 14:43:31,824:[Train] Epoch: 2 [batch: 1854/6188 (29.96%)] Average loss: 0.3157  Average accuracy: 0.8865 lr: 0.0001000000
+INFO:2020-11-21 14:43:32,628:[Valid] Average loss: 0.6230 Average accuracy: 0.8244
+INFO:2020-11-21 14:47:14,715:[Train] Epoch: 2 [batch: 2472/6188 (39.95%)] Average loss: 0.3242  Average accuracy: 0.8839 lr: 0.0001000000
+INFO:2020-11-21 14:47:15,525:[Valid] Average loss: 0.4547 Average accuracy: 0.8649
+INFO:2020-11-21 14:50:57,410:[Train] Epoch: 2 [batch: 3090/6188 (49.94%)] Average loss: 0.3197  Average accuracy: 0.8860 lr: 0.0001000000
+INFO:2020-11-21 14:50:58,223:[Valid] Average loss: 0.3907 Average accuracy: 0.8746
+INFO:2020-11-21 14:50:58,733:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain_best.pth
+INFO:2020-11-21 14:54:40,549:[Train] Epoch: 2 [batch: 3708/6188 (59.92%)] Average loss: 0.3187  Average accuracy: 0.8862 lr: 0.0001000000
+INFO:2020-11-21 14:54:41,377:[Valid] Average loss: 0.4577 Average accuracy: 0.8500
+INFO:2020-11-21 14:58:23,212:[Train] Epoch: 2 [batch: 4326/6188 (69.91%)] Average loss: 0.3193  Average accuracy: 0.8860 lr: 0.0001000000
+INFO:2020-11-21 14:58:24,031:[Valid] Average loss: 0.4341 Average accuracy: 0.8471
+INFO:2020-11-21 15:02:06,079:[Train] Epoch: 2 [batch: 4944/6188 (79.90%)] Average loss: 0.3211  Average accuracy: 0.8859 lr: 0.0001000000
+INFO:2020-11-21 15:02:06,890:[Valid] Average loss: 0.4114 Average accuracy: 0.8539
+INFO:2020-11-21 15:05:49,056:[Train] Epoch: 2 [batch: 5562/6188 (89.88%)] Average loss: 0.3194  Average accuracy: 0.8851 lr: 0.0001000000
+INFO:2020-11-21 15:05:49,878:[Valid] Average loss: 0.5094 Average accuracy: 0.8363
+INFO:2020-11-21 15:09:32,083:[Train] Epoch: 2 [batch: 6180/6188 (99.87%)] Average loss: 0.3223  Average accuracy: 0.8847 lr: 0.0001000000
+INFO:2020-11-21 15:09:32,891:[Valid] Average loss: 0.5161 Average accuracy: 0.8471
+INFO:2020-11-21 15:09:36,189:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 15:09:36,190:Updating...Current learning rate: [5e-05]
+
+INFO:2020-11-21 15:13:18,815:[Train] Epoch: 3 [batch: 618/6188 (09.99%)] Average loss: 0.3140  Average accuracy: 0.8875 lr: 0.0000500000
+INFO:2020-11-21 15:13:18,899:Starting over on the validation set.
+
+INFO:2020-11-21 15:13:19,908:[Valid] Average loss: 0.3934 Average accuracy: 0.8647
+INFO:2020-11-21 15:17:01,899:[Train] Epoch: 3 [batch: 1236/6188 (19.97%)] Average loss: 0.3186  Average accuracy: 0.8868 lr: 0.0000500000
+INFO:2020-11-21 15:17:02,701:[Valid] Average loss: 0.4611 Average accuracy: 0.8474
+INFO:2020-11-21 15:20:45,476:[Train] Epoch: 3 [batch: 1854/6188 (29.96%)] Average loss: 0.3144  Average accuracy: 0.8872 lr: 0.0000500000
+INFO:2020-11-21 15:20:46,294:[Valid] Average loss: 0.5319 Average accuracy: 0.8451
+INFO:2020-11-21 15:24:29,355:[Train] Epoch: 3 [batch: 2472/6188 (39.95%)] Average loss: 0.3260  Average accuracy: 0.8833 lr: 0.0000500000
+INFO:2020-11-21 15:24:30,173:[Valid] Average loss: 0.5567 Average accuracy: 0.8328
+INFO:2020-11-21 15:28:12,757:[Train] Epoch: 3 [batch: 3090/6188 (49.94%)] Average loss: 0.3195  Average accuracy: 0.8851 lr: 0.0000500000
+INFO:2020-11-21 15:28:13,562:[Valid] Average loss: 0.4015 Average accuracy: 0.8612
+INFO:2020-11-21 15:31:56,614:[Train] Epoch: 3 [batch: 3708/6188 (59.92%)] Average loss: 0.3181  Average accuracy: 0.8856 lr: 0.0000500000
+INFO:2020-11-21 15:31:57,441:[Valid] Average loss: 0.4651 Average accuracy: 0.8460
+INFO:2020-11-21 15:35:40,333:[Train] Epoch: 3 [batch: 4326/6188 (69.91%)] Average loss: 0.3239  Average accuracy: 0.8842 lr: 0.0000500000
+INFO:2020-11-21 15:35:41,142:[Valid] Average loss: 0.3737 Average accuracy: 0.8693
+INFO:2020-11-21 15:39:23,991:[Train] Epoch: 3 [batch: 4944/6188 (79.90%)] Average loss: 0.3167  Average accuracy: 0.8864 lr: 0.0000500000
+INFO:2020-11-21 15:39:24,809:[Valid] Average loss: 0.4640 Average accuracy: 0.8588
+INFO:2020-11-21 15:43:06,621:[Train] Epoch: 3 [batch: 5562/6188 (89.88%)] Average loss: 0.3156  Average accuracy: 0.8868 lr: 0.0000500000
+INFO:2020-11-21 15:43:07,450:[Valid] Average loss: 0.5420 Average accuracy: 0.8465
+INFO:2020-11-21 15:46:49,064:[Train] Epoch: 3 [batch: 6180/6188 (99.87%)] Average loss: 0.3187  Average accuracy: 0.8859 lr: 0.0000500000
+INFO:2020-11-21 15:46:49,877:[Valid] Average loss: 0.5012 Average accuracy: 0.8454
+INFO:2020-11-21 15:46:52,961:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 15:46:52,962:Updating...Current learning rate: [0.0001]
+
+INFO:2020-11-21 15:50:34,959:[Train] Epoch: 4 [batch: 618/6188 (09.99%)] Average loss: 0.3174  Average accuracy: 0.8863 lr: 0.0001000000
+INFO:2020-11-21 15:50:35,043:Starting over on the validation set.
+
+INFO:2020-11-21 15:50:36,076:[Valid] Average loss: 0.4910 Average accuracy: 0.8537
+INFO:2020-11-21 15:54:17,852:[Train] Epoch: 4 [batch: 1236/6188 (19.97%)] Average loss: 0.3169  Average accuracy: 0.8864 lr: 0.0001000000
+INFO:2020-11-21 15:54:18,658:[Valid] Average loss: 0.4523 Average accuracy: 0.8608
+INFO:2020-11-21 15:58:00,901:[Train] Epoch: 4 [batch: 1854/6188 (29.96%)] Average loss: 0.3215  Average accuracy: 0.8853 lr: 0.0001000000
+INFO:2020-11-21 15:58:01,705:[Valid] Average loss: 0.4838 Average accuracy: 0.8529
+INFO:2020-11-21 16:01:44,721:[Train] Epoch: 4 [batch: 2472/6188 (39.95%)] Average loss: 0.3177  Average accuracy: 0.8861 lr: 0.0001000000
+INFO:2020-11-21 16:01:45,547:[Valid] Average loss: 0.4383 Average accuracy: 0.8530
+INFO:2020-11-21 16:05:28,799:[Train] Epoch: 4 [batch: 3090/6188 (49.94%)] Average loss: 0.3193  Average accuracy: 0.8853 lr: 0.0001000000
+INFO:2020-11-21 16:05:29,609:[Valid] Average loss: 0.4802 Average accuracy: 0.8424
+INFO:2020-11-21 16:09:11,567:[Train] Epoch: 4 [batch: 3708/6188 (59.92%)] Average loss: 0.3201  Average accuracy: 0.8857 lr: 0.0001000000
+INFO:2020-11-21 16:09:12,410:[Valid] Average loss: 0.4783 Average accuracy: 0.8576
+INFO:2020-11-21 16:12:55,287:[Train] Epoch: 4 [batch: 4326/6188 (69.91%)] Average loss: 0.3142  Average accuracy: 0.8875 lr: 0.0001000000
+INFO:2020-11-21 16:12:56,107:[Valid] Average loss: 0.4482 Average accuracy: 0.8470
+INFO:2020-11-21 16:16:39,079:[Train] Epoch: 4 [batch: 4944/6188 (79.90%)] Average loss: 0.3173  Average accuracy: 0.8855 lr: 0.0001000000
+INFO:2020-11-21 16:16:39,892:[Valid] Average loss: 0.5699 Average accuracy: 0.8311
+INFO:2020-11-21 16:20:22,865:[Train] Epoch: 4 [batch: 5562/6188 (89.88%)] Average loss: 0.3199  Average accuracy: 0.8850 lr: 0.0001000000
+INFO:2020-11-21 16:20:23,694:[Valid] Average loss: 0.4134 Average accuracy: 0.8628
+INFO:2020-11-21 16:24:06,298:[Train] Epoch: 4 [batch: 6180/6188 (99.87%)] Average loss: 0.3181  Average accuracy: 0.8849 lr: 0.0001000000
+INFO:2020-11-21 16:24:07,106:[Valid] Average loss: 0.4065 Average accuracy: 0.8552
+INFO:2020-11-21 16:24:10,261:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 16:24:10,261:Updating...Current learning rate: [8.535533905932738e-05]
+
+INFO:2020-11-21 16:27:54,519:[Train] Epoch: 5 [batch: 618/6188 (09.99%)] Average loss: 0.3163  Average accuracy: 0.8861 lr: 0.0000853553
+INFO:2020-11-21 16:27:54,623:Starting over on the validation set.
+
+INFO:2020-11-21 16:27:55,668:[Valid] Average loss: 0.4300 Average accuracy: 0.8509
+INFO:2020-11-21 16:31:38,971:[Train] Epoch: 5 [batch: 1236/6188 (19.97%)] Average loss: 0.3165  Average accuracy: 0.8861 lr: 0.0000853553
+INFO:2020-11-21 16:31:39,816:[Valid] Average loss: 0.5236 Average accuracy: 0.8263
+INFO:2020-11-21 16:35:22,754:[Train] Epoch: 5 [batch: 1854/6188 (29.96%)] Average loss: 0.3172  Average accuracy: 0.8862 lr: 0.0000853553
+INFO:2020-11-21 16:35:23,574:[Valid] Average loss: 0.4757 Average accuracy: 0.8561
+INFO:2020-11-21 16:39:07,005:[Train] Epoch: 5 [batch: 2472/6188 (39.95%)] Average loss: 0.3188  Average accuracy: 0.8853 lr: 0.0000853553
+INFO:2020-11-21 16:39:07,823:[Valid] Average loss: 0.4181 Average accuracy: 0.8682
+INFO:2020-11-21 16:42:50,703:[Train] Epoch: 5 [batch: 3090/6188 (49.94%)] Average loss: 0.3179  Average accuracy: 0.8856 lr: 0.0000853553
+INFO:2020-11-21 16:42:51,522:[Valid] Average loss: 0.4441 Average accuracy: 0.8598
+INFO:2020-11-21 16:46:34,367:[Train] Epoch: 5 [batch: 3708/6188 (59.92%)] Average loss: 0.3167  Average accuracy: 0.8865 lr: 0.0000853553
+INFO:2020-11-21 16:46:35,186:[Valid] Average loss: 0.4230 Average accuracy: 0.8561
+INFO:2020-11-21 16:50:17,884:[Train] Epoch: 5 [batch: 4326/6188 (69.91%)] Average loss: 0.3208  Average accuracy: 0.8854 lr: 0.0000853553
+INFO:2020-11-21 16:50:18,696:[Valid] Average loss: 0.4248 Average accuracy: 0.8615
+INFO:2020-11-21 16:54:00,888:[Train] Epoch: 5 [batch: 4944/6188 (79.90%)] Average loss: 0.3195  Average accuracy: 0.8857 lr: 0.0000853553
+INFO:2020-11-21 16:54:01,707:[Valid] Average loss: 0.5163 Average accuracy: 0.8394
+INFO:2020-11-21 16:57:43,930:[Train] Epoch: 5 [batch: 5562/6188 (89.88%)] Average loss: 0.3119  Average accuracy: 0.8874 lr: 0.0000853553
+INFO:2020-11-21 16:57:44,734:[Valid] Average loss: 0.5580 Average accuracy: 0.8372
+INFO:2020-11-21 17:01:26,868:[Train] Epoch: 5 [batch: 6180/6188 (99.87%)] Average loss: 0.3194  Average accuracy: 0.8851 lr: 0.0000853553
+INFO:2020-11-21 17:01:27,678:[Valid] Average loss: 0.4258 Average accuracy: 0.8658
+INFO:2020-11-21 17:01:31,002:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 17:01:31,003:Updating...Current learning rate: [5e-05]
+
+INFO:2020-11-21 17:05:13,630:[Train] Epoch: 6 [batch: 618/6188 (09.99%)] Average loss: 0.3188  Average accuracy: 0.8857 lr: 0.0000500000
+INFO:2020-11-21 17:05:13,712:Starting over on the validation set.
+
+INFO:2020-11-21 17:05:14,755:[Valid] Average loss: 0.6176 Average accuracy: 0.8359
+INFO:2020-11-21 17:08:56,626:[Train] Epoch: 6 [batch: 1236/6188 (19.97%)] Average loss: 0.3170  Average accuracy: 0.8863 lr: 0.0000500000
+INFO:2020-11-21 17:08:57,431:[Valid] Average loss: 0.4741 Average accuracy: 0.8555
+INFO:2020-11-21 17:12:39,297:[Train] Epoch: 6 [batch: 1854/6188 (29.96%)] Average loss: 0.3081  Average accuracy: 0.8885 lr: 0.0000500000
+INFO:2020-11-21 17:12:40,096:[Valid] Average loss: 0.4177 Average accuracy: 0.8664
+INFO:2020-11-21 17:16:22,131:[Train] Epoch: 6 [batch: 2472/6188 (39.95%)] Average loss: 0.3163  Average accuracy: 0.8859 lr: 0.0000500000
+INFO:2020-11-21 17:16:22,943:[Valid] Average loss: 0.4485 Average accuracy: 0.8518
+INFO:2020-11-21 17:20:04,771:[Train] Epoch: 6 [batch: 3090/6188 (49.94%)] Average loss: 0.3180  Average accuracy: 0.8858 lr: 0.0000500000
+INFO:2020-11-21 17:20:05,573:[Valid] Average loss: 0.4751 Average accuracy: 0.8345
+INFO:2020-11-21 17:23:47,347:[Train] Epoch: 6 [batch: 3708/6188 (59.92%)] Average loss: 0.3202  Average accuracy: 0.8849 lr: 0.0000500000
+INFO:2020-11-21 17:23:48,157:[Valid] Average loss: 0.5085 Average accuracy: 0.8488
+INFO:2020-11-21 17:27:30,965:[Train] Epoch: 6 [batch: 4326/6188 (69.91%)] Average loss: 0.3089  Average accuracy: 0.8882 lr: 0.0000500000
+INFO:2020-11-21 17:27:31,767:[Valid] Average loss: 0.4374 Average accuracy: 0.8660
+INFO:2020-11-21 17:31:14,861:[Train] Epoch: 6 [batch: 4944/6188 (79.90%)] Average loss: 0.3144  Average accuracy: 0.8870 lr: 0.0000500000
+INFO:2020-11-21 17:31:15,670:[Valid] Average loss: 0.3990 Average accuracy: 0.8618
+INFO:2020-11-21 17:34:58,909:[Train] Epoch: 6 [batch: 5562/6188 (89.88%)] Average loss: 0.3167  Average accuracy: 0.8860 lr: 0.0000500000
+INFO:2020-11-21 17:34:59,720:[Valid] Average loss: 0.4222 Average accuracy: 0.8528
+INFO:2020-11-21 17:38:42,562:[Train] Epoch: 6 [batch: 6180/6188 (99.87%)] Average loss: 0.3224  Average accuracy: 0.8847 lr: 0.0000500000
+INFO:2020-11-21 17:38:43,369:[Valid] Average loss: 0.4269 Average accuracy: 0.8501
+INFO:2020-11-21 17:38:46,476:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 17:38:46,476:Updating...Current learning rate: [1.4644660940672627e-05]
+
+INFO:2020-11-21 17:42:30,182:[Train] Epoch: 7 [batch: 618/6188 (09.99%)] Average loss: 0.3134  Average accuracy: 0.8874 lr: 0.0000146447
+INFO:2020-11-21 17:42:30,264:Starting over on the validation set.
+
+INFO:2020-11-21 17:42:31,297:[Valid] Average loss: 0.3825 Average accuracy: 0.8712
+INFO:2020-11-21 17:46:14,666:[Train] Epoch: 7 [batch: 1236/6188 (19.97%)] Average loss: 0.3214  Average accuracy: 0.8845 lr: 0.0000146447
+INFO:2020-11-21 17:46:15,478:[Valid] Average loss: 0.4823 Average accuracy: 0.8492
+INFO:2020-11-21 17:49:59,283:[Train] Epoch: 7 [batch: 1854/6188 (29.96%)] Average loss: 0.3181  Average accuracy: 0.8857 lr: 0.0000146447
+INFO:2020-11-21 17:50:00,106:[Valid] Average loss: 0.4107 Average accuracy: 0.8597
+INFO:2020-11-21 17:53:43,527:[Train] Epoch: 7 [batch: 2472/6188 (39.95%)] Average loss: 0.3159  Average accuracy: 0.8863 lr: 0.0000146447
+INFO:2020-11-21 17:53:44,342:[Valid] Average loss: 0.4172 Average accuracy: 0.8668
+INFO:2020-11-21 17:57:27,462:[Train] Epoch: 7 [batch: 3090/6188 (49.94%)] Average loss: 0.3187  Average accuracy: 0.8856 lr: 0.0000146447
+INFO:2020-11-21 17:57:28,284:[Valid] Average loss: 0.5887 Average accuracy: 0.8213
+INFO:2020-11-21 18:01:11,786:[Train] Epoch: 7 [batch: 3708/6188 (59.92%)] Average loss: 0.3227  Average accuracy: 0.8837 lr: 0.0000146447
+INFO:2020-11-21 18:01:12,605:[Valid] Average loss: 0.5655 Average accuracy: 0.8204
+INFO:2020-11-21 18:04:55,767:[Train] Epoch: 7 [batch: 4326/6188 (69.91%)] Average loss: 0.3146  Average accuracy: 0.8873 lr: 0.0000146447
+INFO:2020-11-21 18:04:56,586:[Valid] Average loss: 0.5882 Average accuracy: 0.8397
+INFO:2020-11-21 18:08:39,446:[Train] Epoch: 7 [batch: 4944/6188 (79.90%)] Average loss: 0.3143  Average accuracy: 0.8873 lr: 0.0000146447
+INFO:2020-11-21 18:08:40,270:[Valid] Average loss: 0.4430 Average accuracy: 0.8491
+INFO:2020-11-21 18:12:24,262:[Train] Epoch: 7 [batch: 5562/6188 (89.88%)] Average loss: 0.3193  Average accuracy: 0.8859 lr: 0.0000146447
+INFO:2020-11-21 18:12:25,098:[Valid] Average loss: 0.3918 Average accuracy: 0.8654
+INFO:2020-11-21 18:16:08,599:[Train] Epoch: 7 [batch: 6180/6188 (99.87%)] Average loss: 0.3061  Average accuracy: 0.8896 lr: 0.0000146447
+INFO:2020-11-21 18:16:09,431:[Valid] Average loss: 0.3538 Average accuracy: 0.8772
+INFO:2020-11-21 18:16:09,702:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain_best.pth
+INFO:2020-11-21 18:16:12,763:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 18:16:12,764:Updating...Current learning rate: [0.0001]
+
+INFO:2020-11-21 18:19:56,710:[Train] Epoch: 8 [batch: 618/6188 (09.99%)] Average loss: 0.3181  Average accuracy: 0.8859 lr: 0.0001000000
+INFO:2020-11-21 18:19:56,792:Starting over on the validation set.
+
+INFO:2020-11-21 18:19:57,865:[Valid] Average loss: 0.3899 Average accuracy: 0.8706
+INFO:2020-11-21 18:23:41,453:[Train] Epoch: 8 [batch: 1236/6188 (19.97%)] Average loss: 0.3190  Average accuracy: 0.8852 lr: 0.0001000000
+INFO:2020-11-21 18:23:42,280:[Valid] Average loss: 0.4310 Average accuracy: 0.8519
+INFO:2020-11-21 18:27:26,238:[Train] Epoch: 8 [batch: 1854/6188 (29.96%)] Average loss: 0.3186  Average accuracy: 0.8855 lr: 0.0001000000
+INFO:2020-11-21 18:27:27,079:[Valid] Average loss: 0.4700 Average accuracy: 0.8536
+INFO:2020-11-21 18:31:10,486:[Train] Epoch: 8 [batch: 2472/6188 (39.95%)] Average loss: 0.3165  Average accuracy: 0.8860 lr: 0.0001000000
+INFO:2020-11-21 18:31:11,312:[Valid] Average loss: 0.4184 Average accuracy: 0.8587
+INFO:2020-11-21 18:34:54,574:[Train] Epoch: 8 [batch: 3090/6188 (49.94%)] Average loss: 0.3161  Average accuracy: 0.8863 lr: 0.0001000000
+INFO:2020-11-21 18:34:55,403:[Valid] Average loss: 0.4300 Average accuracy: 0.8635
+INFO:2020-11-21 18:38:38,815:[Train] Epoch: 8 [batch: 3708/6188 (59.92%)] Average loss: 0.3116  Average accuracy: 0.8879 lr: 0.0001000000
+INFO:2020-11-21 18:38:39,646:[Valid] Average loss: 0.4836 Average accuracy: 0.8407
+INFO:2020-11-21 18:42:23,061:[Train] Epoch: 8 [batch: 4326/6188 (69.91%)] Average loss: 0.3146  Average accuracy: 0.8870 lr: 0.0001000000
+INFO:2020-11-21 18:42:23,890:[Valid] Average loss: 0.5136 Average accuracy: 0.8402
+INFO:2020-11-21 18:46:06,915:[Train] Epoch: 8 [batch: 4944/6188 (79.90%)] Average loss: 0.3128  Average accuracy: 0.8868 lr: 0.0001000000
+INFO:2020-11-21 18:46:07,738:[Valid] Average loss: 0.4074 Average accuracy: 0.8595
+INFO:2020-11-21 18:49:51,127:[Train] Epoch: 8 [batch: 5562/6188 (89.88%)] Average loss: 0.3193  Average accuracy: 0.8854 lr: 0.0001000000
+INFO:2020-11-21 18:49:51,967:[Valid] Average loss: 0.5410 Average accuracy: 0.8435
+INFO:2020-11-21 18:53:35,388:[Train] Epoch: 8 [batch: 6180/6188 (99.87%)] Average loss: 0.3201  Average accuracy: 0.8847 lr: 0.0001000000
+INFO:2020-11-21 18:53:36,224:[Valid] Average loss: 0.5186 Average accuracy: 0.8423
+INFO:2020-11-21 18:53:39,346:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 18:53:39,347:Updating...Current learning rate: [9.619397662556435e-05]
+
+INFO:2020-11-21 18:57:23,405:[Train] Epoch: 9 [batch: 618/6188 (09.99%)] Average loss: 0.3155  Average accuracy: 0.8870 lr: 0.0000961940
+INFO:2020-11-21 18:57:23,499:Starting over on the validation set.
+
+INFO:2020-11-21 18:57:24,611:[Valid] Average loss: 0.4160 Average accuracy: 0.8655
+INFO:2020-11-21 19:01:08,223:[Train] Epoch: 9 [batch: 1236/6188 (19.97%)] Average loss: 0.3176  Average accuracy: 0.8857 lr: 0.0000961940
+INFO:2020-11-21 19:01:09,044:[Valid] Average loss: 0.4601 Average accuracy: 0.8459
+INFO:2020-11-21 19:04:52,720:[Train] Epoch: 9 [batch: 1854/6188 (29.96%)] Average loss: 0.3102  Average accuracy: 0.8878 lr: 0.0000961940
+INFO:2020-11-21 19:04:53,541:[Valid] Average loss: 0.4469 Average accuracy: 0.8408
+INFO:2020-11-21 19:08:36,975:[Train] Epoch: 9 [batch: 2472/6188 (39.95%)] Average loss: 0.3154  Average accuracy: 0.8872 lr: 0.0000961940
+INFO:2020-11-21 19:08:37,799:[Valid] Average loss: 0.5131 Average accuracy: 0.8455
+INFO:2020-11-21 19:12:21,386:[Train] Epoch: 9 [batch: 3090/6188 (49.94%)] Average loss: 0.3144  Average accuracy: 0.8869 lr: 0.0000961940
+INFO:2020-11-21 19:12:22,208:[Valid] Average loss: 0.4250 Average accuracy: 0.8664
+INFO:2020-11-21 19:16:05,547:[Train] Epoch: 9 [batch: 3708/6188 (59.92%)] Average loss: 0.3236  Average accuracy: 0.8838 lr: 0.0000961940
+INFO:2020-11-21 19:16:06,371:[Valid] Average loss: 0.5216 Average accuracy: 0.8374
+INFO:2020-11-21 19:19:49,857:[Train] Epoch: 9 [batch: 4326/6188 (69.91%)] Average loss: 0.3172  Average accuracy: 0.8864 lr: 0.0000961940
+INFO:2020-11-21 19:19:50,697:[Valid] Average loss: 0.6122 Average accuracy: 0.8330
+INFO:2020-11-21 19:23:34,092:[Train] Epoch: 9 [batch: 4944/6188 (79.90%)] Average loss: 0.3141  Average accuracy: 0.8870 lr: 0.0000961940
+INFO:2020-11-21 19:23:34,917:[Valid] Average loss: 0.4195 Average accuracy: 0.8567
+INFO:2020-11-21 19:27:18,377:[Train] Epoch: 9 [batch: 5562/6188 (89.88%)] Average loss: 0.3151  Average accuracy: 0.8859 lr: 0.0000961940
+INFO:2020-11-21 19:27:19,212:[Valid] Average loss: 0.3712 Average accuracy: 0.8750
+INFO:2020-11-21 19:31:02,455:[Train] Epoch: 9 [batch: 6180/6188 (99.87%)] Average loss: 0.3192  Average accuracy: 0.8849 lr: 0.0000961940
+INFO:2020-11-21 19:31:03,278:[Valid] Average loss: 0.4037 Average accuracy: 0.8601
+INFO:2020-11-21 19:31:06,514:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 19:31:06,514:Updating...Current learning rate: [8.535533905932738e-05]
+
+INFO:2020-11-21 19:34:50,238:[Train] Epoch: 10 [batch: 618/6188 (09.99%)] Average loss: 0.3087  Average accuracy: 0.8887 lr: 0.0000853553
+INFO:2020-11-21 19:34:50,321:Starting over on the validation set.
+
+INFO:2020-11-21 19:34:51,386:[Valid] Average loss: 0.5671 Average accuracy: 0.8304
+INFO:2020-11-21 19:38:34,349:[Train] Epoch: 10 [batch: 1236/6188 (19.97%)] Average loss: 0.3149  Average accuracy: 0.8866 lr: 0.0000853553
+INFO:2020-11-21 19:38:35,434:[Valid] Average loss: 0.4522 Average accuracy: 0.8583
+INFO:2020-11-21 19:42:17,821:[Train] Epoch: 10 [batch: 1854/6188 (29.96%)] Average loss: 0.3150  Average accuracy: 0.8864 lr: 0.0000853553
+INFO:2020-11-21 19:42:18,646:[Valid] Average loss: 0.3897 Average accuracy: 0.8632
+INFO:2020-11-21 19:46:01,778:[Train] Epoch: 10 [batch: 2472/6188 (39.95%)] Average loss: 0.3189  Average accuracy: 0.8851 lr: 0.0000853553
+INFO:2020-11-21 19:46:02,609:[Valid] Average loss: 0.4361 Average accuracy: 0.8573
+INFO:2020-11-21 19:49:45,505:[Train] Epoch: 10 [batch: 3090/6188 (49.94%)] Average loss: 0.3160  Average accuracy: 0.8857 lr: 0.0000853553
+INFO:2020-11-21 19:49:46,325:[Valid] Average loss: 0.4374 Average accuracy: 0.8547
+INFO:2020-11-21 19:53:29,268:[Train] Epoch: 10 [batch: 3708/6188 (59.92%)] Average loss: 0.3194  Average accuracy: 0.8854 lr: 0.0000853553
+INFO:2020-11-21 19:53:30,088:[Valid] Average loss: 0.5353 Average accuracy: 0.8434
+INFO:2020-11-21 19:57:13,099:[Train] Epoch: 10 [batch: 4326/6188 (69.91%)] Average loss: 0.3135  Average accuracy: 0.8873 lr: 0.0000853553
+INFO:2020-11-21 19:57:13,923:[Valid] Average loss: 0.4070 Average accuracy: 0.8608
+INFO:2020-11-21 20:00:57,106:[Train] Epoch: 10 [batch: 4944/6188 (79.90%)] Average loss: 0.3167  Average accuracy: 0.8858 lr: 0.0000853553
+INFO:2020-11-21 20:00:57,927:[Valid] Average loss: 0.5230 Average accuracy: 0.8525
+INFO:2020-11-21 20:04:40,957:[Train] Epoch: 10 [batch: 5562/6188 (89.88%)] Average loss: 0.3168  Average accuracy: 0.8863 lr: 0.0000853553
+INFO:2020-11-21 20:04:41,784:[Valid] Average loss: 0.3834 Average accuracy: 0.8630
+INFO:2020-11-21 20:08:24,589:[Train] Epoch: 10 [batch: 6180/6188 (99.87%)] Average loss: 0.3163  Average accuracy: 0.8866 lr: 0.0000853553
+INFO:2020-11-21 20:08:25,407:[Valid] Average loss: 0.4596 Average accuracy: 0.8408
+INFO:2020-11-21 20:08:28,535:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 20:08:28,535:Updating...Current learning rate: [6.91341716182545e-05]
+
+INFO:2020-11-21 20:12:12,013:[Train] Epoch: 11 [batch: 618/6188 (09.99%)] Average loss: 0.3173  Average accuracy: 0.8857 lr: 0.0000691342
+INFO:2020-11-21 20:12:12,099:Starting over on the validation set.
+
+INFO:2020-11-21 20:12:13,232:[Valid] Average loss: 0.5121 Average accuracy: 0.8389
+INFO:2020-11-21 20:15:56,770:[Train] Epoch: 11 [batch: 1236/6188 (19.97%)] Average loss: 0.3161  Average accuracy: 0.8854 lr: 0.0000691342
+INFO:2020-11-21 20:15:57,636:[Valid] Average loss: 0.4493 Average accuracy: 0.8598
+INFO:2020-11-21 20:19:40,351:[Train] Epoch: 11 [batch: 1854/6188 (29.96%)] Average loss: 0.3118  Average accuracy: 0.8874 lr: 0.0000691342
+INFO:2020-11-21 20:19:41,161:[Valid] Average loss: 0.4496 Average accuracy: 0.8485
+INFO:2020-11-21 20:23:24,246:[Train] Epoch: 11 [batch: 2472/6188 (39.95%)] Average loss: 0.3203  Average accuracy: 0.8848 lr: 0.0000691342
+INFO:2020-11-21 20:23:25,058:[Valid] Average loss: 0.5400 Average accuracy: 0.8322
+INFO:2020-11-21 20:27:07,878:[Train] Epoch: 11 [batch: 3090/6188 (49.94%)] Average loss: 0.3150  Average accuracy: 0.8868 lr: 0.0000691342
+INFO:2020-11-21 20:27:08,689:[Valid] Average loss: 0.5532 Average accuracy: 0.8428
+INFO:2020-11-21 20:30:51,675:[Train] Epoch: 11 [batch: 3708/6188 (59.92%)] Average loss: 0.3148  Average accuracy: 0.8870 lr: 0.0000691342
+INFO:2020-11-21 20:30:52,496:[Valid] Average loss: 0.4171 Average accuracy: 0.8628
+INFO:2020-11-21 20:34:35,110:[Train] Epoch: 11 [batch: 4326/6188 (69.91%)] Average loss: 0.3176  Average accuracy: 0.8859 lr: 0.0000691342
+INFO:2020-11-21 20:34:35,947:[Valid] Average loss: 0.3870 Average accuracy: 0.8666
+INFO:2020-11-21 20:38:18,926:[Train] Epoch: 11 [batch: 4944/6188 (79.90%)] Average loss: 0.3135  Average accuracy: 0.8871 lr: 0.0000691342
+INFO:2020-11-21 20:38:19,752:[Valid] Average loss: 0.4037 Average accuracy: 0.8670
+INFO:2020-11-21 20:42:02,443:[Train] Epoch: 11 [batch: 5562/6188 (89.88%)] Average loss: 0.3133  Average accuracy: 0.8869 lr: 0.0000691342
+INFO:2020-11-21 20:42:03,272:[Valid] Average loss: 0.4118 Average accuracy: 0.8674
+INFO:2020-11-21 20:45:46,340:[Train] Epoch: 11 [batch: 6180/6188 (99.87%)] Average loss: 0.3178  Average accuracy: 0.8859 lr: 0.0000691342
+INFO:2020-11-21 20:45:47,164:[Valid] Average loss: 0.4624 Average accuracy: 0.8425
+INFO:2020-11-21 20:45:50,270:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 20:45:50,271:Updating...Current learning rate: [5e-05]
+
+INFO:2020-11-21 20:49:33,883:[Train] Epoch: 12 [batch: 618/6188 (09.99%)] Average loss: 0.3161  Average accuracy: 0.8856 lr: 0.0000500000
+INFO:2020-11-21 20:49:33,965:Starting over on the validation set.
+
+INFO:2020-11-21 20:49:35,001:[Valid] Average loss: 0.4603 Average accuracy: 0.8582
+INFO:2020-11-21 20:53:17,673:[Train] Epoch: 12 [batch: 1236/6188 (19.97%)] Average loss: 0.3205  Average accuracy: 0.8853 lr: 0.0000500000
+INFO:2020-11-21 20:53:18,499:[Valid] Average loss: 0.5061 Average accuracy: 0.8443
+INFO:2020-11-21 20:57:01,449:[Train] Epoch: 12 [batch: 1854/6188 (29.96%)] Average loss: 0.3164  Average accuracy: 0.8861 lr: 0.0000500000
+INFO:2020-11-21 20:57:02,282:[Valid] Average loss: 0.4747 Average accuracy: 0.8465
+INFO:2020-11-21 21:00:44,997:[Train] Epoch: 12 [batch: 2472/6188 (39.95%)] Average loss: 0.3154  Average accuracy: 0.8869 lr: 0.0000500000
+INFO:2020-11-21 21:00:45,823:[Valid] Average loss: 0.4573 Average accuracy: 0.8577
+INFO:2020-11-21 21:04:28,267:[Train] Epoch: 12 [batch: 3090/6188 (49.94%)] Average loss: 0.3133  Average accuracy: 0.8875 lr: 0.0000500000
+INFO:2020-11-21 21:04:29,095:[Valid] Average loss: 0.5199 Average accuracy: 0.8474
+INFO:2020-11-21 21:08:11,860:[Train] Epoch: 12 [batch: 3708/6188 (59.92%)] Average loss: 0.3129  Average accuracy: 0.8871 lr: 0.0000500000
+INFO:2020-11-21 21:08:12,681:[Valid] Average loss: 0.4170 Average accuracy: 0.8547
+INFO:2020-11-21 21:11:55,258:[Train] Epoch: 12 [batch: 4326/6188 (69.91%)] Average loss: 0.3193  Average accuracy: 0.8855 lr: 0.0000500000
+INFO:2020-11-21 21:11:56,071:[Valid] Average loss: 0.4745 Average accuracy: 0.8390
+INFO:2020-11-21 21:15:38,914:[Train] Epoch: 12 [batch: 4944/6188 (79.90%)] Average loss: 0.3163  Average accuracy: 0.8860 lr: 0.0000500000
+INFO:2020-11-21 21:15:39,734:[Valid] Average loss: 0.4118 Average accuracy: 0.8568
+INFO:2020-11-21 21:19:22,275:[Train] Epoch: 12 [batch: 5562/6188 (89.88%)] Average loss: 0.3134  Average accuracy: 0.8871 lr: 0.0000500000
+INFO:2020-11-21 21:19:23,100:[Valid] Average loss: 0.4147 Average accuracy: 0.8725
+INFO:2020-11-21 21:23:05,766:[Train] Epoch: 12 [batch: 6180/6188 (99.87%)] Average loss: 0.3135  Average accuracy: 0.8871 lr: 0.0000500000
+INFO:2020-11-21 21:23:06,605:[Valid] Average loss: 0.4364 Average accuracy: 0.8496
+INFO:2020-11-21 21:23:09,712:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 21:23:09,713:Updating...Current learning rate: [3.086582838174551e-05]
+
+INFO:2020-11-21 21:26:52,881:[Train] Epoch: 13 [batch: 618/6188 (09.99%)] Average loss: 0.3156  Average accuracy: 0.8868 lr: 0.0000308658
+INFO:2020-11-21 21:26:52,964:Starting over on the validation set.
+
+INFO:2020-11-21 21:26:54,018:[Valid] Average loss: 0.4641 Average accuracy: 0.8555
+INFO:2020-11-21 21:30:36,512:[Train] Epoch: 13 [batch: 1236/6188 (19.97%)] Average loss: 0.3177  Average accuracy: 0.8863 lr: 0.0000308658
+INFO:2020-11-21 21:30:37,322:[Valid] Average loss: 0.4692 Average accuracy: 0.8483
+INFO:2020-11-21 21:34:20,233:[Train] Epoch: 13 [batch: 1854/6188 (29.96%)] Average loss: 0.3107  Average accuracy: 0.8877 lr: 0.0000308658
+INFO:2020-11-21 21:34:21,050:[Valid] Average loss: 0.4045 Average accuracy: 0.8619
+INFO:2020-11-21 21:38:03,473:[Train] Epoch: 13 [batch: 2472/6188 (39.95%)] Average loss: 0.3154  Average accuracy: 0.8865 lr: 0.0000308658
+INFO:2020-11-21 21:38:04,322:[Valid] Average loss: 0.3670 Average accuracy: 0.8725
+INFO:2020-11-21 21:41:46,956:[Train] Epoch: 13 [batch: 3090/6188 (49.94%)] Average loss: 0.3174  Average accuracy: 0.8857 lr: 0.0000308658
+INFO:2020-11-21 21:41:47,775:[Valid] Average loss: 0.5216 Average accuracy: 0.8350
+INFO:2020-11-21 21:45:30,583:[Train] Epoch: 13 [batch: 3708/6188 (59.92%)] Average loss: 0.3191  Average accuracy: 0.8851 lr: 0.0000308658
+INFO:2020-11-21 21:45:31,393:[Valid] Average loss: 0.4633 Average accuracy: 0.8582
+INFO:2020-11-21 21:49:13,308:[Train] Epoch: 13 [batch: 4326/6188 (69.91%)] Average loss: 0.3149  Average accuracy: 0.8864 lr: 0.0000308658
+INFO:2020-11-21 21:49:14,131:[Valid] Average loss: 0.3983 Average accuracy: 0.8627
+INFO:2020-11-21 21:52:57,261:[Train] Epoch: 13 [batch: 4944/6188 (79.90%)] Average loss: 0.3126  Average accuracy: 0.8868 lr: 0.0000308658
+INFO:2020-11-21 21:52:58,080:[Valid] Average loss: 0.5644 Average accuracy: 0.8413
+INFO:2020-11-21 21:56:40,996:[Train] Epoch: 13 [batch: 5562/6188 (89.88%)] Average loss: 0.3132  Average accuracy: 0.8869 lr: 0.0000308658
+INFO:2020-11-21 21:56:41,829:[Valid] Average loss: 0.4588 Average accuracy: 0.8450
+INFO:2020-11-21 22:00:23,922:[Train] Epoch: 13 [batch: 6180/6188 (99.87%)] Average loss: 0.3145  Average accuracy: 0.8871 lr: 0.0000308658
+INFO:2020-11-21 22:00:24,738:[Valid] Average loss: 0.4657 Average accuracy: 0.8467
+INFO:2020-11-21 22:00:27,851:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 22:00:27,851:Updating...Current learning rate: [1.4644660940672627e-05]
+
+INFO:2020-11-21 22:04:11,192:[Train] Epoch: 14 [batch: 618/6188 (09.99%)] Average loss: 0.3140  Average accuracy: 0.8875 lr: 0.0000146447
+INFO:2020-11-21 22:04:11,274:Starting over on the validation set.
+
+INFO:2020-11-21 22:04:12,297:[Valid] Average loss: 0.4510 Average accuracy: 0.8456
+INFO:2020-11-21 22:07:55,501:[Train] Epoch: 14 [batch: 1236/6188 (19.97%)] Average loss: 0.3130  Average accuracy: 0.8867 lr: 0.0000146447
+INFO:2020-11-21 22:07:56,311:[Valid] Average loss: 0.4205 Average accuracy: 0.8619
+INFO:2020-11-21 22:11:38,698:[Train] Epoch: 14 [batch: 1854/6188 (29.96%)] Average loss: 0.3179  Average accuracy: 0.8854 lr: 0.0000146447
+INFO:2020-11-21 22:11:39,657:[Valid] Average loss: 0.5098 Average accuracy: 0.8513
+INFO:2020-11-21 22:15:22,459:[Train] Epoch: 14 [batch: 2472/6188 (39.95%)] Average loss: 0.3188  Average accuracy: 0.8852 lr: 0.0000146447
+INFO:2020-11-21 22:15:23,271:[Valid] Average loss: 0.4107 Average accuracy: 0.8693
+INFO:2020-11-21 22:19:06,004:[Train] Epoch: 14 [batch: 3090/6188 (49.94%)] Average loss: 0.3172  Average accuracy: 0.8855 lr: 0.0000146447
+INFO:2020-11-21 22:19:06,827:[Valid] Average loss: 0.5187 Average accuracy: 0.8282
+INFO:2020-11-21 22:22:49,634:[Train] Epoch: 14 [batch: 3708/6188 (59.92%)] Average loss: 0.3105  Average accuracy: 0.8882 lr: 0.0000146447
+INFO:2020-11-21 22:22:50,468:[Valid] Average loss: 0.4673 Average accuracy: 0.8548
+INFO:2020-11-21 22:26:33,354:[Train] Epoch: 14 [batch: 4326/6188 (69.91%)] Average loss: 0.3116  Average accuracy: 0.8879 lr: 0.0000146447
+INFO:2020-11-21 22:26:34,175:[Valid] Average loss: 0.4326 Average accuracy: 0.8522
+INFO:2020-11-21 22:30:16,646:[Train] Epoch: 14 [batch: 4944/6188 (79.90%)] Average loss: 0.3136  Average accuracy: 0.8875 lr: 0.0000146447
+INFO:2020-11-21 22:30:17,466:[Valid] Average loss: 0.4242 Average accuracy: 0.8573
+INFO:2020-11-21 22:34:00,898:[Train] Epoch: 14 [batch: 5562/6188 (89.88%)] Average loss: 0.3147  Average accuracy: 0.8863 lr: 0.0000146447
+INFO:2020-11-21 22:34:01,723:[Valid] Average loss: 0.3915 Average accuracy: 0.8610
+INFO:2020-11-21 22:37:44,131:[Train] Epoch: 14 [batch: 6180/6188 (99.87%)] Average loss: 0.3163  Average accuracy: 0.8862 lr: 0.0000146447
+INFO:2020-11-21 22:37:44,956:[Valid] Average loss: 0.5431 Average accuracy: 0.8470
+INFO:2020-11-21 22:37:48,157:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 22:37:48,157:Updating...Current learning rate: [3.8060233744356633e-06]
+
+INFO:2020-11-21 22:41:30,954:[Train] Epoch: 15 [batch: 618/6188 (09.99%)] Average loss: 0.3122  Average accuracy: 0.8872 lr: 0.0000038060
+INFO:2020-11-21 22:41:31,062:Starting over on the validation set.
+
+INFO:2020-11-21 22:41:32,099:[Valid] Average loss: 0.5140 Average accuracy: 0.8450
+INFO:2020-11-21 22:45:15,650:[Train] Epoch: 15 [batch: 1236/6188 (19.97%)] Average loss: 0.3132  Average accuracy: 0.8871 lr: 0.0000038060
+INFO:2020-11-21 22:45:16,476:[Valid] Average loss: 0.4276 Average accuracy: 0.8530
+INFO:2020-11-21 22:48:59,217:[Train] Epoch: 15 [batch: 1854/6188 (29.96%)] Average loss: 0.3197  Average accuracy: 0.8853 lr: 0.0000038060
+INFO:2020-11-21 22:49:00,050:[Valid] Average loss: 0.3650 Average accuracy: 0.8703
+INFO:2020-11-21 22:52:43,287:[Train] Epoch: 15 [batch: 2472/6188 (39.95%)] Average loss: 0.3118  Average accuracy: 0.8875 lr: 0.0000038060
+INFO:2020-11-21 22:52:44,110:[Valid] Average loss: 0.4476 Average accuracy: 0.8596
+INFO:2020-11-21 22:56:27,423:[Train] Epoch: 15 [batch: 3090/6188 (49.94%)] Average loss: 0.3168  Average accuracy: 0.8856 lr: 0.0000038060
+INFO:2020-11-21 22:56:28,240:[Valid] Average loss: 0.4524 Average accuracy: 0.8445
+INFO:2020-11-21 23:00:12,285:[Train] Epoch: 15 [batch: 3708/6188 (59.92%)] Average loss: 0.3176  Average accuracy: 0.8864 lr: 0.0000038060
+INFO:2020-11-21 23:00:13,125:[Valid] Average loss: 0.4997 Average accuracy: 0.8304
+INFO:2020-11-21 23:03:58,310:[Train] Epoch: 15 [batch: 4326/6188 (69.91%)] Average loss: 0.3150  Average accuracy: 0.8859 lr: 0.0000038060
+INFO:2020-11-21 23:03:59,157:[Valid] Average loss: 0.4484 Average accuracy: 0.8531
+INFO:2020-11-21 23:07:43,025:[Train] Epoch: 15 [batch: 4944/6188 (79.90%)] Average loss: 0.3120  Average accuracy: 0.8873 lr: 0.0000038060
+INFO:2020-11-21 23:07:43,845:[Valid] Average loss: 0.4432 Average accuracy: 0.8694
+INFO:2020-11-21 23:11:28,741:[Train] Epoch: 15 [batch: 5562/6188 (89.88%)] Average loss: 0.3128  Average accuracy: 0.8875 lr: 0.0000038060
+INFO:2020-11-21 23:11:29,568:[Valid] Average loss: 0.4506 Average accuracy: 0.8519
+INFO:2020-11-21 23:15:12,129:[Train] Epoch: 15 [batch: 6180/6188 (99.87%)] Average loss: 0.3177  Average accuracy: 0.8860 lr: 0.0000038060
+INFO:2020-11-21 23:15:12,939:[Valid] Average loss: 0.5217 Average accuracy: 0.8503
+INFO:2020-11-21 23:15:16,045:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 23:15:16,045:Updating...Current learning rate: [0.0001]
+
+INFO:2020-11-21 23:19:00,074:[Train] Epoch: 16 [batch: 618/6188 (09.99%)] Average loss: 0.3123  Average accuracy: 0.8871 lr: 0.0001000000
+INFO:2020-11-21 23:19:00,144:Starting over on the validation set.
+
+INFO:2020-11-21 23:19:01,171:[Valid] Average loss: 0.4248 Average accuracy: 0.8617
+INFO:2020-11-21 23:22:44,253:[Train] Epoch: 16 [batch: 1236/6188 (19.97%)] Average loss: 0.3227  Average accuracy: 0.8839 lr: 0.0001000000
+INFO:2020-11-21 23:22:45,077:[Valid] Average loss: 0.4347 Average accuracy: 0.8564
+INFO:2020-11-21 23:26:29,806:[Train] Epoch: 16 [batch: 1854/6188 (29.96%)] Average loss: 0.3154  Average accuracy: 0.8860 lr: 0.0001000000
+INFO:2020-11-21 23:26:30,651:[Valid] Average loss: 0.4493 Average accuracy: 0.8590
+INFO:2020-11-21 23:30:14,859:[Train] Epoch: 16 [batch: 2472/6188 (39.95%)] Average loss: 0.3160  Average accuracy: 0.8860 lr: 0.0001000000
+INFO:2020-11-21 23:30:15,686:[Valid] Average loss: 0.3929 Average accuracy: 0.8692
+INFO:2020-11-21 23:33:59,792:[Train] Epoch: 16 [batch: 3090/6188 (49.94%)] Average loss: 0.3118  Average accuracy: 0.8874 lr: 0.0001000000
+INFO:2020-11-21 23:34:00,628:[Valid] Average loss: 0.4777 Average accuracy: 0.8591
+INFO:2020-11-21 23:37:43,866:[Train] Epoch: 16 [batch: 3708/6188 (59.92%)] Average loss: 0.3126  Average accuracy: 0.8871 lr: 0.0001000000
+INFO:2020-11-21 23:37:44,688:[Valid] Average loss: 0.4480 Average accuracy: 0.8415
+INFO:2020-11-21 23:41:28,381:[Train] Epoch: 16 [batch: 4326/6188 (69.91%)] Average loss: 0.3108  Average accuracy: 0.8884 lr: 0.0001000000
+INFO:2020-11-21 23:41:29,209:[Valid] Average loss: 0.4303 Average accuracy: 0.8494
+INFO:2020-11-21 23:45:11,789:[Train] Epoch: 16 [batch: 4944/6188 (79.90%)] Average loss: 0.3148  Average accuracy: 0.8868 lr: 0.0001000000
+INFO:2020-11-21 23:45:12,623:[Valid] Average loss: 0.4546 Average accuracy: 0.8618
+INFO:2020-11-21 23:48:55,160:[Train] Epoch: 16 [batch: 5562/6188 (89.88%)] Average loss: 0.3168  Average accuracy: 0.8861 lr: 0.0001000000
+INFO:2020-11-21 23:48:55,998:[Valid] Average loss: 0.5214 Average accuracy: 0.8469
+INFO:2020-11-21 23:52:39,372:[Train] Epoch: 16 [batch: 6180/6188 (99.87%)] Average loss: 0.3214  Average accuracy: 0.8847 lr: 0.0001000000
+INFO:2020-11-21 23:52:40,196:[Valid] Average loss: 0.5274 Average accuracy: 0.8235
+INFO:2020-11-21 23:52:43,429:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-21 23:52:43,430:Updating...Current learning rate: [9.903926402016153e-05]
+
+INFO:2020-11-21 23:56:26,953:[Train] Epoch: 17 [batch: 618/6188 (09.99%)] Average loss: 0.3089  Average accuracy: 0.8884 lr: 0.0000990393
+INFO:2020-11-21 23:56:27,037:Starting over on the validation set.
+
+INFO:2020-11-21 23:56:28,078:[Valid] Average loss: 0.4176 Average accuracy: 0.8578
+INFO:2020-11-22 00:00:11,074:[Train] Epoch: 17 [batch: 1236/6188 (19.97%)] Average loss: 0.3140  Average accuracy: 0.8872 lr: 0.0000990393
+INFO:2020-11-22 00:00:11,884:[Valid] Average loss: 0.4116 Average accuracy: 0.8685
+INFO:2020-11-22 00:03:54,835:[Train] Epoch: 17 [batch: 1854/6188 (29.96%)] Average loss: 0.3063  Average accuracy: 0.8894 lr: 0.0000990393
+INFO:2020-11-22 00:03:55,671:[Valid] Average loss: 0.4502 Average accuracy: 0.8584
+INFO:2020-11-22 00:07:38,882:[Train] Epoch: 17 [batch: 2472/6188 (39.95%)] Average loss: 0.3162  Average accuracy: 0.8859 lr: 0.0000990393
+INFO:2020-11-22 00:07:39,715:[Valid] Average loss: 0.4818 Average accuracy: 0.8468
+INFO:2020-11-22 00:11:22,962:[Train] Epoch: 17 [batch: 3090/6188 (49.94%)] Average loss: 0.3142  Average accuracy: 0.8868 lr: 0.0000990393
+INFO:2020-11-22 00:11:23,788:[Valid] Average loss: 0.5286 Average accuracy: 0.8357
+INFO:2020-11-22 00:15:06,807:[Train] Epoch: 17 [batch: 3708/6188 (59.92%)] Average loss: 0.3178  Average accuracy: 0.8852 lr: 0.0000990393
+INFO:2020-11-22 00:15:07,657:[Valid] Average loss: 0.4063 Average accuracy: 0.8566
+INFO:2020-11-22 00:18:50,800:[Train] Epoch: 17 [batch: 4326/6188 (69.91%)] Average loss: 0.3136  Average accuracy: 0.8862 lr: 0.0000990393
+INFO:2020-11-22 00:18:51,624:[Valid] Average loss: 0.4598 Average accuracy: 0.8465
+INFO:2020-11-22 00:22:34,433:[Train] Epoch: 17 [batch: 4944/6188 (79.90%)] Average loss: 0.3201  Average accuracy: 0.8851 lr: 0.0000990393
+INFO:2020-11-22 00:22:35,275:[Valid] Average loss: 0.4577 Average accuracy: 0.8500
+INFO:2020-11-22 00:26:18,845:[Train] Epoch: 17 [batch: 5562/6188 (89.88%)] Average loss: 0.3183  Average accuracy: 0.8846 lr: 0.0000990393
+INFO:2020-11-22 00:26:19,673:[Valid] Average loss: 0.4959 Average accuracy: 0.8497
+INFO:2020-11-22 00:30:02,544:[Train] Epoch: 17 [batch: 6180/6188 (99.87%)] Average loss: 0.3173  Average accuracy: 0.8863 lr: 0.0000990393
+INFO:2020-11-22 00:30:03,348:[Valid] Average loss: 0.4550 Average accuracy: 0.8579
+INFO:2020-11-22 00:30:06,538:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 00:30:06,538:Updating...Current learning rate: [9.619397662556435e-05]
+
+INFO:2020-11-22 00:33:49,485:[Train] Epoch: 18 [batch: 618/6188 (09.99%)] Average loss: 0.3199  Average accuracy: 0.8851 lr: 0.0000961940
+INFO:2020-11-22 00:33:49,566:Starting over on the validation set.
+
+INFO:2020-11-22 00:33:50,600:[Valid] Average loss: 0.4523 Average accuracy: 0.8517
+INFO:2020-11-22 00:37:33,716:[Train] Epoch: 18 [batch: 1236/6188 (19.97%)] Average loss: 0.3101  Average accuracy: 0.8878 lr: 0.0000961940
+INFO:2020-11-22 00:37:34,539:[Valid] Average loss: 0.5104 Average accuracy: 0.8544
+INFO:2020-11-22 00:41:17,617:[Train] Epoch: 18 [batch: 1854/6188 (29.96%)] Average loss: 0.3190  Average accuracy: 0.8847 lr: 0.0000961940
+INFO:2020-11-22 00:41:18,423:[Valid] Average loss: 0.4708 Average accuracy: 0.8520
+INFO:2020-11-22 00:45:01,145:[Train] Epoch: 18 [batch: 2472/6188 (39.95%)] Average loss: 0.3168  Average accuracy: 0.8858 lr: 0.0000961940
+INFO:2020-11-22 00:45:02,102:[Valid] Average loss: 0.3992 Average accuracy: 0.8645
+INFO:2020-11-22 00:48:44,973:[Train] Epoch: 18 [batch: 3090/6188 (49.94%)] Average loss: 0.3130  Average accuracy: 0.8870 lr: 0.0000961940
+INFO:2020-11-22 00:48:45,785:[Valid] Average loss: 0.5498 Average accuracy: 0.8260
+INFO:2020-11-22 00:52:28,737:[Train] Epoch: 18 [batch: 3708/6188 (59.92%)] Average loss: 0.3147  Average accuracy: 0.8863 lr: 0.0000961940
+INFO:2020-11-22 00:52:29,542:[Valid] Average loss: 0.3692 Average accuracy: 0.8693
+INFO:2020-11-22 00:56:12,761:[Train] Epoch: 18 [batch: 4326/6188 (69.91%)] Average loss: 0.3071  Average accuracy: 0.8888 lr: 0.0000961940
+INFO:2020-11-22 00:56:13,579:[Valid] Average loss: 0.4522 Average accuracy: 0.8616
+INFO:2020-11-22 00:59:56,445:[Train] Epoch: 18 [batch: 4944/6188 (79.90%)] Average loss: 0.3134  Average accuracy: 0.8870 lr: 0.0000961940
+INFO:2020-11-22 00:59:57,280:[Valid] Average loss: 0.4508 Average accuracy: 0.8509
+INFO:2020-11-22 01:03:40,366:[Train] Epoch: 18 [batch: 5562/6188 (89.88%)] Average loss: 0.3152  Average accuracy: 0.8865 lr: 0.0000961940
+INFO:2020-11-22 01:03:41,181:[Valid] Average loss: 0.4258 Average accuracy: 0.8564
+INFO:2020-11-22 01:07:24,068:[Train] Epoch: 18 [batch: 6180/6188 (99.87%)] Average loss: 0.3145  Average accuracy: 0.8870 lr: 0.0000961940
+INFO:2020-11-22 01:07:24,882:[Valid] Average loss: 0.4765 Average accuracy: 0.8421
+INFO:2020-11-22 01:07:27,965:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 01:07:27,966:Updating...Current learning rate: [9.157348061512727e-05]
+
+INFO:2020-11-22 01:11:11,074:[Train] Epoch: 19 [batch: 618/6188 (09.99%)] Average loss: 0.3094  Average accuracy: 0.8885 lr: 0.0000915735
+INFO:2020-11-22 01:11:11,161:Starting over on the validation set.
+
+INFO:2020-11-22 01:11:12,263:[Valid] Average loss: 0.4263 Average accuracy: 0.8516
+INFO:2020-11-22 01:14:55,717:[Train] Epoch: 19 [batch: 1236/6188 (19.97%)] Average loss: 0.3132  Average accuracy: 0.8872 lr: 0.0000915735
+INFO:2020-11-22 01:14:56,543:[Valid] Average loss: 0.4178 Average accuracy: 0.8567
+INFO:2020-11-22 01:18:39,750:[Train] Epoch: 19 [batch: 1854/6188 (29.96%)] Average loss: 0.3117  Average accuracy: 0.8875 lr: 0.0000915735
+INFO:2020-11-22 01:18:40,573:[Valid] Average loss: 0.4206 Average accuracy: 0.8556
+INFO:2020-11-22 01:22:23,164:[Train] Epoch: 19 [batch: 2472/6188 (39.95%)] Average loss: 0.3158  Average accuracy: 0.8859 lr: 0.0000915735
+INFO:2020-11-22 01:22:23,991:[Valid] Average loss: 0.4647 Average accuracy: 0.8538
+INFO:2020-11-22 01:26:07,026:[Train] Epoch: 19 [batch: 3090/6188 (49.94%)] Average loss: 0.3146  Average accuracy: 0.8858 lr: 0.0000915735
+INFO:2020-11-22 01:26:07,859:[Valid] Average loss: 0.4257 Average accuracy: 0.8524
+INFO:2020-11-22 01:29:50,439:[Train] Epoch: 19 [batch: 3708/6188 (59.92%)] Average loss: 0.3223  Average accuracy: 0.8835 lr: 0.0000915735
+INFO:2020-11-22 01:29:51,263:[Valid] Average loss: 0.4327 Average accuracy: 0.8619
+INFO:2020-11-22 01:33:33,891:[Train] Epoch: 19 [batch: 4326/6188 (69.91%)] Average loss: 0.3174  Average accuracy: 0.8854 lr: 0.0000915735
+INFO:2020-11-22 01:33:34,723:[Valid] Average loss: 0.4433 Average accuracy: 0.8536
+INFO:2020-11-22 01:37:17,823:[Train] Epoch: 19 [batch: 4944/6188 (79.90%)] Average loss: 0.3128  Average accuracy: 0.8867 lr: 0.0000915735
+INFO:2020-11-22 01:37:18,644:[Valid] Average loss: 0.4061 Average accuracy: 0.8639
+INFO:2020-11-22 01:41:01,459:[Train] Epoch: 19 [batch: 5562/6188 (89.88%)] Average loss: 0.3182  Average accuracy: 0.8852 lr: 0.0000915735
+INFO:2020-11-22 01:41:02,288:[Valid] Average loss: 0.3899 Average accuracy: 0.8675
+INFO:2020-11-22 01:44:44,999:[Train] Epoch: 19 [batch: 6180/6188 (99.87%)] Average loss: 0.3171  Average accuracy: 0.8857 lr: 0.0000915735
+INFO:2020-11-22 01:44:45,816:[Valid] Average loss: 0.7269 Average accuracy: 0.8123
+INFO:2020-11-22 01:44:49,020:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 01:44:49,020:Updating...Current learning rate: [8.535533905932738e-05]
+
+INFO:2020-11-22 01:48:32,287:[Train] Epoch: 20 [batch: 618/6188 (09.99%)] Average loss: 0.3157  Average accuracy: 0.8866 lr: 0.0000853553
+INFO:2020-11-22 01:48:32,371:Starting over on the validation set.
+
+INFO:2020-11-22 01:48:33,409:[Valid] Average loss: 0.4177 Average accuracy: 0.8593
+INFO:2020-11-22 01:52:15,855:[Train] Epoch: 20 [batch: 1236/6188 (19.97%)] Average loss: 0.3145  Average accuracy: 0.8865 lr: 0.0000853553
+INFO:2020-11-22 01:52:16,670:[Valid] Average loss: 0.4216 Average accuracy: 0.8555
+INFO:2020-11-22 01:55:59,987:[Train] Epoch: 20 [batch: 1854/6188 (29.96%)] Average loss: 0.3088  Average accuracy: 0.8885 lr: 0.0000853553
+INFO:2020-11-22 01:56:00,800:[Valid] Average loss: 0.5230 Average accuracy: 0.8470
+INFO:2020-11-22 01:59:43,315:[Train] Epoch: 20 [batch: 2472/6188 (39.95%)] Average loss: 0.3161  Average accuracy: 0.8855 lr: 0.0000853553
+INFO:2020-11-22 01:59:44,126:[Valid] Average loss: 0.4317 Average accuracy: 0.8631
+INFO:2020-11-22 02:03:26,647:[Train] Epoch: 20 [batch: 3090/6188 (49.94%)] Average loss: 0.3112  Average accuracy: 0.8882 lr: 0.0000853553
+INFO:2020-11-22 02:03:27,460:[Valid] Average loss: 0.3709 Average accuracy: 0.8693
+INFO:2020-11-22 02:07:10,189:[Train] Epoch: 20 [batch: 3708/6188 (59.92%)] Average loss: 0.3100  Average accuracy: 0.8875 lr: 0.0000853553
+INFO:2020-11-22 02:07:11,008:[Valid] Average loss: 0.4367 Average accuracy: 0.8518
+INFO:2020-11-22 02:10:53,634:[Train] Epoch: 20 [batch: 4326/6188 (69.91%)] Average loss: 0.3190  Average accuracy: 0.8855 lr: 0.0000853553
+INFO:2020-11-22 02:10:54,444:[Valid] Average loss: 0.5301 Average accuracy: 0.8327
+INFO:2020-11-22 02:14:36,926:[Train] Epoch: 20 [batch: 4944/6188 (79.90%)] Average loss: 0.3128  Average accuracy: 0.8865 lr: 0.0000853553
+INFO:2020-11-22 02:14:37,761:[Valid] Average loss: 0.4309 Average accuracy: 0.8632
+INFO:2020-11-22 02:18:20,995:[Train] Epoch: 20 [batch: 5562/6188 (89.88%)] Average loss: 0.3102  Average accuracy: 0.8876 lr: 0.0000853553
+INFO:2020-11-22 02:18:21,813:[Valid] Average loss: 0.4319 Average accuracy: 0.8520
+INFO:2020-11-22 02:22:04,187:[Train] Epoch: 20 [batch: 6180/6188 (99.87%)] Average loss: 0.3165  Average accuracy: 0.8857 lr: 0.0000853553
+INFO:2020-11-22 02:22:05,007:[Valid] Average loss: 0.5461 Average accuracy: 0.8351
+INFO:2020-11-22 02:22:08,488:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 02:22:08,488:Updating...Current learning rate: [7.777851165098012e-05]
+
+INFO:2020-11-22 02:25:51,825:[Train] Epoch: 21 [batch: 618/6188 (09.99%)] Average loss: 0.3101  Average accuracy: 0.8878 lr: 0.0000777785
+INFO:2020-11-22 02:25:51,916:Starting over on the validation set.
+
+INFO:2020-11-22 02:25:52,950:[Valid] Average loss: 0.3863 Average accuracy: 0.8790
+INFO:2020-11-22 02:25:53,222:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain_best.pth
+INFO:2020-11-22 02:29:36,269:[Train] Epoch: 21 [batch: 1236/6188 (19.97%)] Average loss: 0.3158  Average accuracy: 0.8858 lr: 0.0000777785
+INFO:2020-11-22 02:29:37,083:[Valid] Average loss: 0.4841 Average accuracy: 0.8395
+INFO:2020-11-22 02:33:20,210:[Train] Epoch: 21 [batch: 1854/6188 (29.96%)] Average loss: 0.3183  Average accuracy: 0.8860 lr: 0.0000777785
+INFO:2020-11-22 02:33:21,015:[Valid] Average loss: 0.4748 Average accuracy: 0.8345
+INFO:2020-11-22 02:37:04,072:[Train] Epoch: 21 [batch: 2472/6188 (39.95%)] Average loss: 0.3098  Average accuracy: 0.8882 lr: 0.0000777785
+INFO:2020-11-22 02:37:04,882:[Valid] Average loss: 0.4665 Average accuracy: 0.8580
+INFO:2020-11-22 02:40:47,422:[Train] Epoch: 21 [batch: 3090/6188 (49.94%)] Average loss: 0.3162  Average accuracy: 0.8859 lr: 0.0000777785
+INFO:2020-11-22 02:40:48,233:[Valid] Average loss: 0.5172 Average accuracy: 0.8430
+INFO:2020-11-22 02:44:30,881:[Train] Epoch: 21 [batch: 3708/6188 (59.92%)] Average loss: 0.3154  Average accuracy: 0.8862 lr: 0.0000777785
+INFO:2020-11-22 02:44:31,688:[Valid] Average loss: 0.4034 Average accuracy: 0.8628
+INFO:2020-11-22 02:48:14,179:[Train] Epoch: 21 [batch: 4326/6188 (69.91%)] Average loss: 0.3105  Average accuracy: 0.8877 lr: 0.0000777785
+INFO:2020-11-22 02:48:14,985:[Valid] Average loss: 0.4052 Average accuracy: 0.8732
+INFO:2020-11-22 02:51:57,896:[Train] Epoch: 21 [batch: 4944/6188 (79.90%)] Average loss: 0.3123  Average accuracy: 0.8870 lr: 0.0000777785
+INFO:2020-11-22 02:51:58,714:[Valid] Average loss: 0.4381 Average accuracy: 0.8492
+INFO:2020-11-22 02:55:41,860:[Train] Epoch: 21 [batch: 5562/6188 (89.88%)] Average loss: 0.3136  Average accuracy: 0.8867 lr: 0.0000777785
+INFO:2020-11-22 02:55:42,673:[Valid] Average loss: 0.4544 Average accuracy: 0.8514
+INFO:2020-11-22 02:59:25,487:[Train] Epoch: 21 [batch: 6180/6188 (99.87%)] Average loss: 0.3180  Average accuracy: 0.8855 lr: 0.0000777785
+INFO:2020-11-22 02:59:26,290:[Valid] Average loss: 0.5136 Average accuracy: 0.8388
+INFO:2020-11-22 02:59:29,603:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 02:59:29,604:Updating...Current learning rate: [6.91341716182545e-05]
+
+INFO:2020-11-22 03:03:12,604:[Train] Epoch: 22 [batch: 618/6188 (09.99%)] Average loss: 0.3089  Average accuracy: 0.8884 lr: 0.0000691342
+INFO:2020-11-22 03:03:12,720:Starting over on the validation set.
+
+INFO:2020-11-22 03:03:13,726:[Valid] Average loss: 0.4890 Average accuracy: 0.8485
+INFO:2020-11-22 03:06:56,313:[Train] Epoch: 22 [batch: 1236/6188 (19.97%)] Average loss: 0.3158  Average accuracy: 0.8855 lr: 0.0000691342
+INFO:2020-11-22 03:06:57,122:[Valid] Average loss: 0.4787 Average accuracy: 0.8403
+INFO:2020-11-22 03:10:39,668:[Train] Epoch: 22 [batch: 1854/6188 (29.96%)] Average loss: 0.3151  Average accuracy: 0.8863 lr: 0.0000691342
+INFO:2020-11-22 03:10:40,485:[Valid] Average loss: 0.5129 Average accuracy: 0.8371
+INFO:2020-11-22 03:14:23,018:[Train] Epoch: 22 [batch: 2472/6188 (39.95%)] Average loss: 0.3095  Average accuracy: 0.8883 lr: 0.0000691342
+INFO:2020-11-22 03:14:23,826:[Valid] Average loss: 0.3757 Average accuracy: 0.8684
+INFO:2020-11-22 03:18:06,634:[Train] Epoch: 22 [batch: 3090/6188 (49.94%)] Average loss: 0.3152  Average accuracy: 0.8857 lr: 0.0000691342
+INFO:2020-11-22 03:18:07,447:[Valid] Average loss: 0.4125 Average accuracy: 0.8552
+INFO:2020-11-22 03:21:50,075:[Train] Epoch: 22 [batch: 3708/6188 (59.92%)] Average loss: 0.3116  Average accuracy: 0.8877 lr: 0.0000691342
+INFO:2020-11-22 03:21:51,015:[Valid] Average loss: 0.6107 Average accuracy: 0.8230
+INFO:2020-11-22 03:25:33,348:[Train] Epoch: 22 [batch: 4326/6188 (69.91%)] Average loss: 0.3164  Average accuracy: 0.8858 lr: 0.0000691342
+INFO:2020-11-22 03:25:34,180:[Valid] Average loss: 0.4182 Average accuracy: 0.8688
+INFO:2020-11-22 03:29:16,814:[Train] Epoch: 22 [batch: 4944/6188 (79.90%)] Average loss: 0.3055  Average accuracy: 0.8893 lr: 0.0000691342
+INFO:2020-11-22 03:29:17,632:[Valid] Average loss: 0.3715 Average accuracy: 0.8690
+INFO:2020-11-22 03:32:59,841:[Train] Epoch: 22 [batch: 5562/6188 (89.88%)] Average loss: 0.3165  Average accuracy: 0.8865 lr: 0.0000691342
+INFO:2020-11-22 03:33:00,639:[Valid] Average loss: 0.4417 Average accuracy: 0.8552
+INFO:2020-11-22 03:36:43,134:[Train] Epoch: 22 [batch: 6180/6188 (99.87%)] Average loss: 0.3147  Average accuracy: 0.8857 lr: 0.0000691342
+INFO:2020-11-22 03:36:43,939:[Valid] Average loss: 0.4350 Average accuracy: 0.8622
+INFO:2020-11-22 03:36:47,263:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 03:36:47,264:Updating...Current learning rate: [5.9754516100806423e-05]
+
+INFO:2020-11-22 03:40:29,704:[Train] Epoch: 23 [batch: 618/6188 (09.99%)] Average loss: 0.3148  Average accuracy: 0.8860 lr: 0.0000597545
+INFO:2020-11-22 03:40:29,797:Starting over on the validation set.
+
+INFO:2020-11-22 03:40:30,872:[Valid] Average loss: 0.4969 Average accuracy: 0.8507
+INFO:2020-11-22 03:44:13,931:[Train] Epoch: 23 [batch: 1236/6188 (19.97%)] Average loss: 0.3100  Average accuracy: 0.8885 lr: 0.0000597545
+INFO:2020-11-22 03:44:14,735:[Valid] Average loss: 0.3933 Average accuracy: 0.8693
+INFO:2020-11-22 03:47:57,731:[Train] Epoch: 23 [batch: 1854/6188 (29.96%)] Average loss: 0.3081  Average accuracy: 0.8892 lr: 0.0000597545
+INFO:2020-11-22 03:47:58,537:[Valid] Average loss: 0.4428 Average accuracy: 0.8539
+INFO:2020-11-22 03:51:41,265:[Train] Epoch: 23 [batch: 2472/6188 (39.95%)] Average loss: 0.3151  Average accuracy: 0.8861 lr: 0.0000597545
+INFO:2020-11-22 03:51:42,075:[Valid] Average loss: 0.5054 Average accuracy: 0.8325
+INFO:2020-11-22 03:55:25,028:[Train] Epoch: 23 [batch: 3090/6188 (49.94%)] Average loss: 0.3149  Average accuracy: 0.8860 lr: 0.0000597545
+INFO:2020-11-22 03:55:25,845:[Valid] Average loss: 0.4720 Average accuracy: 0.8521
+INFO:2020-11-22 03:59:07,872:[Train] Epoch: 23 [batch: 3708/6188 (59.92%)] Average loss: 0.3142  Average accuracy: 0.8857 lr: 0.0000597545
+INFO:2020-11-22 03:59:08,683:[Valid] Average loss: 0.3973 Average accuracy: 0.8646
+INFO:2020-11-22 04:02:51,625:[Train] Epoch: 23 [batch: 4326/6188 (69.91%)] Average loss: 0.3188  Average accuracy: 0.8851 lr: 0.0000597545
+INFO:2020-11-22 04:02:52,442:[Valid] Average loss: 0.4451 Average accuracy: 0.8573
+INFO:2020-11-22 04:06:35,520:[Train] Epoch: 23 [batch: 4944/6188 (79.90%)] Average loss: 0.3118  Average accuracy: 0.8876 lr: 0.0000597545
+INFO:2020-11-22 04:06:36,336:[Valid] Average loss: 0.4359 Average accuracy: 0.8488
+INFO:2020-11-22 04:10:18,800:[Train] Epoch: 23 [batch: 5562/6188 (89.88%)] Average loss: 0.3151  Average accuracy: 0.8858 lr: 0.0000597545
+INFO:2020-11-22 04:10:19,608:[Valid] Average loss: 0.4917 Average accuracy: 0.8395
+INFO:2020-11-22 04:14:02,095:[Train] Epoch: 23 [batch: 6180/6188 (99.87%)] Average loss: 0.3135  Average accuracy: 0.8865 lr: 0.0000597545
+INFO:2020-11-22 04:14:02,926:[Valid] Average loss: 0.4668 Average accuracy: 0.8609
+INFO:2020-11-22 04:14:06,583:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 04:14:06,583:Updating...Current learning rate: [5e-05]
+
+INFO:2020-11-22 04:17:49,312:[Train] Epoch: 24 [batch: 618/6188 (09.99%)] Average loss: 0.3134  Average accuracy: 0.8871 lr: 0.0000500000
+INFO:2020-11-22 04:17:49,397:Starting over on the validation set.
+
+INFO:2020-11-22 04:17:50,447:[Valid] Average loss: 0.4749 Average accuracy: 0.8561
+INFO:2020-11-22 04:21:33,748:[Train] Epoch: 24 [batch: 1236/6188 (19.97%)] Average loss: 0.3106  Average accuracy: 0.8879 lr: 0.0000500000
+INFO:2020-11-22 04:21:34,557:[Valid] Average loss: 0.4413 Average accuracy: 0.8544
+INFO:2020-11-22 04:25:17,595:[Train] Epoch: 24 [batch: 1854/6188 (29.96%)] Average loss: 0.3121  Average accuracy: 0.8871 lr: 0.0000500000
+INFO:2020-11-22 04:25:18,406:[Valid] Average loss: 0.3981 Average accuracy: 0.8646
+INFO:2020-11-22 04:29:01,137:[Train] Epoch: 24 [batch: 2472/6188 (39.95%)] Average loss: 0.3136  Average accuracy: 0.8863 lr: 0.0000500000
+INFO:2020-11-22 04:29:01,963:[Valid] Average loss: 0.4432 Average accuracy: 0.8534
+INFO:2020-11-22 04:32:44,211:[Train] Epoch: 24 [batch: 3090/6188 (49.94%)] Average loss: 0.3154  Average accuracy: 0.8860 lr: 0.0000500000
+INFO:2020-11-22 04:32:45,025:[Valid] Average loss: 0.3842 Average accuracy: 0.8621
+INFO:2020-11-22 04:36:27,292:[Train] Epoch: 24 [batch: 3708/6188 (59.92%)] Average loss: 0.3130  Average accuracy: 0.8867 lr: 0.0000500000
+INFO:2020-11-22 04:36:28,118:[Valid] Average loss: 0.4811 Average accuracy: 0.8590
+INFO:2020-11-22 04:40:11,161:[Train] Epoch: 24 [batch: 4326/6188 (69.91%)] Average loss: 0.3177  Average accuracy: 0.8850 lr: 0.0000500000
+INFO:2020-11-22 04:40:11,966:[Valid] Average loss: 0.5100 Average accuracy: 0.8269
+INFO:2020-11-22 04:43:54,187:[Train] Epoch: 24 [batch: 4944/6188 (79.90%)] Average loss: 0.3068  Average accuracy: 0.8883 lr: 0.0000500000
+INFO:2020-11-22 04:43:55,005:[Valid] Average loss: 0.4921 Average accuracy: 0.8391
+INFO:2020-11-22 04:47:37,950:[Train] Epoch: 24 [batch: 5562/6188 (89.88%)] Average loss: 0.3153  Average accuracy: 0.8859 lr: 0.0000500000
+INFO:2020-11-22 04:47:38,766:[Valid] Average loss: 0.5571 Average accuracy: 0.8392
+INFO:2020-11-22 04:51:21,450:[Train] Epoch: 24 [batch: 6180/6188 (99.87%)] Average loss: 0.3067  Average accuracy: 0.8888 lr: 0.0000500000
+INFO:2020-11-22 04:51:22,267:[Valid] Average loss: 0.3670 Average accuracy: 0.8747
+INFO:2020-11-22 04:51:25,331:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 04:51:25,332:Updating...Current learning rate: [4.0245483899193595e-05]
+
+INFO:2020-11-22 04:55:08,577:[Train] Epoch: 25 [batch: 618/6188 (09.99%)] Average loss: 0.3138  Average accuracy: 0.8866 lr: 0.0000402455
+INFO:2020-11-22 04:55:08,661:Starting over on the validation set.
+
+INFO:2020-11-22 04:55:09,725:[Valid] Average loss: 0.4813 Average accuracy: 0.8406
+INFO:2020-11-22 04:58:52,410:[Train] Epoch: 25 [batch: 1236/6188 (19.97%)] Average loss: 0.3112  Average accuracy: 0.8873 lr: 0.0000402455
+INFO:2020-11-22 04:58:53,226:[Valid] Average loss: 0.4624 Average accuracy: 0.8571
+INFO:2020-11-22 05:02:36,307:[Train] Epoch: 25 [batch: 1854/6188 (29.96%)] Average loss: 0.3107  Average accuracy: 0.8877 lr: 0.0000402455
+INFO:2020-11-22 05:02:37,139:[Valid] Average loss: 0.4416 Average accuracy: 0.8551
+INFO:2020-11-22 05:06:20,157:[Train] Epoch: 25 [batch: 2472/6188 (39.95%)] Average loss: 0.3170  Average accuracy: 0.8855 lr: 0.0000402455
+INFO:2020-11-22 05:06:20,988:[Valid] Average loss: 0.3226 Average accuracy: 0.8844
+INFO:2020-11-22 05:06:21,273:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain_best.pth
+INFO:2020-11-22 05:10:04,311:[Train] Epoch: 25 [batch: 3090/6188 (49.94%)] Average loss: 0.3136  Average accuracy: 0.8863 lr: 0.0000402455
+INFO:2020-11-22 05:10:05,131:[Valid] Average loss: 0.4243 Average accuracy: 0.8626
+INFO:2020-11-22 05:13:48,162:[Train] Epoch: 25 [batch: 3708/6188 (59.92%)] Average loss: 0.3157  Average accuracy: 0.8861 lr: 0.0000402455
+INFO:2020-11-22 05:13:48,988:[Valid] Average loss: 0.5360 Average accuracy: 0.8334
+INFO:2020-11-22 05:17:31,631:[Train] Epoch: 25 [batch: 4326/6188 (69.91%)] Average loss: 0.3104  Average accuracy: 0.8876 lr: 0.0000402455
+INFO:2020-11-22 05:17:32,453:[Valid] Average loss: 0.4035 Average accuracy: 0.8617
+INFO:2020-11-22 05:21:15,148:[Train] Epoch: 25 [batch: 4944/6188 (79.90%)] Average loss: 0.3140  Average accuracy: 0.8862 lr: 0.0000402455
+INFO:2020-11-22 05:21:15,964:[Valid] Average loss: 0.4547 Average accuracy: 0.8454
+INFO:2020-11-22 05:24:58,872:[Train] Epoch: 25 [batch: 5562/6188 (89.88%)] Average loss: 0.3129  Average accuracy: 0.8868 lr: 0.0000402455
+INFO:2020-11-22 05:24:59,693:[Valid] Average loss: 0.5743 Average accuracy: 0.8303
+INFO:2020-11-22 05:28:42,463:[Train] Epoch: 25 [batch: 6180/6188 (99.87%)] Average loss: 0.3152  Average accuracy: 0.8864 lr: 0.0000402455
+INFO:2020-11-22 05:28:43,281:[Valid] Average loss: 0.4492 Average accuracy: 0.8595
+INFO:2020-11-22 05:28:46,591:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 05:28:46,592:Updating...Current learning rate: [3.086582838174551e-05]
+
+INFO:2020-11-22 05:32:29,807:[Train] Epoch: 26 [batch: 618/6188 (09.99%)] Average loss: 0.3174  Average accuracy: 0.8858 lr: 0.0000308658
+INFO:2020-11-22 05:32:29,889:Starting over on the validation set.
+
+INFO:2020-11-22 05:32:30,932:[Valid] Average loss: 0.4393 Average accuracy: 0.8506
+INFO:2020-11-22 05:36:13,973:[Train] Epoch: 26 [batch: 1236/6188 (19.97%)] Average loss: 0.3110  Average accuracy: 0.8873 lr: 0.0000308658
+INFO:2020-11-22 05:36:14,786:[Valid] Average loss: 0.4677 Average accuracy: 0.8601
+INFO:2020-11-22 05:39:57,719:[Train] Epoch: 26 [batch: 1854/6188 (29.96%)] Average loss: 0.3130  Average accuracy: 0.8871 lr: 0.0000308658
+INFO:2020-11-22 05:39:58,546:[Valid] Average loss: 0.4338 Average accuracy: 0.8482
+INFO:2020-11-22 05:43:41,753:[Train] Epoch: 26 [batch: 2472/6188 (39.95%)] Average loss: 0.3187  Average accuracy: 0.8848 lr: 0.0000308658
+INFO:2020-11-22 05:43:42,599:[Valid] Average loss: 0.5252 Average accuracy: 0.8635
+INFO:2020-11-22 05:47:25,434:[Train] Epoch: 26 [batch: 3090/6188 (49.94%)] Average loss: 0.3113  Average accuracy: 0.8871 lr: 0.0000308658
+INFO:2020-11-22 05:47:26,252:[Valid] Average loss: 0.4768 Average accuracy: 0.8435
+INFO:2020-11-22 05:51:08,176:[Train] Epoch: 26 [batch: 3708/6188 (59.92%)] Average loss: 0.3111  Average accuracy: 0.8875 lr: 0.0000308658
+INFO:2020-11-22 05:51:08,989:[Valid] Average loss: 0.4198 Average accuracy: 0.8625
+INFO:2020-11-22 05:54:51,462:[Train] Epoch: 26 [batch: 4326/6188 (69.91%)] Average loss: 0.3106  Average accuracy: 0.8874 lr: 0.0000308658
+INFO:2020-11-22 05:54:52,285:[Valid] Average loss: 0.4495 Average accuracy: 0.8462
+INFO:2020-11-22 05:58:34,606:[Train] Epoch: 26 [batch: 4944/6188 (79.90%)] Average loss: 0.3153  Average accuracy: 0.8854 lr: 0.0000308658
+INFO:2020-11-22 05:58:35,416:[Valid] Average loss: 0.4226 Average accuracy: 0.8637
+INFO:2020-11-22 06:02:17,951:[Train] Epoch: 26 [batch: 5562/6188 (89.88%)] Average loss: 0.3078  Average accuracy: 0.8886 lr: 0.0000308658
+INFO:2020-11-22 06:02:18,774:[Valid] Average loss: 0.4598 Average accuracy: 0.8423
+INFO:2020-11-22 06:06:00,946:[Train] Epoch: 26 [batch: 6180/6188 (99.87%)] Average loss: 0.3159  Average accuracy: 0.8862 lr: 0.0000308658
+INFO:2020-11-22 06:06:01,747:[Valid] Average loss: 0.4528 Average accuracy: 0.8492
+INFO:2020-11-22 06:06:05,226:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 06:06:05,227:Updating...Current learning rate: [2.2221488349019903e-05]
+
+INFO:2020-11-22 06:09:47,284:[Train] Epoch: 27 [batch: 618/6188 (09.99%)] Average loss: 0.3119  Average accuracy: 0.8866 lr: 0.0000222215
+INFO:2020-11-22 06:09:47,368:Starting over on the validation set.
+
+INFO:2020-11-22 06:09:48,411:[Valid] Average loss: 0.4710 Average accuracy: 0.8413
+INFO:2020-11-22 06:13:31,692:[Train] Epoch: 27 [batch: 1236/6188 (19.97%)] Average loss: 0.3099  Average accuracy: 0.8886 lr: 0.0000222215
+INFO:2020-11-22 06:13:32,502:[Valid] Average loss: 0.5890 Average accuracy: 0.8327
+INFO:2020-11-22 06:17:14,958:[Train] Epoch: 27 [batch: 1854/6188 (29.96%)] Average loss: 0.3132  Average accuracy: 0.8870 lr: 0.0000222215
+INFO:2020-11-22 06:17:15,763:[Valid] Average loss: 0.3576 Average accuracy: 0.8768
+INFO:2020-11-22 06:20:57,743:[Train] Epoch: 27 [batch: 2472/6188 (39.95%)] Average loss: 0.3104  Average accuracy: 0.8881 lr: 0.0000222215
+INFO:2020-11-22 06:20:58,553:[Valid] Average loss: 0.4644 Average accuracy: 0.8366
+INFO:2020-11-22 06:24:40,977:[Train] Epoch: 27 [batch: 3090/6188 (49.94%)] Average loss: 0.3149  Average accuracy: 0.8859 lr: 0.0000222215
+INFO:2020-11-22 06:24:41,781:[Valid] Average loss: 0.4167 Average accuracy: 0.8633
+INFO:2020-11-22 06:28:24,040:[Train] Epoch: 27 [batch: 3708/6188 (59.92%)] Average loss: 0.3135  Average accuracy: 0.8871 lr: 0.0000222215
+INFO:2020-11-22 06:28:24,844:[Valid] Average loss: 0.4662 Average accuracy: 0.8514
+INFO:2020-11-22 06:32:07,186:[Train] Epoch: 27 [batch: 4326/6188 (69.91%)] Average loss: 0.3142  Average accuracy: 0.8860 lr: 0.0000222215
+INFO:2020-11-22 06:32:07,997:[Valid] Average loss: 0.4454 Average accuracy: 0.8534
+INFO:2020-11-22 06:35:50,904:[Train] Epoch: 27 [batch: 4944/6188 (79.90%)] Average loss: 0.3123  Average accuracy: 0.8875 lr: 0.0000222215
+INFO:2020-11-22 06:35:51,728:[Valid] Average loss: 0.5099 Average accuracy: 0.8562
+INFO:2020-11-22 06:39:33,432:[Train] Epoch: 27 [batch: 5562/6188 (89.88%)] Average loss: 0.3112  Average accuracy: 0.8872 lr: 0.0000222215
+INFO:2020-11-22 06:39:34,238:[Valid] Average loss: 0.4371 Average accuracy: 0.8555
+INFO:2020-11-22 06:43:17,210:[Train] Epoch: 27 [batch: 6180/6188 (99.87%)] Average loss: 0.3184  Average accuracy: 0.8852 lr: 0.0000222215
+INFO:2020-11-22 06:43:18,018:[Valid] Average loss: 0.3860 Average accuracy: 0.8615
+INFO:2020-11-22 06:43:21,106:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 06:43:21,106:Updating...Current learning rate: [1.4644660940672627e-05]
+
+INFO:2020-11-22 06:47:04,020:[Train] Epoch: 28 [batch: 618/6188 (09.99%)] Average loss: 0.3154  Average accuracy: 0.8865 lr: 0.0000146447
+INFO:2020-11-22 06:47:04,096:Starting over on the validation set.
+
+INFO:2020-11-22 06:47:05,155:[Valid] Average loss: 0.3846 Average accuracy: 0.8686
+INFO:2020-11-22 06:50:47,155:[Train] Epoch: 28 [batch: 1236/6188 (19.97%)] Average loss: 0.3170  Average accuracy: 0.8859 lr: 0.0000146447
+INFO:2020-11-22 06:50:47,962:[Valid] Average loss: 0.4715 Average accuracy: 0.8553
+INFO:2020-11-22 06:54:30,443:[Train] Epoch: 28 [batch: 1854/6188 (29.96%)] Average loss: 0.3124  Average accuracy: 0.8876 lr: 0.0000146447
+INFO:2020-11-22 06:54:31,259:[Valid] Average loss: 0.4359 Average accuracy: 0.8529
+INFO:2020-11-22 06:58:14,735:[Train] Epoch: 28 [batch: 2472/6188 (39.95%)] Average loss: 0.3185  Average accuracy: 0.8848 lr: 0.0000146447
+INFO:2020-11-22 06:58:15,548:[Valid] Average loss: 0.5247 Average accuracy: 0.8419
+INFO:2020-11-22 07:01:57,595:[Train] Epoch: 28 [batch: 3090/6188 (49.94%)] Average loss: 0.3095  Average accuracy: 0.8883 lr: 0.0000146447
+INFO:2020-11-22 07:01:58,406:[Valid] Average loss: 0.3882 Average accuracy: 0.8675
+INFO:2020-11-22 07:05:41,254:[Train] Epoch: 28 [batch: 3708/6188 (59.92%)] Average loss: 0.3113  Average accuracy: 0.8870 lr: 0.0000146447
+INFO:2020-11-22 07:05:42,073:[Valid] Average loss: 0.5163 Average accuracy: 0.8272
+INFO:2020-11-22 07:09:25,021:[Train] Epoch: 28 [batch: 4326/6188 (69.91%)] Average loss: 0.3104  Average accuracy: 0.8877 lr: 0.0000146447
+INFO:2020-11-22 07:09:25,836:[Valid] Average loss: 0.4206 Average accuracy: 0.8587
+INFO:2020-11-22 07:13:08,128:[Train] Epoch: 28 [batch: 4944/6188 (79.90%)] Average loss: 0.3112  Average accuracy: 0.8874 lr: 0.0000146447
+INFO:2020-11-22 07:13:08,939:[Valid] Average loss: 0.4556 Average accuracy: 0.8480
+INFO:2020-11-22 07:16:50,929:[Train] Epoch: 28 [batch: 5562/6188 (89.88%)] Average loss: 0.3146  Average accuracy: 0.8865 lr: 0.0000146447
+INFO:2020-11-22 07:16:51,732:[Valid] Average loss: 0.4615 Average accuracy: 0.8581
+INFO:2020-11-22 07:20:34,143:[Train] Epoch: 28 [batch: 6180/6188 (99.87%)] Average loss: 0.3158  Average accuracy: 0.8860 lr: 0.0000146447
+INFO:2020-11-22 07:20:34,940:[Valid] Average loss: 0.4814 Average accuracy: 0.8512
+INFO:2020-11-22 07:20:38,244:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 07:20:38,244:Updating...Current learning rate: [8.426519384872733e-06]
+
+INFO:2020-11-22 07:24:21,135:[Train] Epoch: 29 [batch: 618/6188 (09.99%)] Average loss: 0.3124  Average accuracy: 0.8869 lr: 0.0000084265
+INFO:2020-11-22 07:24:21,215:Starting over on the validation set.
+
+INFO:2020-11-22 07:24:22,244:[Valid] Average loss: 0.4990 Average accuracy: 0.8421
+INFO:2020-11-22 07:28:04,768:[Train] Epoch: 29 [batch: 1236/6188 (19.97%)] Average loss: 0.3124  Average accuracy: 0.8869 lr: 0.0000084265
+INFO:2020-11-22 07:28:05,582:[Valid] Average loss: 0.4390 Average accuracy: 0.8582
+INFO:2020-11-22 07:31:48,411:[Train] Epoch: 29 [batch: 1854/6188 (29.96%)] Average loss: 0.3144  Average accuracy: 0.8866 lr: 0.0000084265
+INFO:2020-11-22 07:31:49,220:[Valid] Average loss: 0.4393 Average accuracy: 0.8533
+INFO:2020-11-22 07:35:31,487:[Train] Epoch: 29 [batch: 2472/6188 (39.95%)] Average loss: 0.3089  Average accuracy: 0.8880 lr: 0.0000084265
+INFO:2020-11-22 07:35:32,294:[Valid] Average loss: 0.4269 Average accuracy: 0.8531
+INFO:2020-11-22 07:39:14,071:[Train] Epoch: 29 [batch: 3090/6188 (49.94%)] Average loss: 0.3137  Average accuracy: 0.8871 lr: 0.0000084265
+INFO:2020-11-22 07:39:14,884:[Valid] Average loss: 0.5387 Average accuracy: 0.8403
+INFO:2020-11-22 07:42:56,609:[Train] Epoch: 29 [batch: 3708/6188 (59.92%)] Average loss: 0.3106  Average accuracy: 0.8876 lr: 0.0000084265
+INFO:2020-11-22 07:42:57,416:[Valid] Average loss: 0.4143 Average accuracy: 0.8695
+INFO:2020-11-22 07:46:41,036:[Train] Epoch: 29 [batch: 4326/6188 (69.91%)] Average loss: 0.3146  Average accuracy: 0.8859 lr: 0.0000084265
+INFO:2020-11-22 07:46:41,920:[Valid] Average loss: 0.4464 Average accuracy: 0.8415
+INFO:2020-11-22 07:50:24,498:[Train] Epoch: 29 [batch: 4944/6188 (79.90%)] Average loss: 0.3115  Average accuracy: 0.8871 lr: 0.0000084265
+INFO:2020-11-22 07:50:25,306:[Valid] Average loss: 0.3851 Average accuracy: 0.8630
+INFO:2020-11-22 07:54:07,354:[Train] Epoch: 29 [batch: 5562/6188 (89.88%)] Average loss: 0.3125  Average accuracy: 0.8870 lr: 0.0000084265
+INFO:2020-11-22 07:54:08,167:[Valid] Average loss: 0.4962 Average accuracy: 0.8521
+INFO:2020-11-22 07:57:51,656:[Train] Epoch: 29 [batch: 6180/6188 (99.87%)] Average loss: 0.3168  Average accuracy: 0.8853 lr: 0.0000084265
+INFO:2020-11-22 07:57:52,473:[Valid] Average loss: 0.4509 Average accuracy: 0.8580
+INFO:2020-11-22 07:57:55,698:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 07:57:55,699:Updating...Current learning rate: [3.8060233744356633e-06]
+
+INFO:2020-11-22 08:01:38,836:[Train] Epoch: 30 [batch: 618/6188 (09.99%)] Average loss: 0.3169  Average accuracy: 0.8857 lr: 0.0000038060
+INFO:2020-11-22 08:01:38,919:Starting over on the validation set.
+
+INFO:2020-11-22 08:01:39,975:[Valid] Average loss: 0.4476 Average accuracy: 0.8623
+INFO:2020-11-22 08:05:23,384:[Train] Epoch: 30 [batch: 1236/6188 (19.97%)] Average loss: 0.3067  Average accuracy: 0.8893 lr: 0.0000038060
+INFO:2020-11-22 08:05:24,215:[Valid] Average loss: 0.4180 Average accuracy: 0.8612
+INFO:2020-11-22 08:09:06,608:[Train] Epoch: 30 [batch: 1854/6188 (29.96%)] Average loss: 0.3081  Average accuracy: 0.8883 lr: 0.0000038060
+INFO:2020-11-22 08:09:07,423:[Valid] Average loss: 0.5064 Average accuracy: 0.8499
+INFO:2020-11-22 08:12:50,586:[Train] Epoch: 30 [batch: 2472/6188 (39.95%)] Average loss: 0.3102  Average accuracy: 0.8878 lr: 0.0000038060
+INFO:2020-11-22 08:12:51,419:[Valid] Average loss: 0.4027 Average accuracy: 0.8589
+INFO:2020-11-22 08:16:33,741:[Train] Epoch: 30 [batch: 3090/6188 (49.94%)] Average loss: 0.3174  Average accuracy: 0.8854 lr: 0.0000038060
+INFO:2020-11-22 08:16:34,564:[Valid] Average loss: 0.4827 Average accuracy: 0.8395
+INFO:2020-11-22 08:20:17,478:[Train] Epoch: 30 [batch: 3708/6188 (59.92%)] Average loss: 0.3114  Average accuracy: 0.8877 lr: 0.0000038060
+INFO:2020-11-22 08:20:18,294:[Valid] Average loss: 0.5643 Average accuracy: 0.8378
+INFO:2020-11-22 08:24:00,955:[Train] Epoch: 30 [batch: 4326/6188 (69.91%)] Average loss: 0.3164  Average accuracy: 0.8851 lr: 0.0000038060
+INFO:2020-11-22 08:24:01,778:[Valid] Average loss: 0.3654 Average accuracy: 0.8703
+INFO:2020-11-22 08:27:44,482:[Train] Epoch: 30 [batch: 4944/6188 (79.90%)] Average loss: 0.3151  Average accuracy: 0.8861 lr: 0.0000038060
+INFO:2020-11-22 08:27:45,302:[Valid] Average loss: 0.4435 Average accuracy: 0.8495
+INFO:2020-11-22 08:31:28,356:[Train] Epoch: 30 [batch: 5562/6188 (89.88%)] Average loss: 0.3114  Average accuracy: 0.8875 lr: 0.0000038060
+INFO:2020-11-22 08:31:29,182:[Valid] Average loss: 0.4109 Average accuracy: 0.8573
+INFO:2020-11-22 08:35:11,597:[Train] Epoch: 30 [batch: 6180/6188 (99.87%)] Average loss: 0.3105  Average accuracy: 0.8876 lr: 0.0000038060
+INFO:2020-11-22 08:35:12,544:[Valid] Average loss: 0.4880 Average accuracy: 0.8443
+INFO:2020-11-22 08:35:15,931:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 08:35:15,931:Updating...Current learning rate: [9.607359798384785e-07]
+
+INFO:2020-11-22 08:38:58,867:[Train] Epoch: 31 [batch: 618/6188 (09.99%)] Average loss: 0.3121  Average accuracy: 0.8869 lr: 0.0000009607
+INFO:2020-11-22 08:38:58,948:Starting over on the validation set.
+
+INFO:2020-11-22 08:38:59,987:[Valid] Average loss: 0.4280 Average accuracy: 0.8513
+INFO:2020-11-22 08:42:43,329:[Train] Epoch: 31 [batch: 1236/6188 (19.97%)] Average loss: 0.3164  Average accuracy: 0.8858 lr: 0.0000009607
+INFO:2020-11-22 08:42:44,143:[Valid] Average loss: 0.3832 Average accuracy: 0.8782
+INFO:2020-11-22 08:46:26,840:[Train] Epoch: 31 [batch: 1854/6188 (29.96%)] Average loss: 0.3150  Average accuracy: 0.8865 lr: 0.0000009607
+INFO:2020-11-22 08:46:27,831:[Valid] Average loss: 0.4295 Average accuracy: 0.8531
+INFO:2020-11-22 08:50:10,321:[Train] Epoch: 31 [batch: 2472/6188 (39.95%)] Average loss: 0.3122  Average accuracy: 0.8867 lr: 0.0000009607
+INFO:2020-11-22 08:50:11,147:[Valid] Average loss: 0.5340 Average accuracy: 0.8429
+INFO:2020-11-22 08:53:54,029:[Train] Epoch: 31 [batch: 3090/6188 (49.94%)] Average loss: 0.3104  Average accuracy: 0.8875 lr: 0.0000009607
+INFO:2020-11-22 08:53:54,853:[Valid] Average loss: 0.4240 Average accuracy: 0.8563
+INFO:2020-11-22 08:57:37,817:[Train] Epoch: 31 [batch: 3708/6188 (59.92%)] Average loss: 0.3116  Average accuracy: 0.8882 lr: 0.0000009607
+INFO:2020-11-22 08:57:38,669:[Valid] Average loss: 0.5229 Average accuracy: 0.8477
+INFO:2020-11-22 09:01:21,074:[Train] Epoch: 31 [batch: 4326/6188 (69.91%)] Average loss: 0.3114  Average accuracy: 0.8872 lr: 0.0000009607
+INFO:2020-11-22 09:01:21,904:[Valid] Average loss: 0.5009 Average accuracy: 0.8403
+INFO:2020-11-22 09:05:04,744:[Train] Epoch: 31 [batch: 4944/6188 (79.90%)] Average loss: 0.3187  Average accuracy: 0.8853 lr: 0.0000009607
+INFO:2020-11-22 09:05:05,590:[Valid] Average loss: 0.4163 Average accuracy: 0.8551
+INFO:2020-11-22 09:08:48,561:[Train] Epoch: 31 [batch: 5562/6188 (89.88%)] Average loss: 0.3086  Average accuracy: 0.8877 lr: 0.0000009607
+INFO:2020-11-22 09:08:49,391:[Valid] Average loss: 0.4294 Average accuracy: 0.8671
+INFO:2020-11-22 09:12:32,229:[Train] Epoch: 31 [batch: 6180/6188 (99.87%)] Average loss: 0.3136  Average accuracy: 0.8870 lr: 0.0000009607
+INFO:2020-11-22 09:12:33,040:[Valid] Average loss: 0.4709 Average accuracy: 0.8382
+INFO:2020-11-22 09:12:36,258:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 09:12:36,259:Updating...Current learning rate: [0.0001]
+
+INFO:2020-11-22 09:16:19,538:[Train] Epoch: 32 [batch: 618/6188 (09.99%)] Average loss: 0.3133  Average accuracy: 0.8863 lr: 0.0001000000
+INFO:2020-11-22 09:16:19,623:Starting over on the validation set.
+
+INFO:2020-11-22 09:16:20,657:[Valid] Average loss: 0.3875 Average accuracy: 0.8640
+INFO:2020-11-22 09:20:03,675:[Train] Epoch: 32 [batch: 1236/6188 (19.97%)] Average loss: 0.3160  Average accuracy: 0.8859 lr: 0.0001000000
+INFO:2020-11-22 09:20:04,491:[Valid] Average loss: 0.4258 Average accuracy: 0.8579
+INFO:2020-11-22 09:23:47,581:[Train] Epoch: 32 [batch: 1854/6188 (29.96%)] Average loss: 0.3124  Average accuracy: 0.8872 lr: 0.0001000000
+INFO:2020-11-22 09:23:48,397:[Valid] Average loss: 0.5008 Average accuracy: 0.8460
+INFO:2020-11-22 09:27:31,027:[Train] Epoch: 32 [batch: 2472/6188 (39.95%)] Average loss: 0.3074  Average accuracy: 0.8887 lr: 0.0001000000
+INFO:2020-11-22 09:27:31,857:[Valid] Average loss: 0.5225 Average accuracy: 0.8440
+INFO:2020-11-22 09:31:14,326:[Train] Epoch: 32 [batch: 3090/6188 (49.94%)] Average loss: 0.3089  Average accuracy: 0.8891 lr: 0.0001000000
+INFO:2020-11-22 09:31:15,137:[Valid] Average loss: 0.4252 Average accuracy: 0.8554
+INFO:2020-11-22 09:34:58,031:[Train] Epoch: 32 [batch: 3708/6188 (59.92%)] Average loss: 0.3145  Average accuracy: 0.8864 lr: 0.0001000000
+INFO:2020-11-22 09:34:58,845:[Valid] Average loss: 0.4968 Average accuracy: 0.8514
+INFO:2020-11-22 09:38:41,485:[Train] Epoch: 32 [batch: 4326/6188 (69.91%)] Average loss: 0.3122  Average accuracy: 0.8868 lr: 0.0001000000
+INFO:2020-11-22 09:38:42,302:[Valid] Average loss: 0.5224 Average accuracy: 0.8401
+INFO:2020-11-22 09:42:25,275:[Train] Epoch: 32 [batch: 4944/6188 (79.90%)] Average loss: 0.3164  Average accuracy: 0.8857 lr: 0.0001000000
+INFO:2020-11-22 09:42:26,091:[Valid] Average loss: 0.3641 Average accuracy: 0.8750
+INFO:2020-11-22 09:46:08,551:[Train] Epoch: 32 [batch: 5562/6188 (89.88%)] Average loss: 0.3126  Average accuracy: 0.8870 lr: 0.0001000000
+INFO:2020-11-22 09:46:09,359:[Valid] Average loss: 0.4618 Average accuracy: 0.8392
+INFO:2020-11-22 09:49:52,450:[Train] Epoch: 32 [batch: 6180/6188 (99.87%)] Average loss: 0.3141  Average accuracy: 0.8867 lr: 0.0001000000
+INFO:2020-11-22 09:49:53,269:[Valid] Average loss: 0.4305 Average accuracy: 0.8559
+INFO:2020-11-22 09:49:56,535:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 09:49:56,536:Updating...Current learning rate: [9.975923633360985e-05]
+
+INFO:2020-11-22 09:53:39,291:[Train] Epoch: 33 [batch: 618/6188 (09.99%)] Average loss: 0.3091  Average accuracy: 0.8878 lr: 0.0000997592
+INFO:2020-11-22 09:53:39,387:Starting over on the validation set.
+
+INFO:2020-11-22 09:53:40,471:[Valid] Average loss: 0.3721 Average accuracy: 0.8685
+INFO:2020-11-22 09:57:23,198:[Train] Epoch: 33 [batch: 1236/6188 (19.97%)] Average loss: 0.3148  Average accuracy: 0.8866 lr: 0.0000997592
+INFO:2020-11-22 09:57:24,010:[Valid] Average loss: 0.4594 Average accuracy: 0.8589
+INFO:2020-11-22 10:01:07,144:[Train] Epoch: 33 [batch: 1854/6188 (29.96%)] Average loss: 0.3074  Average accuracy: 0.8880 lr: 0.0000997592
+INFO:2020-11-22 10:01:07,963:[Valid] Average loss: 0.4839 Average accuracy: 0.8449
+INFO:2020-11-22 10:04:50,798:[Train] Epoch: 33 [batch: 2472/6188 (39.95%)] Average loss: 0.3126  Average accuracy: 0.8869 lr: 0.0000997592
+INFO:2020-11-22 10:04:51,615:[Valid] Average loss: 0.4120 Average accuracy: 0.8518
+INFO:2020-11-22 10:08:34,272:[Train] Epoch: 33 [batch: 3090/6188 (49.94%)] Average loss: 0.3146  Average accuracy: 0.8863 lr: 0.0000997592
+INFO:2020-11-22 10:08:35,090:[Valid] Average loss: 0.4241 Average accuracy: 0.8581
+INFO:2020-11-22 10:12:18,204:[Train] Epoch: 33 [batch: 3708/6188 (59.92%)] Average loss: 0.3165  Average accuracy: 0.8855 lr: 0.0000997592
+INFO:2020-11-22 10:12:19,018:[Valid] Average loss: 0.5076 Average accuracy: 0.8340
+INFO:2020-11-22 10:16:01,614:[Train] Epoch: 33 [batch: 4326/6188 (69.91%)] Average loss: 0.3162  Average accuracy: 0.8858 lr: 0.0000997592
+INFO:2020-11-22 10:16:02,461:[Valid] Average loss: 0.5242 Average accuracy: 0.8340
+INFO:2020-11-22 10:19:45,565:[Train] Epoch: 33 [batch: 4944/6188 (79.90%)] Average loss: 0.3087  Average accuracy: 0.8883 lr: 0.0000997592
+INFO:2020-11-22 10:19:46,377:[Valid] Average loss: 0.5730 Average accuracy: 0.8345
+INFO:2020-11-22 10:23:29,865:[Train] Epoch: 33 [batch: 5562/6188 (89.88%)] Average loss: 0.3156  Average accuracy: 0.8857 lr: 0.0000997592
+INFO:2020-11-22 10:23:30,670:[Valid] Average loss: 0.3746 Average accuracy: 0.8749
+INFO:2020-11-22 10:27:13,131:[Train] Epoch: 33 [batch: 6180/6188 (99.87%)] Average loss: 0.3152  Average accuracy: 0.8864 lr: 0.0000997592
+INFO:2020-11-22 10:27:13,942:[Valid] Average loss: 0.3964 Average accuracy: 0.8715
+INFO:2020-11-22 10:27:17,023:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 10:27:17,023:Updating...Current learning rate: [9.903926402016153e-05]
+
+INFO:2020-11-22 10:31:00,577:[Train] Epoch: 34 [batch: 618/6188 (09.99%)] Average loss: 0.3107  Average accuracy: 0.8875 lr: 0.0000990393
+INFO:2020-11-22 10:31:00,658:Starting over on the validation set.
+
+INFO:2020-11-22 10:31:01,688:[Valid] Average loss: 0.4567 Average accuracy: 0.8682
+INFO:2020-11-22 10:34:44,640:[Train] Epoch: 34 [batch: 1236/6188 (19.97%)] Average loss: 0.3122  Average accuracy: 0.8869 lr: 0.0000990393
+INFO:2020-11-22 10:34:45,479:[Valid] Average loss: 0.4054 Average accuracy: 0.8575
+INFO:2020-11-22 10:38:28,848:[Train] Epoch: 34 [batch: 1854/6188 (29.96%)] Average loss: 0.3116  Average accuracy: 0.8879 lr: 0.0000990393
+INFO:2020-11-22 10:38:29,669:[Valid] Average loss: 0.4111 Average accuracy: 0.8585
+INFO:2020-11-22 10:42:13,428:[Train] Epoch: 34 [batch: 2472/6188 (39.95%)] Average loss: 0.3162  Average accuracy: 0.8857 lr: 0.0000990393
+INFO:2020-11-22 10:42:14,242:[Valid] Average loss: 0.4326 Average accuracy: 0.8620
+INFO:2020-11-22 10:45:57,283:[Train] Epoch: 34 [batch: 3090/6188 (49.94%)] Average loss: 0.3110  Average accuracy: 0.8870 lr: 0.0000990393
+INFO:2020-11-22 10:45:58,126:[Valid] Average loss: 0.4343 Average accuracy: 0.8493
+INFO:2020-11-22 10:49:41,045:[Train] Epoch: 34 [batch: 3708/6188 (59.92%)] Average loss: 0.3145  Average accuracy: 0.8863 lr: 0.0000990393
+INFO:2020-11-22 10:49:41,855:[Valid] Average loss: 0.5458 Average accuracy: 0.8422
+INFO:2020-11-22 10:53:25,316:[Train] Epoch: 34 [batch: 4326/6188 (69.91%)] Average loss: 0.3142  Average accuracy: 0.8864 lr: 0.0000990393
+INFO:2020-11-22 10:53:26,128:[Valid] Average loss: 0.4889 Average accuracy: 0.8419
+INFO:2020-11-22 10:57:09,768:[Train] Epoch: 34 [batch: 4944/6188 (79.90%)] Average loss: 0.3149  Average accuracy: 0.8863 lr: 0.0000990393
+INFO:2020-11-22 10:57:10,589:[Valid] Average loss: 0.4399 Average accuracy: 0.8458
+INFO:2020-11-22 11:00:53,938:[Train] Epoch: 34 [batch: 5562/6188 (89.88%)] Average loss: 0.3144  Average accuracy: 0.8861 lr: 0.0000990393
+INFO:2020-11-22 11:00:54,765:[Valid] Average loss: 0.4076 Average accuracy: 0.8611
+INFO:2020-11-22 11:04:37,752:[Train] Epoch: 34 [batch: 6180/6188 (99.87%)] Average loss: 0.3100  Average accuracy: 0.8875 lr: 0.0000990393
+INFO:2020-11-22 11:04:38,574:[Valid] Average loss: 0.5041 Average accuracy: 0.8449
+INFO:2020-11-22 11:04:41,654:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 11:04:41,655:Updating...Current learning rate: [9.784701678661045e-05]
+
+INFO:2020-11-22 11:08:25,298:[Train] Epoch: 35 [batch: 618/6188 (09.99%)] Average loss: 0.3085  Average accuracy: 0.8884 lr: 0.0000978470
+INFO:2020-11-22 11:08:25,380:Starting over on the validation set.
+
+INFO:2020-11-22 11:08:26,420:[Valid] Average loss: 0.4346 Average accuracy: 0.8476
+INFO:2020-11-22 11:12:09,506:[Train] Epoch: 35 [batch: 1236/6188 (19.97%)] Average loss: 0.3119  Average accuracy: 0.8868 lr: 0.0000978470
+INFO:2020-11-22 11:12:10,322:[Valid] Average loss: 0.5319 Average accuracy: 0.8381
+INFO:2020-11-22 11:15:53,838:[Train] Epoch: 35 [batch: 1854/6188 (29.96%)] Average loss: 0.3178  Average accuracy: 0.8855 lr: 0.0000978470
+INFO:2020-11-22 11:15:54,668:[Valid] Average loss: 0.4243 Average accuracy: 0.8583
+INFO:2020-11-22 11:19:38,065:[Train] Epoch: 35 [batch: 2472/6188 (39.95%)] Average loss: 0.3133  Average accuracy: 0.8865 lr: 0.0000978470
+INFO:2020-11-22 11:19:38,898:[Valid] Average loss: 0.4393 Average accuracy: 0.8660
+INFO:2020-11-22 11:23:22,096:[Train] Epoch: 35 [batch: 3090/6188 (49.94%)] Average loss: 0.3120  Average accuracy: 0.8867 lr: 0.0000978470
+INFO:2020-11-22 11:23:22,923:[Valid] Average loss: 0.4999 Average accuracy: 0.8461
+INFO:2020-11-22 11:27:06,157:[Train] Epoch: 35 [batch: 3708/6188 (59.92%)] Average loss: 0.3102  Average accuracy: 0.8880 lr: 0.0000978470
+INFO:2020-11-22 11:27:06,986:[Valid] Average loss: 0.3948 Average accuracy: 0.8590
+INFO:2020-11-22 11:30:50,953:[Train] Epoch: 35 [batch: 4326/6188 (69.91%)] Average loss: 0.3122  Average accuracy: 0.8869 lr: 0.0000978470
+INFO:2020-11-22 11:30:51,774:[Valid] Average loss: 0.3802 Average accuracy: 0.8762
+INFO:2020-11-22 11:34:34,885:[Train] Epoch: 35 [batch: 4944/6188 (79.90%)] Average loss: 0.3097  Average accuracy: 0.8878 lr: 0.0000978470
+INFO:2020-11-22 11:34:35,723:[Valid] Average loss: 0.4618 Average accuracy: 0.8523
+INFO:2020-11-22 11:38:19,172:[Train] Epoch: 35 [batch: 5562/6188 (89.88%)] Average loss: 0.3150  Average accuracy: 0.8857 lr: 0.0000978470
+INFO:2020-11-22 11:38:20,002:[Valid] Average loss: 0.4409 Average accuracy: 0.8528
+INFO:2020-11-22 11:42:03,212:[Train] Epoch: 35 [batch: 6180/6188 (99.87%)] Average loss: 0.3100  Average accuracy: 0.8878 lr: 0.0000978470
+INFO:2020-11-22 11:42:04,048:[Valid] Average loss: 0.5161 Average accuracy: 0.8361
+INFO:2020-11-22 11:42:07,154:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 11:42:07,155:Updating...Current learning rate: [9.619397662556435e-05]
+
+INFO:2020-11-22 11:45:50,923:[Train] Epoch: 36 [batch: 618/6188 (09.99%)] Average loss: 0.3092  Average accuracy: 0.8883 lr: 0.0000961940
+INFO:2020-11-22 11:45:51,007:Starting over on the validation set.
+
+INFO:2020-11-22 11:45:52,037:[Valid] Average loss: 0.4397 Average accuracy: 0.8608
+INFO:2020-11-22 11:49:35,564:[Train] Epoch: 36 [batch: 1236/6188 (19.97%)] Average loss: 0.3090  Average accuracy: 0.8888 lr: 0.0000961940
+INFO:2020-11-22 11:49:36,371:[Valid] Average loss: 0.4679 Average accuracy: 0.8362
+INFO:2020-11-22 11:53:20,198:[Train] Epoch: 36 [batch: 1854/6188 (29.96%)] Average loss: 0.3161  Average accuracy: 0.8860 lr: 0.0000961940
+INFO:2020-11-22 11:53:21,018:[Valid] Average loss: 0.4604 Average accuracy: 0.8456
+INFO:2020-11-22 11:57:04,515:[Train] Epoch: 36 [batch: 2472/6188 (39.95%)] Average loss: 0.3091  Average accuracy: 0.8881 lr: 0.0000961940
+INFO:2020-11-22 11:57:05,347:[Valid] Average loss: 0.4961 Average accuracy: 0.8502
+INFO:2020-11-22 12:00:48,954:[Train] Epoch: 36 [batch: 3090/6188 (49.94%)] Average loss: 0.3160  Average accuracy: 0.8854 lr: 0.0000961940
+INFO:2020-11-22 12:00:49,786:[Valid] Average loss: 0.4212 Average accuracy: 0.8607
+INFO:2020-11-22 12:04:33,321:[Train] Epoch: 36 [batch: 3708/6188 (59.92%)] Average loss: 0.3135  Average accuracy: 0.8868 lr: 0.0000961940
+INFO:2020-11-22 12:04:34,131:[Valid] Average loss: 0.4270 Average accuracy: 0.8552
+INFO:2020-11-22 12:08:17,814:[Train] Epoch: 36 [batch: 4326/6188 (69.91%)] Average loss: 0.3214  Average accuracy: 0.8835 lr: 0.0000961940
+INFO:2020-11-22 12:08:18,639:[Valid] Average loss: 0.3855 Average accuracy: 0.8670
+INFO:2020-11-22 12:12:01,872:[Train] Epoch: 36 [batch: 4944/6188 (79.90%)] Average loss: 0.3089  Average accuracy: 0.8878 lr: 0.0000961940
+INFO:2020-11-22 12:12:02,677:[Valid] Average loss: 0.4322 Average accuracy: 0.8563
+INFO:2020-11-22 12:15:45,923:[Train] Epoch: 36 [batch: 5562/6188 (89.88%)] Average loss: 0.3132  Average accuracy: 0.8861 lr: 0.0000961940
+INFO:2020-11-22 12:15:46,740:[Valid] Average loss: 0.4349 Average accuracy: 0.8525
+INFO:2020-11-22 12:19:30,262:[Train] Epoch: 36 [batch: 6180/6188 (99.87%)] Average loss: 0.3127  Average accuracy: 0.8872 lr: 0.0000961940
+INFO:2020-11-22 12:19:31,067:[Valid] Average loss: 0.5553 Average accuracy: 0.8461
+INFO:2020-11-22 12:19:34,132:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 12:19:34,133:Updating...Current learning rate: [9.409606321741775e-05]
+
+INFO:2020-11-22 12:23:18,311:[Train] Epoch: 37 [batch: 618/6188 (09.99%)] Average loss: 0.3112  Average accuracy: 0.8873 lr: 0.0000940961
+INFO:2020-11-22 12:23:18,399:Starting over on the validation set.
+
+INFO:2020-11-22 12:23:19,441:[Valid] Average loss: 0.5230 Average accuracy: 0.8320
+INFO:2020-11-22 12:27:03,475:[Train] Epoch: 37 [batch: 1236/6188 (19.97%)] Average loss: 0.3130  Average accuracy: 0.8865 lr: 0.0000940961
+INFO:2020-11-22 12:27:04,293:[Valid] Average loss: 0.5100 Average accuracy: 0.8358
+INFO:2020-11-22 12:30:47,226:[Train] Epoch: 37 [batch: 1854/6188 (29.96%)] Average loss: 0.3076  Average accuracy: 0.8887 lr: 0.0000940961
+INFO:2020-11-22 12:30:48,041:[Valid] Average loss: 0.4075 Average accuracy: 0.8615
+INFO:2020-11-22 12:34:31,588:[Train] Epoch: 37 [batch: 2472/6188 (39.95%)] Average loss: 0.3154  Average accuracy: 0.8856 lr: 0.0000940961
+INFO:2020-11-22 12:34:32,414:[Valid] Average loss: 0.4318 Average accuracy: 0.8503
+INFO:2020-11-22 12:38:15,798:[Train] Epoch: 37 [batch: 3090/6188 (49.94%)] Average loss: 0.3155  Average accuracy: 0.8862 lr: 0.0000940961
+INFO:2020-11-22 12:38:16,613:[Valid] Average loss: 0.4268 Average accuracy: 0.8600
+INFO:2020-11-22 12:42:00,914:[Train] Epoch: 37 [batch: 3708/6188 (59.92%)] Average loss: 0.3169  Average accuracy: 0.8857 lr: 0.0000940961
+INFO:2020-11-22 12:42:01,734:[Valid] Average loss: 0.4287 Average accuracy: 0.8670
+INFO:2020-11-22 12:45:45,144:[Train] Epoch: 37 [batch: 4326/6188 (69.91%)] Average loss: 0.3153  Average accuracy: 0.8856 lr: 0.0000940961
+INFO:2020-11-22 12:45:45,973:[Valid] Average loss: 0.4606 Average accuracy: 0.8490
+INFO:2020-11-22 12:49:29,673:[Train] Epoch: 37 [batch: 4944/6188 (79.90%)] Average loss: 0.3126  Average accuracy: 0.8868 lr: 0.0000940961
+INFO:2020-11-22 12:49:30,519:[Valid] Average loss: 0.3951 Average accuracy: 0.8635
+INFO:2020-11-22 12:53:14,078:[Train] Epoch: 37 [batch: 5562/6188 (89.88%)] Average loss: 0.3125  Average accuracy: 0.8868 lr: 0.0000940961
+INFO:2020-11-22 12:53:14,903:[Valid] Average loss: 0.5890 Average accuracy: 0.8366
+INFO:2020-11-22 12:56:58,304:[Train] Epoch: 37 [batch: 6180/6188 (99.87%)] Average loss: 0.3063  Average accuracy: 0.8890 lr: 0.0000940961
+INFO:2020-11-22 12:56:59,123:[Valid] Average loss: 0.3515 Average accuracy: 0.8756
+INFO:2020-11-22 12:57:02,220:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 12:57:02,220:Updating...Current learning rate: [9.157348061512727e-05]
+
+INFO:2020-11-22 13:00:46,672:[Train] Epoch: 38 [batch: 618/6188 (09.99%)] Average loss: 0.3112  Average accuracy: 0.8871 lr: 0.0000915735
+INFO:2020-11-22 13:00:46,757:Starting over on the validation set.
+
+INFO:2020-11-22 13:00:47,817:[Valid] Average loss: 0.4163 Average accuracy: 0.8632
+INFO:2020-11-22 13:04:31,818:[Train] Epoch: 38 [batch: 1236/6188 (19.97%)] Average loss: 0.3140  Average accuracy: 0.8862 lr: 0.0000915735
+INFO:2020-11-22 13:04:32,633:[Valid] Average loss: 0.4536 Average accuracy: 0.8650
+INFO:2020-11-22 13:08:16,199:[Train] Epoch: 38 [batch: 1854/6188 (29.96%)] Average loss: 0.3114  Average accuracy: 0.8872 lr: 0.0000915735
+INFO:2020-11-22 13:08:17,021:[Valid] Average loss: 0.4616 Average accuracy: 0.8443
+INFO:2020-11-22 13:12:00,320:[Train] Epoch: 38 [batch: 2472/6188 (39.95%)] Average loss: 0.3081  Average accuracy: 0.8884 lr: 0.0000915735
+INFO:2020-11-22 13:12:01,180:[Valid] Average loss: 0.4746 Average accuracy: 0.8460
+INFO:2020-11-22 13:15:45,122:[Train] Epoch: 38 [batch: 3090/6188 (49.94%)] Average loss: 0.3128  Average accuracy: 0.8871 lr: 0.0000915735
+INFO:2020-11-22 13:15:45,940:[Valid] Average loss: 0.4446 Average accuracy: 0.8615
+INFO:2020-11-22 13:19:29,591:[Train] Epoch: 38 [batch: 3708/6188 (59.92%)] Average loss: 0.3135  Average accuracy: 0.8869 lr: 0.0000915735
+INFO:2020-11-22 13:19:30,402:[Valid] Average loss: 0.5035 Average accuracy: 0.8458
+INFO:2020-11-22 13:23:14,178:[Train] Epoch: 38 [batch: 4326/6188 (69.91%)] Average loss: 0.3126  Average accuracy: 0.8868 lr: 0.0000915735
+INFO:2020-11-22 13:23:14,990:[Valid] Average loss: 0.4216 Average accuracy: 0.8632
+INFO:2020-11-22 13:26:58,346:[Train] Epoch: 38 [batch: 4944/6188 (79.90%)] Average loss: 0.3058  Average accuracy: 0.8886 lr: 0.0000915735
+INFO:2020-11-22 13:26:59,165:[Valid] Average loss: 0.5136 Average accuracy: 0.8236
+INFO:2020-11-22 13:30:42,834:[Train] Epoch: 38 [batch: 5562/6188 (89.88%)] Average loss: 0.3139  Average accuracy: 0.8860 lr: 0.0000915735
+INFO:2020-11-22 13:30:43,646:[Valid] Average loss: 0.3775 Average accuracy: 0.8704
+INFO:2020-11-22 13:34:27,381:[Train] Epoch: 38 [batch: 6180/6188 (99.87%)] Average loss: 0.3183  Average accuracy: 0.8853 lr: 0.0000915735
+INFO:2020-11-22 13:34:28,198:[Valid] Average loss: 0.4533 Average accuracy: 0.8484
+INFO:2020-11-22 13:34:31,301:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 13:34:31,301:Updating...Current learning rate: [8.865052266813685e-05]
+
+INFO:2020-11-22 13:38:15,831:[Train] Epoch: 39 [batch: 618/6188 (09.99%)] Average loss: 0.3134  Average accuracy: 0.8871 lr: 0.0000886505
+INFO:2020-11-22 13:38:15,927:Starting over on the validation set.
+
+INFO:2020-11-22 13:38:16,959:[Valid] Average loss: 0.3763 Average accuracy: 0.8670
+INFO:2020-11-22 13:42:00,899:[Train] Epoch: 39 [batch: 1236/6188 (19.97%)] Average loss: 0.3134  Average accuracy: 0.8868 lr: 0.0000886505
+INFO:2020-11-22 13:42:01,710:[Valid] Average loss: 0.4308 Average accuracy: 0.8719
+INFO:2020-11-22 13:45:45,515:[Train] Epoch: 39 [batch: 1854/6188 (29.96%)] Average loss: 0.3148  Average accuracy: 0.8859 lr: 0.0000886505
+INFO:2020-11-22 13:45:46,329:[Valid] Average loss: 0.5130 Average accuracy: 0.8389
+INFO:2020-11-22 13:49:29,478:[Train] Epoch: 39 [batch: 2472/6188 (39.95%)] Average loss: 0.3103  Average accuracy: 0.8879 lr: 0.0000886505
+INFO:2020-11-22 13:49:30,285:[Valid] Average loss: 0.3888 Average accuracy: 0.8635
+INFO:2020-11-22 13:53:14,039:[Train] Epoch: 39 [batch: 3090/6188 (49.94%)] Average loss: 0.3147  Average accuracy: 0.8858 lr: 0.0000886505
+INFO:2020-11-22 13:53:14,851:[Valid] Average loss: 0.4230 Average accuracy: 0.8606
+INFO:2020-11-22 13:56:58,576:[Train] Epoch: 39 [batch: 3708/6188 (59.92%)] Average loss: 0.3202  Average accuracy: 0.8845 lr: 0.0000886505
+INFO:2020-11-22 13:56:59,384:[Valid] Average loss: 0.4786 Average accuracy: 0.8488
+INFO:2020-11-22 14:00:43,007:[Train] Epoch: 39 [batch: 4326/6188 (69.91%)] Average loss: 0.3090  Average accuracy: 0.8877 lr: 0.0000886505
+INFO:2020-11-22 14:00:43,812:[Valid] Average loss: 0.4657 Average accuracy: 0.8449
+INFO:2020-11-22 14:04:26,904:[Train] Epoch: 39 [batch: 4944/6188 (79.90%)] Average loss: 0.3036  Average accuracy: 0.8900 lr: 0.0000886505
+INFO:2020-11-22 14:04:27,710:[Valid] Average loss: 0.5338 Average accuracy: 0.8267
+INFO:2020-11-22 14:08:11,169:[Train] Epoch: 39 [batch: 5562/6188 (89.88%)] Average loss: 0.3111  Average accuracy: 0.8870 lr: 0.0000886505
+INFO:2020-11-22 14:08:11,975:[Valid] Average loss: 0.4740 Average accuracy: 0.8586
+INFO:2020-11-22 14:11:55,421:[Train] Epoch: 39 [batch: 6180/6188 (99.87%)] Average loss: 0.3074  Average accuracy: 0.8883 lr: 0.0000886505
+INFO:2020-11-22 14:11:56,249:[Valid] Average loss: 0.4341 Average accuracy: 0.8491
+INFO:2020-11-22 14:11:59,500:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 14:11:59,500:Updating...Current learning rate: [8.535533905932738e-05]
+
+INFO:2020-11-22 14:15:42,584:[Train] Epoch: 40 [batch: 618/6188 (09.99%)] Average loss: 0.3112  Average accuracy: 0.8873 lr: 0.0000853553
+INFO:2020-11-22 14:15:42,670:Starting over on the validation set.
+
+INFO:2020-11-22 14:15:43,678:[Valid] Average loss: 0.4292 Average accuracy: 0.8530
+INFO:2020-11-22 14:19:27,334:[Train] Epoch: 40 [batch: 1236/6188 (19.97%)] Average loss: 0.3117  Average accuracy: 0.8874 lr: 0.0000853553
+INFO:2020-11-22 14:19:28,143:[Valid] Average loss: 0.4626 Average accuracy: 0.8445
+INFO:2020-11-22 14:23:11,588:[Train] Epoch: 40 [batch: 1854/6188 (29.96%)] Average loss: 0.3148  Average accuracy: 0.8867 lr: 0.0000853553
+INFO:2020-11-22 14:23:12,395:[Valid] Average loss: 0.4482 Average accuracy: 0.8586
+INFO:2020-11-22 14:26:55,778:[Train] Epoch: 40 [batch: 2472/6188 (39.95%)] Average loss: 0.3145  Average accuracy: 0.8858 lr: 0.0000853553
+INFO:2020-11-22 14:26:56,584:[Valid] Average loss: 0.3836 Average accuracy: 0.8702
+INFO:2020-11-22 14:30:39,072:[Train] Epoch: 40 [batch: 3090/6188 (49.94%)] Average loss: 0.3081  Average accuracy: 0.8879 lr: 0.0000853553
+INFO:2020-11-22 14:30:39,883:[Valid] Average loss: 0.3773 Average accuracy: 0.8694
+INFO:2020-11-22 14:34:22,735:[Train] Epoch: 40 [batch: 3708/6188 (59.92%)] Average loss: 0.3083  Average accuracy: 0.8881 lr: 0.0000853553
+INFO:2020-11-22 14:34:23,554:[Valid] Average loss: 0.5357 Average accuracy: 0.8470
+INFO:2020-11-22 14:38:06,028:[Train] Epoch: 40 [batch: 4326/6188 (69.91%)] Average loss: 0.3057  Average accuracy: 0.8896 lr: 0.0000853553
+INFO:2020-11-22 14:38:06,855:[Valid] Average loss: 0.4385 Average accuracy: 0.8500
+INFO:2020-11-22 14:41:49,607:[Train] Epoch: 40 [batch: 4944/6188 (79.90%)] Average loss: 0.3145  Average accuracy: 0.8860 lr: 0.0000853553
+INFO:2020-11-22 14:41:50,429:[Valid] Average loss: 0.4768 Average accuracy: 0.8497
+INFO:2020-11-22 14:45:33,456:[Train] Epoch: 40 [batch: 5562/6188 (89.88%)] Average loss: 0.3149  Average accuracy: 0.8865 lr: 0.0000853553
+INFO:2020-11-22 14:45:34,263:[Valid] Average loss: 0.5270 Average accuracy: 0.8388
+INFO:2020-11-22 14:49:16,546:[Train] Epoch: 40 [batch: 6180/6188 (99.87%)] Average loss: 0.3127  Average accuracy: 0.8863 lr: 0.0000853553
+INFO:2020-11-22 14:49:17,355:[Valid] Average loss: 0.4490 Average accuracy: 0.8486
+INFO:2020-11-22 14:49:20,505:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 14:49:20,506:Updating...Current learning rate: [8.171966420818228e-05]
+
+INFO:2020-11-22 14:53:04,549:[Train] Epoch: 41 [batch: 618/6188 (09.99%)] Average loss: 0.3081  Average accuracy: 0.8887 lr: 0.0000817197
+INFO:2020-11-22 14:53:04,636:Starting over on the validation set.
+
+INFO:2020-11-22 14:53:05,653:[Valid] Average loss: 0.4471 Average accuracy: 0.8497
+INFO:2020-11-22 14:56:49,113:[Train] Epoch: 41 [batch: 1236/6188 (19.97%)] Average loss: 0.3127  Average accuracy: 0.8867 lr: 0.0000817197
+INFO:2020-11-22 14:56:49,932:[Valid] Average loss: 0.5187 Average accuracy: 0.8516
+INFO:2020-11-22 15:00:33,184:[Train] Epoch: 41 [batch: 1854/6188 (29.96%)] Average loss: 0.3104  Average accuracy: 0.8872 lr: 0.0000817197
+INFO:2020-11-22 15:00:33,986:[Valid] Average loss: 0.4645 Average accuracy: 0.8546
+INFO:2020-11-22 15:04:17,876:[Train] Epoch: 41 [batch: 2472/6188 (39.95%)] Average loss: 0.3173  Average accuracy: 0.8855 lr: 0.0000817197
+INFO:2020-11-22 15:04:18,705:[Valid] Average loss: 0.4755 Average accuracy: 0.8407
+INFO:2020-11-22 15:08:02,968:[Train] Epoch: 41 [batch: 3090/6188 (49.94%)] Average loss: 0.3079  Average accuracy: 0.8880 lr: 0.0000817197
+INFO:2020-11-22 15:08:03,802:[Valid] Average loss: 0.4418 Average accuracy: 0.8529
+INFO:2020-11-22 15:11:47,615:[Train] Epoch: 41 [batch: 3708/6188 (59.92%)] Average loss: 0.3115  Average accuracy: 0.8873 lr: 0.0000817197
+INFO:2020-11-22 15:11:48,437:[Valid] Average loss: 0.4566 Average accuracy: 0.8521
+INFO:2020-11-22 15:15:31,199:[Train] Epoch: 41 [batch: 4326/6188 (69.91%)] Average loss: 0.3131  Average accuracy: 0.8869 lr: 0.0000817197
+INFO:2020-11-22 15:15:32,037:[Valid] Average loss: 0.3824 Average accuracy: 0.8652
+INFO:2020-11-22 15:19:14,208:[Train] Epoch: 41 [batch: 4944/6188 (79.90%)] Average loss: 0.3111  Average accuracy: 0.8868 lr: 0.0000817197
+INFO:2020-11-22 15:19:15,039:[Valid] Average loss: 0.4592 Average accuracy: 0.8546
+INFO:2020-11-22 15:22:57,892:[Train] Epoch: 41 [batch: 5562/6188 (89.88%)] Average loss: 0.3095  Average accuracy: 0.8878 lr: 0.0000817197
+INFO:2020-11-22 15:22:58,706:[Valid] Average loss: 0.4171 Average accuracy: 0.8544
+INFO:2020-11-22 15:26:42,248:[Train] Epoch: 41 [batch: 6180/6188 (99.87%)] Average loss: 0.3132  Average accuracy: 0.8866 lr: 0.0000817197
+INFO:2020-11-22 15:26:43,071:[Valid] Average loss: 0.4623 Average accuracy: 0.8539
+INFO:2020-11-22 15:26:46,402:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 15:26:46,403:Updating...Current learning rate: [7.777851165098012e-05]
+
+INFO:2020-11-22 15:30:30,219:[Train] Epoch: 42 [batch: 618/6188 (09.99%)] Average loss: 0.3136  Average accuracy: 0.8863 lr: 0.0000777785
+INFO:2020-11-22 15:30:30,324:Starting over on the validation set.
+
+INFO:2020-11-22 15:30:31,419:[Valid] Average loss: 0.4527 Average accuracy: 0.8479
+INFO:2020-11-22 15:34:15,516:[Train] Epoch: 42 [batch: 1236/6188 (19.97%)] Average loss: 0.3143  Average accuracy: 0.8864 lr: 0.0000777785
+INFO:2020-11-22 15:34:16,333:[Valid] Average loss: 0.4829 Average accuracy: 0.8443
+INFO:2020-11-22 15:37:58,980:[Train] Epoch: 42 [batch: 1854/6188 (29.96%)] Average loss: 0.3055  Average accuracy: 0.8890 lr: 0.0000777785
+INFO:2020-11-22 15:37:59,806:[Valid] Average loss: 0.4560 Average accuracy: 0.8513
+INFO:2020-11-22 15:41:42,602:[Train] Epoch: 42 [batch: 2472/6188 (39.95%)] Average loss: 0.3185  Average accuracy: 0.8845 lr: 0.0000777785
+INFO:2020-11-22 15:41:43,428:[Valid] Average loss: 0.4338 Average accuracy: 0.8491
+INFO:2020-11-22 15:45:25,951:[Train] Epoch: 42 [batch: 3090/6188 (49.94%)] Average loss: 0.3120  Average accuracy: 0.8871 lr: 0.0000777785
+INFO:2020-11-22 15:45:26,766:[Valid] Average loss: 0.4562 Average accuracy: 0.8423
+INFO:2020-11-22 15:49:09,989:[Train] Epoch: 42 [batch: 3708/6188 (59.92%)] Average loss: 0.3081  Average accuracy: 0.8880 lr: 0.0000777785
+INFO:2020-11-22 15:49:10,806:[Valid] Average loss: 0.4362 Average accuracy: 0.8497
+INFO:2020-11-22 15:52:53,365:[Train] Epoch: 42 [batch: 4326/6188 (69.91%)] Average loss: 0.3072  Average accuracy: 0.8883 lr: 0.0000777785
+INFO:2020-11-22 15:52:54,186:[Valid] Average loss: 0.4316 Average accuracy: 0.8693
+INFO:2020-11-22 15:56:36,470:[Train] Epoch: 42 [batch: 4944/6188 (79.90%)] Average loss: 0.3082  Average accuracy: 0.8882 lr: 0.0000777785
+INFO:2020-11-22 15:56:37,284:[Valid] Average loss: 0.4933 Average accuracy: 0.8493
+INFO:2020-11-22 16:00:19,972:[Train] Epoch: 42 [batch: 5562/6188 (89.88%)] Average loss: 0.3146  Average accuracy: 0.8857 lr: 0.0000777785
+INFO:2020-11-22 16:00:20,782:[Valid] Average loss: 0.4493 Average accuracy: 0.8510
+INFO:2020-11-22 16:04:02,187:[Train] Epoch: 42 [batch: 6180/6188 (99.87%)] Average loss: 0.3071  Average accuracy: 0.8882 lr: 0.0000777785
+INFO:2020-11-22 16:04:03,003:[Valid] Average loss: 0.4349 Average accuracy: 0.8768
+INFO:2020-11-22 16:04:06,597:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 16:04:06,598:Updating...Current learning rate: [7.35698368412999e-05]
+
+INFO:2020-11-22 16:07:50,323:[Train] Epoch: 43 [batch: 618/6188 (09.99%)] Average loss: 0.3084  Average accuracy: 0.8877 lr: 0.0000735698
+INFO:2020-11-22 16:07:50,422:Starting over on the validation set.
+
+INFO:2020-11-22 16:07:51,470:[Valid] Average loss: 0.4140 Average accuracy: 0.8635
+INFO:2020-11-22 16:11:33,670:[Train] Epoch: 43 [batch: 1236/6188 (19.97%)] Average loss: 0.3118  Average accuracy: 0.8866 lr: 0.0000735698
+INFO:2020-11-22 16:11:34,481:[Valid] Average loss: 0.4227 Average accuracy: 0.8630
+INFO:2020-11-22 16:15:16,197:[Train] Epoch: 43 [batch: 1854/6188 (29.96%)] Average loss: 0.3166  Average accuracy: 0.8854 lr: 0.0000735698
+INFO:2020-11-22 16:15:17,017:[Valid] Average loss: 0.4573 Average accuracy: 0.8447
+INFO:2020-11-22 16:19:00,149:[Train] Epoch: 43 [batch: 2472/6188 (39.95%)] Average loss: 0.3109  Average accuracy: 0.8873 lr: 0.0000735698
+INFO:2020-11-22 16:19:01,032:[Valid] Average loss: 0.5282 Average accuracy: 0.8360
+INFO:2020-11-22 16:22:43,205:[Train] Epoch: 43 [batch: 3090/6188 (49.94%)] Average loss: 0.3095  Average accuracy: 0.8873 lr: 0.0000735698
+INFO:2020-11-22 16:22:44,020:[Valid] Average loss: 0.4034 Average accuracy: 0.8591
+INFO:2020-11-22 16:26:25,725:[Train] Epoch: 43 [batch: 3708/6188 (59.92%)] Average loss: 0.3135  Average accuracy: 0.8867 lr: 0.0000735698
+INFO:2020-11-22 16:26:26,577:[Valid] Average loss: 0.4857 Average accuracy: 0.8591
+INFO:2020-11-22 16:30:09,648:[Train] Epoch: 43 [batch: 4326/6188 (69.91%)] Average loss: 0.3031  Average accuracy: 0.8899 lr: 0.0000735698
+INFO:2020-11-22 16:30:10,491:[Valid] Average loss: 0.4928 Average accuracy: 0.8548
+INFO:2020-11-22 16:33:53,347:[Train] Epoch: 43 [batch: 4944/6188 (79.90%)] Average loss: 0.3123  Average accuracy: 0.8863 lr: 0.0000735698
+INFO:2020-11-22 16:33:54,180:[Valid] Average loss: 0.5234 Average accuracy: 0.8293
+INFO:2020-11-22 16:37:35,898:[Train] Epoch: 43 [batch: 5562/6188 (89.88%)] Average loss: 0.3111  Average accuracy: 0.8876 lr: 0.0000735698
+INFO:2020-11-22 16:37:36,708:[Valid] Average loss: 0.4030 Average accuracy: 0.8590
+INFO:2020-11-22 16:41:20,193:[Train] Epoch: 43 [batch: 6180/6188 (99.87%)] Average loss: 0.3137  Average accuracy: 0.8864 lr: 0.0000735698
+INFO:2020-11-22 16:41:21,152:[Valid] Average loss: 0.3975 Average accuracy: 0.8637
+INFO:2020-11-22 16:41:24,446:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 16:41:24,447:Updating...Current learning rate: [6.91341716182545e-05]
+
+INFO:2020-11-22 16:45:07,548:[Train] Epoch: 44 [batch: 618/6188 (09.99%)] Average loss: 0.3134  Average accuracy: 0.8868 lr: 0.0000691342
+INFO:2020-11-22 16:45:07,652:Starting over on the validation set.
+
+INFO:2020-11-22 16:45:08,768:[Valid] Average loss: 0.3865 Average accuracy: 0.8670
+INFO:2020-11-22 16:48:51,204:[Train] Epoch: 44 [batch: 1236/6188 (19.97%)] Average loss: 0.3143  Average accuracy: 0.8859 lr: 0.0000691342
+INFO:2020-11-22 16:48:52,041:[Valid] Average loss: 0.4852 Average accuracy: 0.8547
+INFO:2020-11-22 16:52:33,946:[Train] Epoch: 44 [batch: 1854/6188 (29.96%)] Average loss: 0.3129  Average accuracy: 0.8867 lr: 0.0000691342
+INFO:2020-11-22 16:52:34,896:[Valid] Average loss: 0.4058 Average accuracy: 0.8598
+INFO:2020-11-22 16:56:16,867:[Train] Epoch: 44 [batch: 2472/6188 (39.95%)] Average loss: 0.3148  Average accuracy: 0.8855 lr: 0.0000691342
+INFO:2020-11-22 16:56:17,689:[Valid] Average loss: 0.4896 Average accuracy: 0.8373
+INFO:2020-11-22 17:00:01,069:[Train] Epoch: 44 [batch: 3090/6188 (49.94%)] Average loss: 0.3132  Average accuracy: 0.8869 lr: 0.0000691342
+INFO:2020-11-22 17:00:01,894:[Valid] Average loss: 0.4989 Average accuracy: 0.8341
+INFO:2020-11-22 17:03:45,078:[Train] Epoch: 44 [batch: 3708/6188 (59.92%)] Average loss: 0.3133  Average accuracy: 0.8861 lr: 0.0000691342
+INFO:2020-11-22 17:03:45,903:[Valid] Average loss: 0.4359 Average accuracy: 0.8491
+INFO:2020-11-22 17:07:27,673:[Train] Epoch: 44 [batch: 4326/6188 (69.91%)] Average loss: 0.3092  Average accuracy: 0.8880 lr: 0.0000691342
+INFO:2020-11-22 17:07:28,512:[Valid] Average loss: 0.4837 Average accuracy: 0.8564
+INFO:2020-11-22 17:11:10,147:[Train] Epoch: 44 [batch: 4944/6188 (79.90%)] Average loss: 0.3084  Average accuracy: 0.8880 lr: 0.0000691342
+INFO:2020-11-22 17:11:10,972:[Valid] Average loss: 0.3928 Average accuracy: 0.8681
+INFO:2020-11-22 17:14:54,093:[Train] Epoch: 44 [batch: 5562/6188 (89.88%)] Average loss: 0.3123  Average accuracy: 0.8864 lr: 0.0000691342
+INFO:2020-11-22 17:14:54,949:[Valid] Average loss: 0.4590 Average accuracy: 0.8455
+INFO:2020-11-22 17:18:37,059:[Train] Epoch: 44 [batch: 6180/6188 (99.87%)] Average loss: 0.3078  Average accuracy: 0.8880 lr: 0.0000691342
+INFO:2020-11-22 17:18:37,884:[Valid] Average loss: 0.4880 Average accuracy: 0.8586
+INFO:2020-11-22 17:18:41,106:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 17:18:41,107:Updating...Current learning rate: [6.451423386272312e-05]
+
+INFO:2020-11-22 17:22:24,542:[Train] Epoch: 45 [batch: 618/6188 (09.99%)] Average loss: 0.3119  Average accuracy: 0.8872 lr: 0.0000645142
+INFO:2020-11-22 17:22:24,615:Starting over on the validation set.
+
+INFO:2020-11-22 17:22:25,668:[Valid] Average loss: 0.4693 Average accuracy: 0.8451
+INFO:2020-11-22 17:26:08,512:[Train] Epoch: 45 [batch: 1236/6188 (19.97%)] Average loss: 0.3105  Average accuracy: 0.8879 lr: 0.0000645142
+INFO:2020-11-22 17:26:09,318:[Valid] Average loss: 0.4099 Average accuracy: 0.8542
+INFO:2020-11-22 17:29:51,262:[Train] Epoch: 45 [batch: 1854/6188 (29.96%)] Average loss: 0.3139  Average accuracy: 0.8863 lr: 0.0000645142
+INFO:2020-11-22 17:29:52,084:[Valid] Average loss: 0.4861 Average accuracy: 0.8561
+INFO:2020-11-22 17:33:34,326:[Train] Epoch: 45 [batch: 2472/6188 (39.95%)] Average loss: 0.3124  Average accuracy: 0.8865 lr: 0.0000645142
+INFO:2020-11-22 17:33:35,166:[Valid] Average loss: 0.4984 Average accuracy: 0.8413
+INFO:2020-11-22 17:37:18,073:[Train] Epoch: 45 [batch: 3090/6188 (49.94%)] Average loss: 0.3093  Average accuracy: 0.8873 lr: 0.0000645142
+INFO:2020-11-22 17:37:18,893:[Valid] Average loss: 0.5494 Average accuracy: 0.8425
+INFO:2020-11-22 17:41:01,344:[Train] Epoch: 45 [batch: 3708/6188 (59.92%)] Average loss: 0.3134  Average accuracy: 0.8860 lr: 0.0000645142
+INFO:2020-11-22 17:41:02,170:[Valid] Average loss: 0.4082 Average accuracy: 0.8583
+INFO:2020-11-22 17:44:45,164:[Train] Epoch: 45 [batch: 4326/6188 (69.91%)] Average loss: 0.3151  Average accuracy: 0.8865 lr: 0.0000645142
+INFO:2020-11-22 17:44:45,995:[Valid] Average loss: 0.4347 Average accuracy: 0.8511
+INFO:2020-11-22 17:48:29,057:[Train] Epoch: 45 [batch: 4944/6188 (79.90%)] Average loss: 0.3079  Average accuracy: 0.8881 lr: 0.0000645142
+INFO:2020-11-22 17:48:29,875:[Valid] Average loss: 0.4030 Average accuracy: 0.8684
+INFO:2020-11-22 17:52:12,704:[Train] Epoch: 45 [batch: 5562/6188 (89.88%)] Average loss: 0.3088  Average accuracy: 0.8879 lr: 0.0000645142
+INFO:2020-11-22 17:52:13,537:[Valid] Average loss: 0.4497 Average accuracy: 0.8575
+INFO:2020-11-22 17:55:55,539:[Train] Epoch: 45 [batch: 6180/6188 (99.87%)] Average loss: 0.3132  Average accuracy: 0.8864 lr: 0.0000645142
+INFO:2020-11-22 17:55:56,344:[Valid] Average loss: 0.4066 Average accuracy: 0.8595
+INFO:2020-11-22 17:55:59,577:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 17:55:59,578:Updating...Current learning rate: [5.9754516100806423e-05]
+
+INFO:2020-11-22 17:59:41,644:[Train] Epoch: 46 [batch: 618/6188 (09.99%)] Average loss: 0.3142  Average accuracy: 0.8860 lr: 0.0000597545
+INFO:2020-11-22 17:59:41,738:Starting over on the validation set.
+
+INFO:2020-11-22 17:59:42,773:[Valid] Average loss: 0.3760 Average accuracy: 0.8662
+INFO:2020-11-22 18:03:24,646:[Train] Epoch: 46 [batch: 1236/6188 (19.97%)] Average loss: 0.3068  Average accuracy: 0.8887 lr: 0.0000597545
+INFO:2020-11-22 18:03:25,465:[Valid] Average loss: 0.5047 Average accuracy: 0.8575
+INFO:2020-11-22 18:07:09,181:[Train] Epoch: 46 [batch: 1854/6188 (29.96%)] Average loss: 0.3149  Average accuracy: 0.8855 lr: 0.0000597545
+INFO:2020-11-22 18:07:09,996:[Valid] Average loss: 0.5003 Average accuracy: 0.8439
+INFO:2020-11-22 18:10:52,608:[Train] Epoch: 46 [batch: 2472/6188 (39.95%)] Average loss: 0.3110  Average accuracy: 0.8870 lr: 0.0000597545
+INFO:2020-11-22 18:10:53,417:[Valid] Average loss: 0.3789 Average accuracy: 0.8710
+INFO:2020-11-22 18:14:35,557:[Train] Epoch: 46 [batch: 3090/6188 (49.94%)] Average loss: 0.3141  Average accuracy: 0.8866 lr: 0.0000597545
+INFO:2020-11-22 18:14:36,366:[Valid] Average loss: 0.4954 Average accuracy: 0.8338
+INFO:2020-11-22 18:18:18,481:[Train] Epoch: 46 [batch: 3708/6188 (59.92%)] Average loss: 0.3104  Average accuracy: 0.8880 lr: 0.0000597545
+INFO:2020-11-22 18:18:19,303:[Valid] Average loss: 0.4543 Average accuracy: 0.8576
+INFO:2020-11-22 18:22:01,067:[Train] Epoch: 46 [batch: 4326/6188 (69.91%)] Average loss: 0.3090  Average accuracy: 0.8874 lr: 0.0000597545
+INFO:2020-11-22 18:22:01,884:[Valid] Average loss: 0.4059 Average accuracy: 0.8557
+INFO:2020-11-22 18:25:44,610:[Train] Epoch: 46 [batch: 4944/6188 (79.90%)] Average loss: 0.3066  Average accuracy: 0.8886 lr: 0.0000597545
+INFO:2020-11-22 18:25:45,424:[Valid] Average loss: 0.4319 Average accuracy: 0.8576
+INFO:2020-11-22 18:29:28,349:[Train] Epoch: 46 [batch: 5562/6188 (89.88%)] Average loss: 0.3110  Average accuracy: 0.8873 lr: 0.0000597545
+INFO:2020-11-22 18:29:29,164:[Valid] Average loss: 0.4616 Average accuracy: 0.8456
+INFO:2020-11-22 18:33:10,712:[Train] Epoch: 46 [batch: 6180/6188 (99.87%)] Average loss: 0.3133  Average accuracy: 0.8868 lr: 0.0000597545
+INFO:2020-11-22 18:33:11,527:[Valid] Average loss: 0.5098 Average accuracy: 0.8429
+INFO:2020-11-22 18:33:14,599:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 18:33:14,600:Updating...Current learning rate: [5.490085701647805e-05]
+
+INFO:2020-11-22 18:36:58,097:[Train] Epoch: 47 [batch: 618/6188 (09.99%)] Average loss: 0.3084  Average accuracy: 0.8885 lr: 0.0000549009
+INFO:2020-11-22 18:36:58,177:Starting over on the validation set.
+
+INFO:2020-11-22 18:36:59,219:[Valid] Average loss: 0.3991 Average accuracy: 0.8584
+INFO:2020-11-22 18:40:42,814:[Train] Epoch: 47 [batch: 1236/6188 (19.97%)] Average loss: 0.3113  Average accuracy: 0.8878 lr: 0.0000549009
+INFO:2020-11-22 18:40:43,650:[Valid] Average loss: 0.5942 Average accuracy: 0.8233
+INFO:2020-11-22 18:44:27,369:[Train] Epoch: 47 [batch: 1854/6188 (29.96%)] Average loss: 0.3115  Average accuracy: 0.8871 lr: 0.0000549009
+INFO:2020-11-22 18:44:28,196:[Valid] Average loss: 0.4470 Average accuracy: 0.8614
+INFO:2020-11-22 18:48:11,374:[Train] Epoch: 47 [batch: 2472/6188 (39.95%)] Average loss: 0.3150  Average accuracy: 0.8862 lr: 0.0000549009
+INFO:2020-11-22 18:48:12,192:[Valid] Average loss: 0.3907 Average accuracy: 0.8605
+INFO:2020-11-22 18:51:54,596:[Train] Epoch: 47 [batch: 3090/6188 (49.94%)] Average loss: 0.3089  Average accuracy: 0.8879 lr: 0.0000549009
+INFO:2020-11-22 18:51:55,407:[Valid] Average loss: 0.3641 Average accuracy: 0.8742
+INFO:2020-11-22 18:55:38,073:[Train] Epoch: 47 [batch: 3708/6188 (59.92%)] Average loss: 0.3120  Average accuracy: 0.8865 lr: 0.0000549009
+INFO:2020-11-22 18:55:38,886:[Valid] Average loss: 0.5126 Average accuracy: 0.8432
+INFO:2020-11-22 18:59:21,374:[Train] Epoch: 47 [batch: 4326/6188 (69.91%)] Average loss: 0.3099  Average accuracy: 0.8873 lr: 0.0000549009
+INFO:2020-11-22 18:59:22,188:[Valid] Average loss: 0.4211 Average accuracy: 0.8701
+INFO:2020-11-22 19:03:04,614:[Train] Epoch: 47 [batch: 4944/6188 (79.90%)] Average loss: 0.3111  Average accuracy: 0.8872 lr: 0.0000549009
+INFO:2020-11-22 19:03:05,431:[Valid] Average loss: 0.4309 Average accuracy: 0.8533
+INFO:2020-11-22 19:06:48,392:[Train] Epoch: 47 [batch: 5562/6188 (89.88%)] Average loss: 0.3145  Average accuracy: 0.8863 lr: 0.0000549009
+INFO:2020-11-22 19:06:49,226:[Valid] Average loss: 0.4810 Average accuracy: 0.8409
+INFO:2020-11-22 19:10:32,040:[Train] Epoch: 47 [batch: 6180/6188 (99.87%)] Average loss: 0.3148  Average accuracy: 0.8859 lr: 0.0000549009
+INFO:2020-11-22 19:10:32,850:[Valid] Average loss: 0.4720 Average accuracy: 0.8463
+INFO:2020-11-22 19:10:35,986:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 19:10:35,987:Updating...Current learning rate: [5e-05]
+
+INFO:2020-11-22 19:14:18,689:[Train] Epoch: 48 [batch: 618/6188 (09.99%)] Average loss: 0.3046  Average accuracy: 0.8894 lr: 0.0000500000
+INFO:2020-11-22 19:14:18,772:Starting over on the validation set.
+
+INFO:2020-11-22 19:14:19,840:[Valid] Average loss: 0.3700 Average accuracy: 0.8690
+INFO:2020-11-22 19:18:02,508:[Train] Epoch: 48 [batch: 1236/6188 (19.97%)] Average loss: 0.3150  Average accuracy: 0.8863 lr: 0.0000500000
+INFO:2020-11-22 19:18:03,353:[Valid] Average loss: 0.4057 Average accuracy: 0.8646
+INFO:2020-11-22 19:21:47,133:[Train] Epoch: 48 [batch: 1854/6188 (29.96%)] Average loss: 0.3097  Average accuracy: 0.8870 lr: 0.0000500000
+INFO:2020-11-22 19:21:47,963:[Valid] Average loss: 0.4628 Average accuracy: 0.8501
+INFO:2020-11-22 19:25:31,182:[Train] Epoch: 48 [batch: 2472/6188 (39.95%)] Average loss: 0.3098  Average accuracy: 0.8868 lr: 0.0000500000
+INFO:2020-11-22 19:25:32,019:[Valid] Average loss: 0.5548 Average accuracy: 0.8287
+INFO:2020-11-22 19:29:14,945:[Train] Epoch: 48 [batch: 3090/6188 (49.94%)] Average loss: 0.3121  Average accuracy: 0.8869 lr: 0.0000500000
+INFO:2020-11-22 19:29:15,773:[Valid] Average loss: 0.3937 Average accuracy: 0.8599
+INFO:2020-11-22 19:32:58,789:[Train] Epoch: 48 [batch: 3708/6188 (59.92%)] Average loss: 0.3137  Average accuracy: 0.8866 lr: 0.0000500000
+INFO:2020-11-22 19:32:59,740:[Valid] Average loss: 0.4161 Average accuracy: 0.8621
+INFO:2020-11-22 19:36:41,736:[Train] Epoch: 48 [batch: 4326/6188 (69.91%)] Average loss: 0.3134  Average accuracy: 0.8864 lr: 0.0000500000
+INFO:2020-11-22 19:36:42,558:[Valid] Average loss: 0.3927 Average accuracy: 0.8656
+INFO:2020-11-22 19:40:25,427:[Train] Epoch: 48 [batch: 4944/6188 (79.90%)] Average loss: 0.3117  Average accuracy: 0.8870 lr: 0.0000500000
+INFO:2020-11-22 19:40:26,262:[Valid] Average loss: 0.5056 Average accuracy: 0.8490
+INFO:2020-11-22 19:44:08,442:[Train] Epoch: 48 [batch: 5562/6188 (89.88%)] Average loss: 0.3076  Average accuracy: 0.8882 lr: 0.0000500000
+INFO:2020-11-22 19:44:09,259:[Valid] Average loss: 0.5304 Average accuracy: 0.8352
+INFO:2020-11-22 19:47:51,611:[Train] Epoch: 48 [batch: 6180/6188 (99.87%)] Average loss: 0.3116  Average accuracy: 0.8870 lr: 0.0000500000
+INFO:2020-11-22 19:47:52,427:[Valid] Average loss: 0.4896 Average accuracy: 0.8481
+INFO:2020-11-22 19:47:55,557:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 19:47:55,558:Updating...Current learning rate: [4.509914298352197e-05]
+
+INFO:2020-11-22 19:51:38,275:[Train] Epoch: 49 [batch: 618/6188 (09.99%)] Average loss: 0.3145  Average accuracy: 0.8863 lr: 0.0000450991
+INFO:2020-11-22 19:51:38,356:Starting over on the validation set.
+
+INFO:2020-11-22 19:51:39,409:[Valid] Average loss: 0.4307 Average accuracy: 0.8654
+INFO:2020-11-22 19:55:22,203:[Train] Epoch: 49 [batch: 1236/6188 (19.97%)] Average loss: 0.3091  Average accuracy: 0.8877 lr: 0.0000450991
+INFO:2020-11-22 19:55:23,024:[Valid] Average loss: 0.4001 Average accuracy: 0.8639
+INFO:2020-11-22 19:59:05,952:[Train] Epoch: 49 [batch: 1854/6188 (29.96%)] Average loss: 0.3098  Average accuracy: 0.8881 lr: 0.0000450991
+INFO:2020-11-22 19:59:06,784:[Valid] Average loss: 0.3912 Average accuracy: 0.8658
+INFO:2020-11-22 20:02:49,005:[Train] Epoch: 49 [batch: 2472/6188 (39.95%)] Average loss: 0.3120  Average accuracy: 0.8865 lr: 0.0000450991
+INFO:2020-11-22 20:02:49,827:[Valid] Average loss: 0.4587 Average accuracy: 0.8496
+INFO:2020-11-22 20:06:32,833:[Train] Epoch: 49 [batch: 3090/6188 (49.94%)] Average loss: 0.3089  Average accuracy: 0.8883 lr: 0.0000450991
+INFO:2020-11-22 20:06:33,670:[Valid] Average loss: 0.3993 Average accuracy: 0.8630
+INFO:2020-11-22 20:10:15,815:[Train] Epoch: 49 [batch: 3708/6188 (59.92%)] Average loss: 0.3111  Average accuracy: 0.8870 lr: 0.0000450991
+INFO:2020-11-22 20:10:16,636:[Valid] Average loss: 0.4202 Average accuracy: 0.8583
+INFO:2020-11-22 20:13:59,174:[Train] Epoch: 49 [batch: 4326/6188 (69.91%)] Average loss: 0.3135  Average accuracy: 0.8862 lr: 0.0000450991
+INFO:2020-11-22 20:14:00,003:[Valid] Average loss: 0.5542 Average accuracy: 0.8292
+INFO:2020-11-22 20:17:43,174:[Train] Epoch: 49 [batch: 4944/6188 (79.90%)] Average loss: 0.3097  Average accuracy: 0.8877 lr: 0.0000450991
+INFO:2020-11-22 20:17:43,996:[Valid] Average loss: 0.4949 Average accuracy: 0.8442
+INFO:2020-11-22 20:21:26,622:[Train] Epoch: 49 [batch: 5562/6188 (89.88%)] Average loss: 0.3101  Average accuracy: 0.8872 lr: 0.0000450991
+INFO:2020-11-22 20:21:27,446:[Valid] Average loss: 0.4650 Average accuracy: 0.8407
+INFO:2020-11-22 20:25:10,022:[Train] Epoch: 49 [batch: 6180/6188 (99.87%)] Average loss: 0.3138  Average accuracy: 0.8863 lr: 0.0000450991
+INFO:2020-11-22 20:25:10,864:[Valid] Average loss: 0.5020 Average accuracy: 0.8517
+INFO:2020-11-22 20:25:13,964:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 20:25:13,965:Updating...Current learning rate: [4.0245483899193595e-05]
+
+INFO:2020-11-22 20:28:56,526:[Train] Epoch: 50 [batch: 618/6188 (09.99%)] Average loss: 0.3108  Average accuracy: 0.8877 lr: 0.0000402455
+INFO:2020-11-22 20:28:56,597:Starting over on the validation set.
+
+INFO:2020-11-22 20:28:57,631:[Valid] Average loss: 0.4162 Average accuracy: 0.8626
+INFO:2020-11-22 20:32:40,931:[Train] Epoch: 50 [batch: 1236/6188 (19.97%)] Average loss: 0.3127  Average accuracy: 0.8861 lr: 0.0000402455
+INFO:2020-11-22 20:32:41,752:[Valid] Average loss: 0.4587 Average accuracy: 0.8672
+INFO:2020-11-22 20:36:24,195:[Train] Epoch: 50 [batch: 1854/6188 (29.96%)] Average loss: 0.3131  Average accuracy: 0.8866 lr: 0.0000402455
+INFO:2020-11-22 20:36:24,996:[Valid] Average loss: 0.4343 Average accuracy: 0.8524
+INFO:2020-11-22 20:40:07,448:[Train] Epoch: 50 [batch: 2472/6188 (39.95%)] Average loss: 0.3080  Average accuracy: 0.8880 lr: 0.0000402455
+INFO:2020-11-22 20:40:08,258:[Valid] Average loss: 0.4723 Average accuracy: 0.8513
+INFO:2020-11-22 20:43:50,660:[Train] Epoch: 50 [batch: 3090/6188 (49.94%)] Average loss: 0.3104  Average accuracy: 0.8876 lr: 0.0000402455
+INFO:2020-11-22 20:43:51,470:[Valid] Average loss: 0.5121 Average accuracy: 0.8431
+INFO:2020-11-22 20:47:35,245:[Train] Epoch: 50 [batch: 3708/6188 (59.92%)] Average loss: 0.3110  Average accuracy: 0.8870 lr: 0.0000402455
+INFO:2020-11-22 20:47:36,060:[Valid] Average loss: 0.4460 Average accuracy: 0.8453
+INFO:2020-11-22 20:51:18,680:[Train] Epoch: 50 [batch: 4326/6188 (69.91%)] Average loss: 0.3092  Average accuracy: 0.8875 lr: 0.0000402455
+INFO:2020-11-22 20:51:19,501:[Valid] Average loss: 0.4584 Average accuracy: 0.8600
+INFO:2020-11-22 20:55:02,007:[Train] Epoch: 50 [batch: 4944/6188 (79.90%)] Average loss: 0.3097  Average accuracy: 0.8876 lr: 0.0000402455
+INFO:2020-11-22 20:55:02,813:[Valid] Average loss: 0.4275 Average accuracy: 0.8548
+INFO:2020-11-22 20:58:45,025:[Train] Epoch: 50 [batch: 5562/6188 (89.88%)] Average loss: 0.3137  Average accuracy: 0.8861 lr: 0.0000402455
+INFO:2020-11-22 20:58:45,845:[Valid] Average loss: 0.4414 Average accuracy: 0.8481
+INFO:2020-11-22 21:02:28,157:[Train] Epoch: 50 [batch: 6180/6188 (99.87%)] Average loss: 0.3117  Average accuracy: 0.8875 lr: 0.0000402455
+INFO:2020-11-22 21:02:28,958:[Valid] Average loss: 0.4441 Average accuracy: 0.8474
+INFO:2020-11-22 21:02:32,048:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 21:02:32,049:Updating...Current learning rate: [3.5485766137276894e-05]
+
+INFO:2020-11-22 21:06:14,339:[Train] Epoch: 51 [batch: 618/6188 (09.99%)] Average loss: 0.3058  Average accuracy: 0.8885 lr: 0.0000354858
+INFO:2020-11-22 21:06:14,423:Starting over on the validation set.
+
+INFO:2020-11-22 21:06:15,465:[Valid] Average loss: 0.4662 Average accuracy: 0.8514
+INFO:2020-11-22 21:09:57,839:[Train] Epoch: 51 [batch: 1236/6188 (19.97%)] Average loss: 0.3150  Average accuracy: 0.8859 lr: 0.0000354858
+INFO:2020-11-22 21:09:58,652:[Valid] Average loss: 0.4820 Average accuracy: 0.8390
+INFO:2020-11-22 21:13:41,020:[Train] Epoch: 51 [batch: 1854/6188 (29.96%)] Average loss: 0.3137  Average accuracy: 0.8861 lr: 0.0000354858
+INFO:2020-11-22 21:13:41,829:[Valid] Average loss: 0.4100 Average accuracy: 0.8606
+INFO:2020-11-22 21:17:24,763:[Train] Epoch: 51 [batch: 2472/6188 (39.95%)] Average loss: 0.3061  Average accuracy: 0.8891 lr: 0.0000354858
+INFO:2020-11-22 21:17:25,580:[Valid] Average loss: 0.4173 Average accuracy: 0.8586
+INFO:2020-11-22 21:21:08,709:[Train] Epoch: 51 [batch: 3090/6188 (49.94%)] Average loss: 0.3082  Average accuracy: 0.8885 lr: 0.0000354858
+INFO:2020-11-22 21:21:09,513:[Valid] Average loss: 0.4063 Average accuracy: 0.8692
+INFO:2020-11-22 21:24:51,900:[Train] Epoch: 51 [batch: 3708/6188 (59.92%)] Average loss: 0.3121  Average accuracy: 0.8870 lr: 0.0000354858
+INFO:2020-11-22 21:24:52,705:[Valid] Average loss: 0.5048 Average accuracy: 0.8448
+INFO:2020-11-22 21:28:35,025:[Train] Epoch: 51 [batch: 4326/6188 (69.91%)] Average loss: 0.3097  Average accuracy: 0.8875 lr: 0.0000354858
+INFO:2020-11-22 21:28:35,836:[Valid] Average loss: 0.4045 Average accuracy: 0.8690
+INFO:2020-11-22 21:32:18,197:[Train] Epoch: 51 [batch: 4944/6188 (79.90%)] Average loss: 0.3165  Average accuracy: 0.8851 lr: 0.0000354858
+INFO:2020-11-22 21:32:19,023:[Valid] Average loss: 0.4182 Average accuracy: 0.8577
+INFO:2020-11-22 21:36:01,238:[Train] Epoch: 51 [batch: 5562/6188 (89.88%)] Average loss: 0.3144  Average accuracy: 0.8861 lr: 0.0000354858
+INFO:2020-11-22 21:36:02,041:[Valid] Average loss: 0.5263 Average accuracy: 0.8422
+INFO:2020-11-22 21:39:44,664:[Train] Epoch: 51 [batch: 6180/6188 (99.87%)] Average loss: 0.3064  Average accuracy: 0.8886 lr: 0.0000354858
+INFO:2020-11-22 21:39:45,502:[Valid] Average loss: 0.4754 Average accuracy: 0.8406
+INFO:2020-11-22 21:39:48,586:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 21:39:48,586:Updating...Current learning rate: [3.086582838174551e-05]
+
+INFO:2020-11-22 21:43:31,682:[Train] Epoch: 52 [batch: 618/6188 (09.99%)] Average loss: 0.3120  Average accuracy: 0.8867 lr: 0.0000308658
+INFO:2020-11-22 21:43:31,761:Starting over on the validation set.
+
+INFO:2020-11-22 21:43:32,817:[Valid] Average loss: 0.3780 Average accuracy: 0.8693
+INFO:2020-11-22 21:47:15,532:[Train] Epoch: 52 [batch: 1236/6188 (19.97%)] Average loss: 0.3138  Average accuracy: 0.8861 lr: 0.0000308658
+INFO:2020-11-22 21:47:16,374:[Valid] Average loss: 0.4237 Average accuracy: 0.8502
+INFO:2020-11-22 21:50:59,386:[Train] Epoch: 52 [batch: 1854/6188 (29.96%)] Average loss: 0.3080  Average accuracy: 0.8879 lr: 0.0000308658
+INFO:2020-11-22 21:51:00,214:[Valid] Average loss: 0.3741 Average accuracy: 0.8692
+INFO:2020-11-22 21:54:43,764:[Train] Epoch: 52 [batch: 2472/6188 (39.95%)] Average loss: 0.3112  Average accuracy: 0.8871 lr: 0.0000308658
+INFO:2020-11-22 21:54:44,589:[Valid] Average loss: 0.6246 Average accuracy: 0.8278
+INFO:2020-11-22 21:58:27,697:[Train] Epoch: 52 [batch: 3090/6188 (49.94%)] Average loss: 0.3141  Average accuracy: 0.8866 lr: 0.0000308658
+INFO:2020-11-22 21:58:28,509:[Valid] Average loss: 0.4171 Average accuracy: 0.8622
+INFO:2020-11-22 22:02:11,059:[Train] Epoch: 52 [batch: 3708/6188 (59.92%)] Average loss: 0.3101  Average accuracy: 0.8880 lr: 0.0000308658
+INFO:2020-11-22 22:02:11,865:[Valid] Average loss: 0.4720 Average accuracy: 0.8532
+INFO:2020-11-22 22:05:54,698:[Train] Epoch: 52 [batch: 4326/6188 (69.91%)] Average loss: 0.3132  Average accuracy: 0.8866 lr: 0.0000308658
+INFO:2020-11-22 22:05:55,491:[Valid] Average loss: 0.4101 Average accuracy: 0.8578
+INFO:2020-11-22 22:09:38,565:[Train] Epoch: 52 [batch: 4944/6188 (79.90%)] Average loss: 0.3114  Average accuracy: 0.8868 lr: 0.0000308658
+INFO:2020-11-22 22:09:39,513:[Valid] Average loss: 0.3750 Average accuracy: 0.8728
+INFO:2020-11-22 22:13:22,291:[Train] Epoch: 52 [batch: 5562/6188 (89.88%)] Average loss: 0.3062  Average accuracy: 0.8886 lr: 0.0000308658
+INFO:2020-11-22 22:13:23,123:[Valid] Average loss: 0.4921 Average accuracy: 0.8406
+INFO:2020-11-22 22:17:06,378:[Train] Epoch: 52 [batch: 6180/6188 (99.87%)] Average loss: 0.3092  Average accuracy: 0.8878 lr: 0.0000308658
+INFO:2020-11-22 22:17:07,176:[Valid] Average loss: 0.5461 Average accuracy: 0.8297
+INFO:2020-11-22 22:17:10,303:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 22:17:10,304:Updating...Current learning rate: [2.6430163158700115e-05]
+
+INFO:2020-11-22 22:20:52,701:[Train] Epoch: 53 [batch: 618/6188 (09.99%)] Average loss: 0.3087  Average accuracy: 0.8877 lr: 0.0000264302
+INFO:2020-11-22 22:20:52,793:Starting over on the validation set.
+
+INFO:2020-11-22 22:20:53,828:[Valid] Average loss: 0.4467 Average accuracy: 0.8396
+INFO:2020-11-22 22:24:36,140:[Train] Epoch: 53 [batch: 1236/6188 (19.97%)] Average loss: 0.3083  Average accuracy: 0.8877 lr: 0.0000264302
+INFO:2020-11-22 22:24:36,950:[Valid] Average loss: 0.5119 Average accuracy: 0.8485
+INFO:2020-11-22 22:28:19,529:[Train] Epoch: 53 [batch: 1854/6188 (29.96%)] Average loss: 0.3108  Average accuracy: 0.8874 lr: 0.0000264302
+INFO:2020-11-22 22:28:20,346:[Valid] Average loss: 0.4134 Average accuracy: 0.8655
+INFO:2020-11-22 22:32:02,646:[Train] Epoch: 53 [batch: 2472/6188 (39.95%)] Average loss: 0.3141  Average accuracy: 0.8865 lr: 0.0000264302
+INFO:2020-11-22 22:32:03,473:[Valid] Average loss: 0.5090 Average accuracy: 0.8400
+INFO:2020-11-22 22:35:46,219:[Train] Epoch: 53 [batch: 3090/6188 (49.94%)] Average loss: 0.3092  Average accuracy: 0.8881 lr: 0.0000264302
+INFO:2020-11-22 22:35:47,044:[Valid] Average loss: 0.4324 Average accuracy: 0.8563
+INFO:2020-11-22 22:39:29,986:[Train] Epoch: 53 [batch: 3708/6188 (59.92%)] Average loss: 0.3105  Average accuracy: 0.8871 lr: 0.0000264302
+INFO:2020-11-22 22:39:30,796:[Valid] Average loss: 0.4502 Average accuracy: 0.8517
+INFO:2020-11-22 22:43:13,509:[Train] Epoch: 53 [batch: 4326/6188 (69.91%)] Average loss: 0.3116  Average accuracy: 0.8870 lr: 0.0000264302
+INFO:2020-11-22 22:43:14,313:[Valid] Average loss: 0.3681 Average accuracy: 0.8754
+INFO:2020-11-22 22:46:57,604:[Train] Epoch: 53 [batch: 4944/6188 (79.90%)] Average loss: 0.3141  Average accuracy: 0.8862 lr: 0.0000264302
+INFO:2020-11-22 22:46:58,423:[Valid] Average loss: 0.4643 Average accuracy: 0.8557
+INFO:2020-11-22 22:50:41,333:[Train] Epoch: 53 [batch: 5562/6188 (89.88%)] Average loss: 0.3088  Average accuracy: 0.8879 lr: 0.0000264302
+INFO:2020-11-22 22:50:42,136:[Valid] Average loss: 0.3779 Average accuracy: 0.8659
+INFO:2020-11-22 22:54:25,645:[Train] Epoch: 53 [batch: 6180/6188 (99.87%)] Average loss: 0.3098  Average accuracy: 0.8870 lr: 0.0000264302
+INFO:2020-11-22 22:54:26,454:[Valid] Average loss: 0.5393 Average accuracy: 0.8342
+INFO:2020-11-22 22:54:29,577:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 22:54:29,577:Updating...Current learning rate: [2.2221488349019903e-05]
+
+INFO:2020-11-22 22:58:13,381:[Train] Epoch: 54 [batch: 618/6188 (09.99%)] Average loss: 0.3071  Average accuracy: 0.8885 lr: 0.0000222215
+INFO:2020-11-22 22:58:13,469:Starting over on the validation set.
+
+INFO:2020-11-22 22:58:14,501:[Valid] Average loss: 0.5013 Average accuracy: 0.8388
+INFO:2020-11-22 23:01:57,178:[Train] Epoch: 54 [batch: 1236/6188 (19.97%)] Average loss: 0.3107  Average accuracy: 0.8872 lr: 0.0000222215
+INFO:2020-11-22 23:01:57,993:[Valid] Average loss: 0.4346 Average accuracy: 0.8570
+INFO:2020-11-22 23:05:41,123:[Train] Epoch: 54 [batch: 1854/6188 (29.96%)] Average loss: 0.3102  Average accuracy: 0.8872 lr: 0.0000222215
+INFO:2020-11-22 23:05:41,936:[Valid] Average loss: 0.4986 Average accuracy: 0.8499
+INFO:2020-11-22 23:09:24,789:[Train] Epoch: 54 [batch: 2472/6188 (39.95%)] Average loss: 0.3121  Average accuracy: 0.8873 lr: 0.0000222215
+INFO:2020-11-22 23:09:25,639:[Valid] Average loss: 0.4735 Average accuracy: 0.8481
+INFO:2020-11-22 23:13:08,504:[Train] Epoch: 54 [batch: 3090/6188 (49.94%)] Average loss: 0.3139  Average accuracy: 0.8858 lr: 0.0000222215
+INFO:2020-11-22 23:13:09,335:[Valid] Average loss: 0.4373 Average accuracy: 0.8519
+INFO:2020-11-22 23:16:52,336:[Train] Epoch: 54 [batch: 3708/6188 (59.92%)] Average loss: 0.3131  Average accuracy: 0.8863 lr: 0.0000222215
+INFO:2020-11-22 23:16:53,155:[Valid] Average loss: 0.3934 Average accuracy: 0.8795
+INFO:2020-11-22 23:20:35,702:[Train] Epoch: 54 [batch: 4326/6188 (69.91%)] Average loss: 0.3061  Average accuracy: 0.8883 lr: 0.0000222215
+INFO:2020-11-22 23:20:36,523:[Valid] Average loss: 0.3954 Average accuracy: 0.8635
+INFO:2020-11-22 23:24:19,622:[Train] Epoch: 54 [batch: 4944/6188 (79.90%)] Average loss: 0.3114  Average accuracy: 0.8870 lr: 0.0000222215
+INFO:2020-11-22 23:24:20,451:[Valid] Average loss: 0.5116 Average accuracy: 0.8481
+INFO:2020-11-22 23:28:03,692:[Train] Epoch: 54 [batch: 5562/6188 (89.88%)] Average loss: 0.3134  Average accuracy: 0.8859 lr: 0.0000222215
+INFO:2020-11-22 23:28:04,515:[Valid] Average loss: 0.4166 Average accuracy: 0.8540
+INFO:2020-11-22 23:31:46,870:[Train] Epoch: 54 [batch: 6180/6188 (99.87%)] Average loss: 0.3073  Average accuracy: 0.8892 lr: 0.0000222215
+INFO:2020-11-22 23:31:47,689:[Valid] Average loss: 0.4494 Average accuracy: 0.8428
+INFO:2020-11-22 23:31:50,819:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-22 23:31:50,819:Updating...Current learning rate: [1.8280335791817733e-05]
+
+INFO:2020-11-22 23:35:34,251:[Train] Epoch: 55 [batch: 618/6188 (09.99%)] Average loss: 0.3145  Average accuracy: 0.8860 lr: 0.0000182803
+INFO:2020-11-22 23:35:34,336:Starting over on the validation set.
+
+INFO:2020-11-22 23:35:35,396:[Valid] Average loss: 0.5149 Average accuracy: 0.8344
+INFO:2020-11-22 23:39:18,307:[Train] Epoch: 55 [batch: 1236/6188 (19.97%)] Average loss: 0.3100  Average accuracy: 0.8876 lr: 0.0000182803
+INFO:2020-11-22 23:39:19,116:[Valid] Average loss: 0.5717 Average accuracy: 0.8341
+INFO:2020-11-22 23:43:02,051:[Train] Epoch: 55 [batch: 1854/6188 (29.96%)] Average loss: 0.3082  Average accuracy: 0.8878 lr: 0.0000182803
+INFO:2020-11-22 23:43:02,872:[Valid] Average loss: 0.4561 Average accuracy: 0.8402
+INFO:2020-11-22 23:46:45,666:[Train] Epoch: 55 [batch: 2472/6188 (39.95%)] Average loss: 0.3145  Average accuracy: 0.8860 lr: 0.0000182803
+INFO:2020-11-22 23:46:46,493:[Valid] Average loss: 0.4013 Average accuracy: 0.8704
+INFO:2020-11-22 23:50:29,784:[Train] Epoch: 55 [batch: 3090/6188 (49.94%)] Average loss: 0.3076  Average accuracy: 0.8882 lr: 0.0000182803
+INFO:2020-11-22 23:50:30,610:[Valid] Average loss: 0.3765 Average accuracy: 0.8720
+INFO:2020-11-22 23:54:13,472:[Train] Epoch: 55 [batch: 3708/6188 (59.92%)] Average loss: 0.3144  Average accuracy: 0.8858 lr: 0.0000182803
+INFO:2020-11-22 23:54:14,297:[Valid] Average loss: 0.4503 Average accuracy: 0.8423
+INFO:2020-11-22 23:57:57,439:[Train] Epoch: 55 [batch: 4326/6188 (69.91%)] Average loss: 0.3068  Average accuracy: 0.8884 lr: 0.0000182803
+INFO:2020-11-22 23:57:58,281:[Valid] Average loss: 0.3744 Average accuracy: 0.8687
+INFO:2020-11-23 00:01:41,006:[Train] Epoch: 55 [batch: 4944/6188 (79.90%)] Average loss: 0.3094  Average accuracy: 0.8875 lr: 0.0000182803
+INFO:2020-11-23 00:01:41,822:[Valid] Average loss: 0.4476 Average accuracy: 0.8562
+INFO:2020-11-23 00:05:24,438:[Train] Epoch: 55 [batch: 5562/6188 (89.88%)] Average loss: 0.3157  Average accuracy: 0.8856 lr: 0.0000182803
+INFO:2020-11-23 00:05:25,249:[Valid] Average loss: 0.3616 Average accuracy: 0.8796
+INFO:2020-11-23 00:09:07,386:[Train] Epoch: 55 [batch: 6180/6188 (99.87%)] Average loss: 0.3075  Average accuracy: 0.8885 lr: 0.0000182803
+INFO:2020-11-23 00:09:08,216:[Valid] Average loss: 0.5568 Average accuracy: 0.8358
+INFO:2020-11-23 00:09:11,293:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 00:09:11,294:Updating...Current learning rate: [1.4644660940672627e-05]
+
+INFO:2020-11-23 00:12:53,902:[Train] Epoch: 56 [batch: 618/6188 (09.99%)] Average loss: 0.3103  Average accuracy: 0.8873 lr: 0.0000146447
+INFO:2020-11-23 00:12:53,984:Starting over on the validation set.
+
+INFO:2020-11-23 00:12:55,017:[Valid] Average loss: 0.4845 Average accuracy: 0.8482
+INFO:2020-11-23 00:16:37,562:[Train] Epoch: 56 [batch: 1236/6188 (19.97%)] Average loss: 0.3129  Average accuracy: 0.8867 lr: 0.0000146447
+INFO:2020-11-23 00:16:38,386:[Valid] Average loss: 0.3651 Average accuracy: 0.8740
+INFO:2020-11-23 00:20:20,304:[Train] Epoch: 56 [batch: 1854/6188 (29.96%)] Average loss: 0.3083  Average accuracy: 0.8881 lr: 0.0000146447
+INFO:2020-11-23 00:20:21,115:[Valid] Average loss: 0.4945 Average accuracy: 0.8458
+INFO:2020-11-23 00:24:03,830:[Train] Epoch: 56 [batch: 2472/6188 (39.95%)] Average loss: 0.3118  Average accuracy: 0.8866 lr: 0.0000146447
+INFO:2020-11-23 00:24:04,788:[Valid] Average loss: 0.4173 Average accuracy: 0.8530
+INFO:2020-11-23 00:27:47,505:[Train] Epoch: 56 [batch: 3090/6188 (49.94%)] Average loss: 0.3100  Average accuracy: 0.8877 lr: 0.0000146447
+INFO:2020-11-23 00:27:48,329:[Valid] Average loss: 0.5620 Average accuracy: 0.8281
+INFO:2020-11-23 00:31:31,282:[Train] Epoch: 56 [batch: 3708/6188 (59.92%)] Average loss: 0.3083  Average accuracy: 0.8881 lr: 0.0000146447
+INFO:2020-11-23 00:31:32,103:[Valid] Average loss: 0.4749 Average accuracy: 0.8532
+INFO:2020-11-23 00:35:14,480:[Train] Epoch: 56 [batch: 4326/6188 (69.91%)] Average loss: 0.3117  Average accuracy: 0.8871 lr: 0.0000146447
+INFO:2020-11-23 00:35:15,305:[Valid] Average loss: 0.3913 Average accuracy: 0.8711
+INFO:2020-11-23 00:38:57,928:[Train] Epoch: 56 [batch: 4944/6188 (79.90%)] Average loss: 0.3106  Average accuracy: 0.8875 lr: 0.0000146447
+INFO:2020-11-23 00:38:58,760:[Valid] Average loss: 0.4051 Average accuracy: 0.8631
+INFO:2020-11-23 00:42:40,874:[Train] Epoch: 56 [batch: 5562/6188 (89.88%)] Average loss: 0.3156  Average accuracy: 0.8859 lr: 0.0000146447
+INFO:2020-11-23 00:42:41,705:[Valid] Average loss: 0.5367 Average accuracy: 0.8301
+INFO:2020-11-23 00:46:24,092:[Train] Epoch: 56 [batch: 6180/6188 (99.87%)] Average loss: 0.3105  Average accuracy: 0.8873 lr: 0.0000146447
+INFO:2020-11-23 00:46:24,916:[Valid] Average loss: 0.3803 Average accuracy: 0.8664
+INFO:2020-11-23 00:46:27,994:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 00:46:27,995:Updating...Current learning rate: [1.134947733186315e-05]
+
+INFO:2020-11-23 00:50:10,913:[Train] Epoch: 57 [batch: 618/6188 (09.99%)] Average loss: 0.3167  Average accuracy: 0.8854 lr: 0.0000113495
+INFO:2020-11-23 00:50:11,007:Starting over on the validation set.
+
+INFO:2020-11-23 00:50:12,050:[Valid] Average loss: 0.4877 Average accuracy: 0.8359
+INFO:2020-11-23 00:53:54,639:[Train] Epoch: 57 [batch: 1236/6188 (19.97%)] Average loss: 0.3076  Average accuracy: 0.8882 lr: 0.0000113495
+INFO:2020-11-23 00:53:55,469:[Valid] Average loss: 0.4341 Average accuracy: 0.8619
+INFO:2020-11-23 00:57:37,390:[Train] Epoch: 57 [batch: 1854/6188 (29.96%)] Average loss: 0.3118  Average accuracy: 0.8868 lr: 0.0000113495
+INFO:2020-11-23 00:57:38,205:[Valid] Average loss: 0.3571 Average accuracy: 0.8737
+INFO:2020-11-23 01:01:21,689:[Train] Epoch: 57 [batch: 2472/6188 (39.95%)] Average loss: 0.3114  Average accuracy: 0.8876 lr: 0.0000113495
+INFO:2020-11-23 01:01:22,509:[Valid] Average loss: 0.3951 Average accuracy: 0.8684
+INFO:2020-11-23 01:05:04,657:[Train] Epoch: 57 [batch: 3090/6188 (49.94%)] Average loss: 0.3110  Average accuracy: 0.8874 lr: 0.0000113495
+INFO:2020-11-23 01:05:05,485:[Valid] Average loss: 0.4887 Average accuracy: 0.8425
+INFO:2020-11-23 01:08:48,125:[Train] Epoch: 57 [batch: 3708/6188 (59.92%)] Average loss: 0.3093  Average accuracy: 0.8878 lr: 0.0000113495
+INFO:2020-11-23 01:08:48,936:[Valid] Average loss: 0.4379 Average accuracy: 0.8630
+INFO:2020-11-23 01:12:31,773:[Train] Epoch: 57 [batch: 4326/6188 (69.91%)] Average loss: 0.3130  Average accuracy: 0.8864 lr: 0.0000113495
+INFO:2020-11-23 01:12:32,588:[Valid] Average loss: 0.5573 Average accuracy: 0.8301
+INFO:2020-11-23 01:16:15,150:[Train] Epoch: 57 [batch: 4944/6188 (79.90%)] Average loss: 0.3050  Average accuracy: 0.8889 lr: 0.0000113495
+INFO:2020-11-23 01:16:15,977:[Valid] Average loss: 0.4169 Average accuracy: 0.8560
+INFO:2020-11-23 01:19:58,997:[Train] Epoch: 57 [batch: 5562/6188 (89.88%)] Average loss: 0.3110  Average accuracy: 0.8871 lr: 0.0000113495
+INFO:2020-11-23 01:19:59,801:[Valid] Average loss: 0.4267 Average accuracy: 0.8585
+INFO:2020-11-23 01:23:41,642:[Train] Epoch: 57 [batch: 6180/6188 (99.87%)] Average loss: 0.3122  Average accuracy: 0.8864 lr: 0.0000113495
+INFO:2020-11-23 01:23:42,452:[Valid] Average loss: 0.5086 Average accuracy: 0.8438
+INFO:2020-11-23 01:23:45,557:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 01:23:45,557:Updating...Current learning rate: [8.426519384872733e-06]
+
+INFO:2020-11-23 01:27:27,977:[Train] Epoch: 58 [batch: 618/6188 (09.99%)] Average loss: 0.3054  Average accuracy: 0.8888 lr: 0.0000084265
+INFO:2020-11-23 01:27:28,060:Starting over on the validation set.
+
+INFO:2020-11-23 01:27:29,091:[Valid] Average loss: 0.5073 Average accuracy: 0.8486
+INFO:2020-11-23 01:31:10,937:[Train] Epoch: 58 [batch: 1236/6188 (19.97%)] Average loss: 0.3077  Average accuracy: 0.8878 lr: 0.0000084265
+INFO:2020-11-23 01:31:11,752:[Valid] Average loss: 0.4079 Average accuracy: 0.8659
+INFO:2020-11-23 01:34:54,809:[Train] Epoch: 58 [batch: 1854/6188 (29.96%)] Average loss: 0.3112  Average accuracy: 0.8878 lr: 0.0000084265
+INFO:2020-11-23 01:34:55,619:[Valid] Average loss: 0.4503 Average accuracy: 0.8544
+INFO:2020-11-23 01:38:38,000:[Train] Epoch: 58 [batch: 2472/6188 (39.95%)] Average loss: 0.3075  Average accuracy: 0.8877 lr: 0.0000084265
+INFO:2020-11-23 01:38:38,828:[Valid] Average loss: 0.3607 Average accuracy: 0.8755
+INFO:2020-11-23 01:42:21,207:[Train] Epoch: 58 [batch: 3090/6188 (49.94%)] Average loss: 0.3175  Average accuracy: 0.8848 lr: 0.0000084265
+INFO:2020-11-23 01:42:22,061:[Valid] Average loss: 0.5075 Average accuracy: 0.8405
+INFO:2020-11-23 01:46:04,743:[Train] Epoch: 58 [batch: 3708/6188 (59.92%)] Average loss: 0.3113  Average accuracy: 0.8866 lr: 0.0000084265
+INFO:2020-11-23 01:46:05,563:[Valid] Average loss: 0.4516 Average accuracy: 0.8549
+INFO:2020-11-23 01:49:47,334:[Train] Epoch: 58 [batch: 4326/6188 (69.91%)] Average loss: 0.3046  Average accuracy: 0.8897 lr: 0.0000084265
+INFO:2020-11-23 01:49:48,138:[Valid] Average loss: 0.4290 Average accuracy: 0.8556
+INFO:2020-11-23 01:53:30,405:[Train] Epoch: 58 [batch: 4944/6188 (79.90%)] Average loss: 0.3083  Average accuracy: 0.8875 lr: 0.0000084265
+INFO:2020-11-23 01:53:31,205:[Valid] Average loss: 0.4147 Average accuracy: 0.8586
+INFO:2020-11-23 01:57:13,021:[Train] Epoch: 58 [batch: 5562/6188 (89.88%)] Average loss: 0.3124  Average accuracy: 0.8870 lr: 0.0000084265
+INFO:2020-11-23 01:57:13,825:[Valid] Average loss: 0.4819 Average accuracy: 0.8435
+INFO:2020-11-23 02:00:56,563:[Train] Epoch: 58 [batch: 6180/6188 (99.87%)] Average loss: 0.3123  Average accuracy: 0.8867 lr: 0.0000084265
+INFO:2020-11-23 02:00:57,374:[Valid] Average loss: 0.4943 Average accuracy: 0.8373
+INFO:2020-11-23 02:01:00,443:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 02:01:00,444:Updating...Current learning rate: [5.903936782582253e-06]
+
+INFO:2020-11-23 02:04:42,708:[Train] Epoch: 59 [batch: 618/6188 (09.99%)] Average loss: 0.3099  Average accuracy: 0.8874 lr: 0.0000059039
+INFO:2020-11-23 02:04:42,785:Starting over on the validation set.
+
+INFO:2020-11-23 02:04:43,830:[Valid] Average loss: 0.4334 Average accuracy: 0.8584
+INFO:2020-11-23 02:08:26,561:[Train] Epoch: 59 [batch: 1236/6188 (19.97%)] Average loss: 0.3103  Average accuracy: 0.8872 lr: 0.0000059039
+INFO:2020-11-23 02:08:27,369:[Valid] Average loss: 0.3806 Average accuracy: 0.8788
+INFO:2020-11-23 02:12:09,421:[Train] Epoch: 59 [batch: 1854/6188 (29.96%)] Average loss: 0.3133  Average accuracy: 0.8862 lr: 0.0000059039
+INFO:2020-11-23 02:12:10,230:[Valid] Average loss: 0.4383 Average accuracy: 0.8532
+INFO:2020-11-23 02:15:52,586:[Train] Epoch: 59 [batch: 2472/6188 (39.95%)] Average loss: 0.3113  Average accuracy: 0.8874 lr: 0.0000059039
+INFO:2020-11-23 02:15:53,413:[Valid] Average loss: 0.4592 Average accuracy: 0.8675
+INFO:2020-11-23 02:19:36,194:[Train] Epoch: 59 [batch: 3090/6188 (49.94%)] Average loss: 0.3122  Average accuracy: 0.8873 lr: 0.0000059039
+INFO:2020-11-23 02:19:37,014:[Valid] Average loss: 0.4764 Average accuracy: 0.8401
+INFO:2020-11-23 02:23:19,503:[Train] Epoch: 59 [batch: 3708/6188 (59.92%)] Average loss: 0.3116  Average accuracy: 0.8874 lr: 0.0000059039
+INFO:2020-11-23 02:23:20,332:[Valid] Average loss: 0.4555 Average accuracy: 0.8483
+INFO:2020-11-23 02:27:03,812:[Train] Epoch: 59 [batch: 4326/6188 (69.91%)] Average loss: 0.3081  Average accuracy: 0.8882 lr: 0.0000059039
+INFO:2020-11-23 02:27:04,624:[Valid] Average loss: 0.4902 Average accuracy: 0.8514
+INFO:2020-11-23 02:30:47,497:[Train] Epoch: 59 [batch: 4944/6188 (79.90%)] Average loss: 0.3150  Average accuracy: 0.8855 lr: 0.0000059039
+INFO:2020-11-23 02:30:48,305:[Valid] Average loss: 0.4534 Average accuracy: 0.8412
+INFO:2020-11-23 02:34:30,653:[Train] Epoch: 59 [batch: 5562/6188 (89.88%)] Average loss: 0.3046  Average accuracy: 0.8892 lr: 0.0000059039
+INFO:2020-11-23 02:34:31,459:[Valid] Average loss: 0.5030 Average accuracy: 0.8403
+INFO:2020-11-23 02:38:13,405:[Train] Epoch: 59 [batch: 6180/6188 (99.87%)] Average loss: 0.3066  Average accuracy: 0.8886 lr: 0.0000059039
+INFO:2020-11-23 02:38:14,209:[Valid] Average loss: 0.4175 Average accuracy: 0.8543
+INFO:2020-11-23 02:38:17,264:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 02:38:17,265:Updating...Current learning rate: [3.8060233744356633e-06]
+
+INFO:2020-11-23 02:41:59,607:[Train] Epoch: 60 [batch: 618/6188 (09.99%)] Average loss: 0.3084  Average accuracy: 0.8885 lr: 0.0000038060
+INFO:2020-11-23 02:41:59,690:Starting over on the validation set.
+
+INFO:2020-11-23 02:42:00,740:[Valid] Average loss: 0.3510 Average accuracy: 0.8771
+INFO:2020-11-23 02:45:42,468:[Train] Epoch: 60 [batch: 1236/6188 (19.97%)] Average loss: 0.3164  Average accuracy: 0.8854 lr: 0.0000038060
+INFO:2020-11-23 02:45:43,269:[Valid] Average loss: 0.4462 Average accuracy: 0.8563
+INFO:2020-11-23 02:49:25,681:[Train] Epoch: 60 [batch: 1854/6188 (29.96%)] Average loss: 0.3106  Average accuracy: 0.8876 lr: 0.0000038060
+INFO:2020-11-23 02:49:26,494:[Valid] Average loss: 0.4861 Average accuracy: 0.8527
+INFO:2020-11-23 02:53:08,934:[Train] Epoch: 60 [batch: 2472/6188 (39.95%)] Average loss: 0.3172  Average accuracy: 0.8856 lr: 0.0000038060
+INFO:2020-11-23 02:53:09,744:[Valid] Average loss: 0.3977 Average accuracy: 0.8682
+INFO:2020-11-23 02:56:52,726:[Train] Epoch: 60 [batch: 3090/6188 (49.94%)] Average loss: 0.3069  Average accuracy: 0.8884 lr: 0.0000038060
+INFO:2020-11-23 02:56:53,544:[Valid] Average loss: 0.4613 Average accuracy: 0.8401
+INFO:2020-11-23 03:00:36,431:[Train] Epoch: 60 [batch: 3708/6188 (59.92%)] Average loss: 0.3132  Average accuracy: 0.8871 lr: 0.0000038060
+INFO:2020-11-23 03:00:37,250:[Valid] Average loss: 0.4560 Average accuracy: 0.8474
+INFO:2020-11-23 03:04:19,916:[Train] Epoch: 60 [batch: 4326/6188 (69.91%)] Average loss: 0.3054  Average accuracy: 0.8889 lr: 0.0000038060
+INFO:2020-11-23 03:04:20,731:[Valid] Average loss: 0.5086 Average accuracy: 0.8375
+INFO:2020-11-23 03:08:03,472:[Train] Epoch: 60 [batch: 4944/6188 (79.90%)] Average loss: 0.3065  Average accuracy: 0.8884 lr: 0.0000038060
+INFO:2020-11-23 03:08:04,282:[Valid] Average loss: 0.4515 Average accuracy: 0.8572
+INFO:2020-11-23 03:11:46,361:[Train] Epoch: 60 [batch: 5562/6188 (89.88%)] Average loss: 0.3102  Average accuracy: 0.8876 lr: 0.0000038060
+INFO:2020-11-23 03:11:47,167:[Valid] Average loss: 0.4824 Average accuracy: 0.8316
+INFO:2020-11-23 03:15:29,603:[Train] Epoch: 60 [batch: 6180/6188 (99.87%)] Average loss: 0.3128  Average accuracy: 0.8862 lr: 0.0000038060
+INFO:2020-11-23 03:15:30,414:[Valid] Average loss: 0.4680 Average accuracy: 0.8649
+INFO:2020-11-23 03:15:33,517:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 03:15:33,518:Updating...Current learning rate: [2.152983213389559e-06]
+
+INFO:2020-11-23 03:19:15,565:[Train] Epoch: 61 [batch: 618/6188 (09.99%)] Average loss: 0.3069  Average accuracy: 0.8889 lr: 0.0000021530
+INFO:2020-11-23 03:19:15,647:Starting over on the validation set.
+
+INFO:2020-11-23 03:19:16,674:[Valid] Average loss: 0.4623 Average accuracy: 0.8539
+INFO:2020-11-23 03:22:58,643:[Train] Epoch: 61 [batch: 1236/6188 (19.97%)] Average loss: 0.3082  Average accuracy: 0.8876 lr: 0.0000021530
+INFO:2020-11-23 03:22:59,456:[Valid] Average loss: 0.4861 Average accuracy: 0.8402
+INFO:2020-11-23 03:26:42,303:[Train] Epoch: 61 [batch: 1854/6188 (29.96%)] Average loss: 0.3088  Average accuracy: 0.8881 lr: 0.0000021530
+INFO:2020-11-23 03:26:43,115:[Valid] Average loss: 0.4501 Average accuracy: 0.8591
+INFO:2020-11-23 03:30:25,487:[Train] Epoch: 61 [batch: 2472/6188 (39.95%)] Average loss: 0.3159  Average accuracy: 0.8860 lr: 0.0000021530
+INFO:2020-11-23 03:30:26,307:[Valid] Average loss: 0.4173 Average accuracy: 0.8624
+INFO:2020-11-23 03:34:08,656:[Train] Epoch: 61 [batch: 3090/6188 (49.94%)] Average loss: 0.3143  Average accuracy: 0.8861 lr: 0.0000021530
+INFO:2020-11-23 03:34:09,486:[Valid] Average loss: 0.4075 Average accuracy: 0.8667
+INFO:2020-11-23 03:37:51,410:[Train] Epoch: 61 [batch: 3708/6188 (59.92%)] Average loss: 0.3091  Average accuracy: 0.8874 lr: 0.0000021530
+INFO:2020-11-23 03:37:52,220:[Valid] Average loss: 0.4480 Average accuracy: 0.8560
+INFO:2020-11-23 03:41:34,395:[Train] Epoch: 61 [batch: 4326/6188 (69.91%)] Average loss: 0.3129  Average accuracy: 0.8864 lr: 0.0000021530
+INFO:2020-11-23 03:41:35,226:[Valid] Average loss: 0.4601 Average accuracy: 0.8428
+INFO:2020-11-23 03:45:17,272:[Train] Epoch: 61 [batch: 4944/6188 (79.90%)] Average loss: 0.3060  Average accuracy: 0.8887 lr: 0.0000021530
+INFO:2020-11-23 03:45:18,083:[Valid] Average loss: 0.4288 Average accuracy: 0.8555
+INFO:2020-11-23 03:49:00,510:[Train] Epoch: 61 [batch: 5562/6188 (89.88%)] Average loss: 0.3122  Average accuracy: 0.8869 lr: 0.0000021530
+INFO:2020-11-23 03:49:01,331:[Valid] Average loss: 0.4636 Average accuracy: 0.8497
+INFO:2020-11-23 03:52:44,523:[Train] Epoch: 61 [batch: 6180/6188 (99.87%)] Average loss: 0.3076  Average accuracy: 0.8881 lr: 0.0000021530
+INFO:2020-11-23 03:52:45,350:[Valid] Average loss: 0.4836 Average accuracy: 0.8474
+INFO:2020-11-23 03:52:48,454:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 03:52:48,454:Updating...Current learning rate: [9.607359798384785e-07]
+
+INFO:2020-11-23 03:56:31,910:[Train] Epoch: 62 [batch: 618/6188 (09.99%)] Average loss: 0.3121  Average accuracy: 0.8868 lr: 0.0000009607
+INFO:2020-11-23 03:56:32,006:Starting over on the validation set.
+
+INFO:2020-11-23 03:56:33,083:[Valid] Average loss: 0.4326 Average accuracy: 0.8539
+INFO:2020-11-23 04:00:15,468:[Train] Epoch: 62 [batch: 1236/6188 (19.97%)] Average loss: 0.3128  Average accuracy: 0.8873 lr: 0.0000009607
+INFO:2020-11-23 04:00:16,279:[Valid] Average loss: 0.4364 Average accuracy: 0.8646
+INFO:2020-11-23 04:03:58,478:[Train] Epoch: 62 [batch: 1854/6188 (29.96%)] Average loss: 0.3101  Average accuracy: 0.8873 lr: 0.0000009607
+INFO:2020-11-23 04:03:59,295:[Valid] Average loss: 0.4446 Average accuracy: 0.8596
+INFO:2020-11-23 04:07:41,777:[Train] Epoch: 62 [batch: 2472/6188 (39.95%)] Average loss: 0.3085  Average accuracy: 0.8875 lr: 0.0000009607
+INFO:2020-11-23 04:07:42,607:[Valid] Average loss: 0.5129 Average accuracy: 0.8282
+INFO:2020-11-23 04:11:25,594:[Train] Epoch: 62 [batch: 3090/6188 (49.94%)] Average loss: 0.3140  Average accuracy: 0.8858 lr: 0.0000009607
+INFO:2020-11-23 04:11:26,427:[Valid] Average loss: 0.4000 Average accuracy: 0.8724
+INFO:2020-11-23 04:15:09,005:[Train] Epoch: 62 [batch: 3708/6188 (59.92%)] Average loss: 0.3137  Average accuracy: 0.8865 lr: 0.0000009607
+INFO:2020-11-23 04:15:09,824:[Valid] Average loss: 0.4579 Average accuracy: 0.8457
+INFO:2020-11-23 04:18:52,510:[Train] Epoch: 62 [batch: 4326/6188 (69.91%)] Average loss: 0.3086  Average accuracy: 0.8885 lr: 0.0000009607
+INFO:2020-11-23 04:18:53,347:[Valid] Average loss: 0.4765 Average accuracy: 0.8460
+INFO:2020-11-23 04:22:35,787:[Train] Epoch: 62 [batch: 4944/6188 (79.90%)] Average loss: 0.3133  Average accuracy: 0.8865 lr: 0.0000009607
+INFO:2020-11-23 04:22:36,604:[Valid] Average loss: 0.4063 Average accuracy: 0.8560
+INFO:2020-11-23 04:26:19,144:[Train] Epoch: 62 [batch: 5562/6188 (89.88%)] Average loss: 0.3088  Average accuracy: 0.8876 lr: 0.0000009607
+INFO:2020-11-23 04:26:19,969:[Valid] Average loss: 0.4031 Average accuracy: 0.8646
+INFO:2020-11-23 04:30:02,401:[Train] Epoch: 62 [batch: 6180/6188 (99.87%)] Average loss: 0.3079  Average accuracy: 0.8888 lr: 0.0000009607
+INFO:2020-11-23 04:30:03,208:[Valid] Average loss: 0.5396 Average accuracy: 0.8408
+INFO:2020-11-23 04:30:06,317:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 04:30:06,318:Updating...Current learning rate: [2.407636663901591e-07]
+
+INFO:2020-11-23 04:33:49,467:[Train] Epoch: 63 [batch: 618/6188 (09.99%)] Average loss: 0.3072  Average accuracy: 0.8886 lr: 0.0000002408
+INFO:2020-11-23 04:33:49,538:Starting over on the validation set.
+
+INFO:2020-11-23 04:33:50,593:[Valid] Average loss: 0.4064 Average accuracy: 0.8588
+INFO:2020-11-23 04:37:33,561:[Train] Epoch: 63 [batch: 1236/6188 (19.97%)] Average loss: 0.3161  Average accuracy: 0.8855 lr: 0.0000002408
+INFO:2020-11-23 04:37:34,373:[Valid] Average loss: 0.4287 Average accuracy: 0.8604
+INFO:2020-11-23 04:41:16,633:[Train] Epoch: 63 [batch: 1854/6188 (29.96%)] Average loss: 0.3068  Average accuracy: 0.8885 lr: 0.0000002408
+INFO:2020-11-23 04:41:17,443:[Valid] Average loss: 0.4437 Average accuracy: 0.8487
+INFO:2020-11-23 04:44:59,134:[Train] Epoch: 63 [batch: 2472/6188 (39.95%)] Average loss: 0.3109  Average accuracy: 0.8872 lr: 0.0000002408
+INFO:2020-11-23 04:45:00,075:[Valid] Average loss: 0.4846 Average accuracy: 0.8419
+INFO:2020-11-23 04:48:42,127:[Train] Epoch: 63 [batch: 3090/6188 (49.94%)] Average loss: 0.3072  Average accuracy: 0.8888 lr: 0.0000002408
+INFO:2020-11-23 04:48:42,932:[Valid] Average loss: 0.4430 Average accuracy: 0.8485
+INFO:2020-11-23 04:52:25,191:[Train] Epoch: 63 [batch: 3708/6188 (59.92%)] Average loss: 0.3111  Average accuracy: 0.8873 lr: 0.0000002408
+INFO:2020-11-23 04:52:25,999:[Valid] Average loss: 0.3902 Average accuracy: 0.8683
+INFO:2020-11-23 04:56:08,314:[Train] Epoch: 63 [batch: 4326/6188 (69.91%)] Average loss: 0.3127  Average accuracy: 0.8864 lr: 0.0000002408
+INFO:2020-11-23 04:56:09,119:[Valid] Average loss: 0.5018 Average accuracy: 0.8398
+INFO:2020-11-23 04:59:51,283:[Train] Epoch: 63 [batch: 4944/6188 (79.90%)] Average loss: 0.3138  Average accuracy: 0.8868 lr: 0.0000002408
+INFO:2020-11-23 04:59:52,090:[Valid] Average loss: 0.4921 Average accuracy: 0.8589
+INFO:2020-11-23 05:03:34,188:[Train] Epoch: 63 [batch: 5562/6188 (89.88%)] Average loss: 0.3099  Average accuracy: 0.8871 lr: 0.0000002408
+INFO:2020-11-23 05:03:34,988:[Valid] Average loss: 0.4253 Average accuracy: 0.8708
+INFO:2020-11-23 05:07:17,367:[Train] Epoch: 63 [batch: 6180/6188 (99.87%)] Average loss: 0.3078  Average accuracy: 0.8880 lr: 0.0000002408
+INFO:2020-11-23 05:07:18,172:[Valid] Average loss: 0.4907 Average accuracy: 0.8365
+INFO:2020-11-23 05:07:21,269:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 05:07:21,269:Updating...Current learning rate: [0.0001]
+
+INFO:2020-11-23 05:11:04,183:[Train] Epoch: 64 [batch: 618/6188 (09.99%)] Average loss: 0.3087  Average accuracy: 0.8876 lr: 0.0001000000
+INFO:2020-11-23 05:11:04,266:Starting over on the validation set.
+
+INFO:2020-11-23 05:11:05,297:[Valid] Average loss: 0.5068 Average accuracy: 0.8384
+INFO:2020-11-23 05:14:47,381:[Train] Epoch: 64 [batch: 1236/6188 (19.97%)] Average loss: 0.3091  Average accuracy: 0.8876 lr: 0.0001000000
+INFO:2020-11-23 05:14:48,206:[Valid] Average loss: 0.4542 Average accuracy: 0.8490
+INFO:2020-11-23 05:18:30,592:[Train] Epoch: 64 [batch: 1854/6188 (29.96%)] Average loss: 0.3123  Average accuracy: 0.8869 lr: 0.0001000000
+INFO:2020-11-23 05:18:31,398:[Valid] Average loss: 0.4656 Average accuracy: 0.8526
+INFO:2020-11-23 05:22:13,599:[Train] Epoch: 64 [batch: 2472/6188 (39.95%)] Average loss: 0.3086  Average accuracy: 0.8879 lr: 0.0001000000
+INFO:2020-11-23 05:22:14,400:[Valid] Average loss: 0.4096 Average accuracy: 0.8713
+INFO:2020-11-23 05:25:56,914:[Train] Epoch: 64 [batch: 3090/6188 (49.94%)] Average loss: 0.3135  Average accuracy: 0.8860 lr: 0.0001000000
+INFO:2020-11-23 05:25:57,724:[Valid] Average loss: 0.4351 Average accuracy: 0.8611
+INFO:2020-11-23 05:29:40,147:[Train] Epoch: 64 [batch: 3708/6188 (59.92%)] Average loss: 0.3150  Average accuracy: 0.8864 lr: 0.0001000000
+INFO:2020-11-23 05:29:40,951:[Valid] Average loss: 0.4818 Average accuracy: 0.8398
+INFO:2020-11-23 05:33:22,949:[Train] Epoch: 64 [batch: 4326/6188 (69.91%)] Average loss: 0.3115  Average accuracy: 0.8874 lr: 0.0001000000
+INFO:2020-11-23 05:33:23,753:[Valid] Average loss: 0.3946 Average accuracy: 0.8618
+INFO:2020-11-23 05:37:05,795:[Train] Epoch: 64 [batch: 4944/6188 (79.90%)] Average loss: 0.3112  Average accuracy: 0.8870 lr: 0.0001000000
+INFO:2020-11-23 05:37:06,599:[Valid] Average loss: 0.4554 Average accuracy: 0.8534
+INFO:2020-11-23 05:40:49,553:[Train] Epoch: 64 [batch: 5562/6188 (89.88%)] Average loss: 0.3101  Average accuracy: 0.8877 lr: 0.0001000000
+INFO:2020-11-23 05:40:50,365:[Valid] Average loss: 0.3995 Average accuracy: 0.8601
+INFO:2020-11-23 05:44:33,520:[Train] Epoch: 64 [batch: 6180/6188 (99.87%)] Average loss: 0.3114  Average accuracy: 0.8872 lr: 0.0001000000
+INFO:2020-11-23 05:44:34,330:[Valid] Average loss: 0.5031 Average accuracy: 0.8457
+INFO:2020-11-23 05:44:37,414:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 05:44:37,414:Updating...Current learning rate: [9.993977281025862e-05]
+
+INFO:2020-11-23 05:48:20,811:[Train] Epoch: 65 [batch: 618/6188 (09.99%)] Average loss: 0.3114  Average accuracy: 0.8869 lr: 0.0000999398
+INFO:2020-11-23 05:48:20,893:Starting over on the validation set.
+
+INFO:2020-11-23 05:48:21,907:[Valid] Average loss: 0.5374 Average accuracy: 0.8445
+INFO:2020-11-23 05:52:05,329:[Train] Epoch: 65 [batch: 1236/6188 (19.97%)] Average loss: 0.3090  Average accuracy: 0.8878 lr: 0.0000999398
+INFO:2020-11-23 05:52:06,144:[Valid] Average loss: 0.4222 Average accuracy: 0.8629
+INFO:2020-11-23 05:55:49,228:[Train] Epoch: 65 [batch: 1854/6188 (29.96%)] Average loss: 0.3079  Average accuracy: 0.8885 lr: 0.0000999398
+INFO:2020-11-23 05:55:50,071:[Valid] Average loss: 0.4510 Average accuracy: 0.8521
+INFO:2020-11-23 05:59:33,251:[Train] Epoch: 65 [batch: 2472/6188 (39.95%)] Average loss: 0.3120  Average accuracy: 0.8870 lr: 0.0000999398
+INFO:2020-11-23 05:59:34,061:[Valid] Average loss: 0.4807 Average accuracy: 0.8527
+INFO:2020-11-23 06:03:17,349:[Train] Epoch: 65 [batch: 3090/6188 (49.94%)] Average loss: 0.3102  Average accuracy: 0.8876 lr: 0.0000999398
+INFO:2020-11-23 06:03:18,157:[Valid] Average loss: 0.4780 Average accuracy: 0.8475
+INFO:2020-11-23 06:07:01,179:[Train] Epoch: 65 [batch: 3708/6188 (59.92%)] Average loss: 0.3182  Average accuracy: 0.8851 lr: 0.0000999398
+INFO:2020-11-23 06:07:01,993:[Valid] Average loss: 0.4575 Average accuracy: 0.8445
+INFO:2020-11-23 06:10:45,315:[Train] Epoch: 65 [batch: 4326/6188 (69.91%)] Average loss: 0.3111  Average accuracy: 0.8860 lr: 0.0000999398
+INFO:2020-11-23 06:10:46,130:[Valid] Average loss: 0.3558 Average accuracy: 0.8767
+INFO:2020-11-23 06:14:29,567:[Train] Epoch: 65 [batch: 4944/6188 (79.90%)] Average loss: 0.3053  Average accuracy: 0.8891 lr: 0.0000999398
+INFO:2020-11-23 06:14:30,393:[Valid] Average loss: 0.4555 Average accuracy: 0.8471
+INFO:2020-11-23 06:18:13,410:[Train] Epoch: 65 [batch: 5562/6188 (89.88%)] Average loss: 0.3098  Average accuracy: 0.8870 lr: 0.0000999398
+INFO:2020-11-23 06:18:14,228:[Valid] Average loss: 0.4451 Average accuracy: 0.8489
+INFO:2020-11-23 06:21:57,426:[Train] Epoch: 65 [batch: 6180/6188 (99.87%)] Average loss: 0.3089  Average accuracy: 0.8878 lr: 0.0000999398
+INFO:2020-11-23 06:21:58,237:[Valid] Average loss: 0.4192 Average accuracy: 0.8563
+INFO:2020-11-23 06:22:01,338:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 06:22:01,338:Updating...Current learning rate: [9.975923633360985e-05]
+
+INFO:2020-11-23 06:25:44,186:[Train] Epoch: 66 [batch: 618/6188 (09.99%)] Average loss: 0.3142  Average accuracy: 0.8857 lr: 0.0000997592
+INFO:2020-11-23 06:25:44,289:Starting over on the validation set.
+
+INFO:2020-11-23 06:25:45,313:[Valid] Average loss: 0.4142 Average accuracy: 0.8597
+INFO:2020-11-23 06:29:27,698:[Train] Epoch: 66 [batch: 1236/6188 (19.97%)] Average loss: 0.3174  Average accuracy: 0.8857 lr: 0.0000997592
+INFO:2020-11-23 06:29:28,506:[Valid] Average loss: 0.5676 Average accuracy: 0.8376
+INFO:2020-11-23 06:33:10,883:[Train] Epoch: 66 [batch: 1854/6188 (29.96%)] Average loss: 0.3117  Average accuracy: 0.8871 lr: 0.0000997592
+INFO:2020-11-23 06:33:11,704:[Valid] Average loss: 0.5375 Average accuracy: 0.8360
+INFO:2020-11-23 06:36:54,061:[Train] Epoch: 66 [batch: 2472/6188 (39.95%)] Average loss: 0.3045  Average accuracy: 0.8891 lr: 0.0000997592
+INFO:2020-11-23 06:36:54,860:[Valid] Average loss: 0.4029 Average accuracy: 0.8568
+INFO:2020-11-23 06:40:37,077:[Train] Epoch: 66 [batch: 3090/6188 (49.94%)] Average loss: 0.3110  Average accuracy: 0.8866 lr: 0.0000997592
+INFO:2020-11-23 06:40:37,913:[Valid] Average loss: 0.5011 Average accuracy: 0.8409
+INFO:2020-11-23 06:44:19,983:[Train] Epoch: 66 [batch: 3708/6188 (59.92%)] Average loss: 0.3067  Average accuracy: 0.8884 lr: 0.0000997592
+INFO:2020-11-23 06:44:20,788:[Valid] Average loss: 0.4018 Average accuracy: 0.8662
+INFO:2020-11-23 06:48:02,590:[Train] Epoch: 66 [batch: 4326/6188 (69.91%)] Average loss: 0.3070  Average accuracy: 0.8889 lr: 0.0000997592
+INFO:2020-11-23 06:48:03,394:[Valid] Average loss: 0.4924 Average accuracy: 0.8489
+INFO:2020-11-23 06:51:45,401:[Train] Epoch: 66 [batch: 4944/6188 (79.90%)] Average loss: 0.3093  Average accuracy: 0.8874 lr: 0.0000997592
+INFO:2020-11-23 06:51:46,205:[Valid] Average loss: 0.3665 Average accuracy: 0.8770
+INFO:2020-11-23 06:55:28,020:[Train] Epoch: 66 [batch: 5562/6188 (89.88%)] Average loss: 0.3094  Average accuracy: 0.8874 lr: 0.0000997592
+INFO:2020-11-23 06:55:28,831:[Valid] Average loss: 0.4139 Average accuracy: 0.8525
+INFO:2020-11-23 06:59:11,291:[Train] Epoch: 66 [batch: 6180/6188 (99.87%)] Average loss: 0.3139  Average accuracy: 0.8863 lr: 0.0000997592
+INFO:2020-11-23 06:59:12,094:[Valid] Average loss: 0.4141 Average accuracy: 0.8580
+INFO:2020-11-23 06:59:15,342:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 06:59:15,343:Updating...Current learning rate: [9.945882549823906e-05]
+
+INFO:2020-11-23 07:02:57,167:[Train] Epoch: 67 [batch: 618/6188 (09.99%)] Average loss: 0.3055  Average accuracy: 0.8885 lr: 0.0000994588
+INFO:2020-11-23 07:02:57,250:Starting over on the validation set.
+
+INFO:2020-11-23 07:02:58,293:[Valid] Average loss: 0.4330 Average accuracy: 0.8542
+INFO:2020-11-23 07:06:40,140:[Train] Epoch: 67 [batch: 1236/6188 (19.97%)] Average loss: 0.3112  Average accuracy: 0.8871 lr: 0.0000994588
+INFO:2020-11-23 07:06:40,943:[Valid] Average loss: 0.4337 Average accuracy: 0.8565
+INFO:2020-11-23 07:10:22,809:[Train] Epoch: 67 [batch: 1854/6188 (29.96%)] Average loss: 0.3089  Average accuracy: 0.8876 lr: 0.0000994588
+INFO:2020-11-23 07:10:23,625:[Valid] Average loss: 0.4073 Average accuracy: 0.8573
+INFO:2020-11-23 07:14:05,370:[Train] Epoch: 67 [batch: 2472/6188 (39.95%)] Average loss: 0.3112  Average accuracy: 0.8871 lr: 0.0000994588
+INFO:2020-11-23 07:14:06,221:[Valid] Average loss: 0.4407 Average accuracy: 0.8490
+INFO:2020-11-23 07:17:48,208:[Train] Epoch: 67 [batch: 3090/6188 (49.94%)] Average loss: 0.3073  Average accuracy: 0.8893 lr: 0.0000994588
+INFO:2020-11-23 07:17:49,036:[Valid] Average loss: 0.4542 Average accuracy: 0.8529
+INFO:2020-11-23 07:21:31,649:[Train] Epoch: 67 [batch: 3708/6188 (59.92%)] Average loss: 0.3121  Average accuracy: 0.8869 lr: 0.0000994588
+INFO:2020-11-23 07:21:32,465:[Valid] Average loss: 0.4675 Average accuracy: 0.8516
+INFO:2020-11-23 07:25:15,735:[Train] Epoch: 67 [batch: 4326/6188 (69.91%)] Average loss: 0.3162  Average accuracy: 0.8847 lr: 0.0000994588
+INFO:2020-11-23 07:25:16,565:[Valid] Average loss: 0.4051 Average accuracy: 0.8751
+INFO:2020-11-23 07:28:59,232:[Train] Epoch: 67 [batch: 4944/6188 (79.90%)] Average loss: 0.3133  Average accuracy: 0.8866 lr: 0.0000994588
+INFO:2020-11-23 07:29:00,059:[Valid] Average loss: 0.4981 Average accuracy: 0.8330
+INFO:2020-11-23 07:32:41,686:[Train] Epoch: 67 [batch: 5562/6188 (89.88%)] Average loss: 0.3080  Average accuracy: 0.8883 lr: 0.0000994588
+INFO:2020-11-23 07:32:42,494:[Valid] Average loss: 0.5050 Average accuracy: 0.8510
+INFO:2020-11-23 07:36:24,440:[Train] Epoch: 67 [batch: 6180/6188 (99.87%)] Average loss: 0.3087  Average accuracy: 0.8876 lr: 0.0000994588
+INFO:2020-11-23 07:36:25,247:[Valid] Average loss: 0.4673 Average accuracy: 0.8518
+INFO:2020-11-23 07:36:28,299:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 07:36:28,300:Updating...Current learning rate: [9.903926402016153e-05]
+
+INFO:2020-11-23 07:40:10,615:[Train] Epoch: 68 [batch: 618/6188 (09.99%)] Average loss: 0.3153  Average accuracy: 0.8862 lr: 0.0000990393
+INFO:2020-11-23 07:40:10,694:Starting over on the validation set.
+
+INFO:2020-11-23 07:40:11,735:[Valid] Average loss: 0.4045 Average accuracy: 0.8647
+INFO:2020-11-23 07:43:53,585:[Train] Epoch: 68 [batch: 1236/6188 (19.97%)] Average loss: 0.3115  Average accuracy: 0.8869 lr: 0.0000990393
+INFO:2020-11-23 07:43:54,398:[Valid] Average loss: 0.4726 Average accuracy: 0.8415
+INFO:2020-11-23 07:47:36,205:[Train] Epoch: 68 [batch: 1854/6188 (29.96%)] Average loss: 0.3152  Average accuracy: 0.8855 lr: 0.0000990393
+INFO:2020-11-23 07:47:37,016:[Valid] Average loss: 0.4518 Average accuracy: 0.8625
+INFO:2020-11-23 07:51:18,752:[Train] Epoch: 68 [batch: 2472/6188 (39.95%)] Average loss: 0.3114  Average accuracy: 0.8870 lr: 0.0000990393
+INFO:2020-11-23 07:51:19,570:[Valid] Average loss: 0.3986 Average accuracy: 0.8657
+INFO:2020-11-23 07:55:01,425:[Train] Epoch: 68 [batch: 3090/6188 (49.94%)] Average loss: 0.3039  Average accuracy: 0.8894 lr: 0.0000990393
+INFO:2020-11-23 07:55:02,231:[Valid] Average loss: 0.4403 Average accuracy: 0.8584
+INFO:2020-11-23 07:58:44,142:[Train] Epoch: 68 [batch: 3708/6188 (59.92%)] Average loss: 0.3121  Average accuracy: 0.8869 lr: 0.0000990393
+INFO:2020-11-23 07:58:44,942:[Valid] Average loss: 0.4080 Average accuracy: 0.8555
+INFO:2020-11-23 08:02:26,655:[Train] Epoch: 68 [batch: 4326/6188 (69.91%)] Average loss: 0.3059  Average accuracy: 0.8886 lr: 0.0000990393
+INFO:2020-11-23 08:02:27,458:[Valid] Average loss: 0.5434 Average accuracy: 0.8347
+INFO:2020-11-23 08:06:09,376:[Train] Epoch: 68 [batch: 4944/6188 (79.90%)] Average loss: 0.3083  Average accuracy: 0.8877 lr: 0.0000990393
+INFO:2020-11-23 08:06:10,199:[Valid] Average loss: 0.4063 Average accuracy: 0.8692
+INFO:2020-11-23 08:09:52,380:[Train] Epoch: 68 [batch: 5562/6188 (89.88%)] Average loss: 0.3116  Average accuracy: 0.8871 lr: 0.0000990393
+INFO:2020-11-23 08:09:53,197:[Valid] Average loss: 0.5697 Average accuracy: 0.8242
+INFO:2020-11-23 08:13:35,196:[Train] Epoch: 68 [batch: 6180/6188 (99.87%)] Average loss: 0.3073  Average accuracy: 0.8887 lr: 0.0000990393
+INFO:2020-11-23 08:13:36,015:[Valid] Average loss: 0.4130 Average accuracy: 0.8573
+INFO:2020-11-23 08:13:39,100:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 08:13:39,100:Updating...Current learning rate: [9.850156265972721e-05]
+
+INFO:2020-11-23 08:17:21,582:[Train] Epoch: 69 [batch: 618/6188 (09.99%)] Average loss: 0.3150  Average accuracy: 0.8863 lr: 0.0000985016
+INFO:2020-11-23 08:17:21,652:Starting over on the validation set.
+
+INFO:2020-11-23 08:17:22,666:[Valid] Average loss: 0.4112 Average accuracy: 0.8569
+INFO:2020-11-23 08:21:04,780:[Train] Epoch: 69 [batch: 1236/6188 (19.97%)] Average loss: 0.3079  Average accuracy: 0.8882 lr: 0.0000985016
+INFO:2020-11-23 08:21:05,587:[Valid] Average loss: 0.4112 Average accuracy: 0.8600
+INFO:2020-11-23 08:24:47,615:[Train] Epoch: 69 [batch: 1854/6188 (29.96%)] Average loss: 0.3117  Average accuracy: 0.8867 lr: 0.0000985016
+INFO:2020-11-23 08:24:48,427:[Valid] Average loss: 0.5706 Average accuracy: 0.8270
+INFO:2020-11-23 08:28:30,295:[Train] Epoch: 69 [batch: 2472/6188 (39.95%)] Average loss: 0.3106  Average accuracy: 0.8874 lr: 0.0000985016
+INFO:2020-11-23 08:28:31,103:[Valid] Average loss: 0.4222 Average accuracy: 0.8611
+INFO:2020-11-23 08:32:13,099:[Train] Epoch: 69 [batch: 3090/6188 (49.94%)] Average loss: 0.3080  Average accuracy: 0.8878 lr: 0.0000985016
+INFO:2020-11-23 08:32:13,904:[Valid] Average loss: 0.4900 Average accuracy: 0.8478
+INFO:2020-11-23 08:35:55,945:[Train] Epoch: 69 [batch: 3708/6188 (59.92%)] Average loss: 0.3108  Average accuracy: 0.8865 lr: 0.0000985016
+INFO:2020-11-23 08:35:56,750:[Valid] Average loss: 0.4286 Average accuracy: 0.8460
+INFO:2020-11-23 08:39:38,545:[Train] Epoch: 69 [batch: 4326/6188 (69.91%)] Average loss: 0.3120  Average accuracy: 0.8874 lr: 0.0000985016
+INFO:2020-11-23 08:39:39,351:[Valid] Average loss: 0.4238 Average accuracy: 0.8539
+INFO:2020-11-23 08:43:21,284:[Train] Epoch: 69 [batch: 4944/6188 (79.90%)] Average loss: 0.3104  Average accuracy: 0.8874 lr: 0.0000985016
+INFO:2020-11-23 08:43:22,088:[Valid] Average loss: 0.3720 Average accuracy: 0.8765
+INFO:2020-11-23 08:47:04,131:[Train] Epoch: 69 [batch: 5562/6188 (89.88%)] Average loss: 0.3120  Average accuracy: 0.8870 lr: 0.0000985016
+INFO:2020-11-23 08:47:04,945:[Valid] Average loss: 0.5259 Average accuracy: 0.8478
+INFO:2020-11-23 08:50:46,651:[Train] Epoch: 69 [batch: 6180/6188 (99.87%)] Average loss: 0.3060  Average accuracy: 0.8884 lr: 0.0000985016
+INFO:2020-11-23 08:50:47,498:[Valid] Average loss: 0.4496 Average accuracy: 0.8566
+INFO:2020-11-23 08:50:50,599:Saved current model as: dilate_ags_unet_008_aug_epoch220_retrain.pth
+INFO:2020-11-23 08:50:50,599:Updating...Current learning rate: [9.784701678661045e-05]
+
+INFO:2020-11-23 08:54:32,924:[Train] Epoch: 70 [batch: 618/6188 (09.99%)] Average loss: 0.3128  Average accuracy: 0.8869 lr: 0.0000978470
+INFO:2020-11-23 08:54:33,001:Starting over on the validation set.
+
+INFO:2020-11-23 08:54:34,041:[Valid] Average loss: 0.4079 Average accuracy: 0.8638
+INFO:2020-11-23 08:58:15,785:[Train] Epoch: 70 [batch: 1236/6188 (19.97%)] Average loss: 0.3115  Average accuracy: 0.8867 lr: 0.0000978470
+INFO:2020-11-23 08:58:16,588:[Valid] Average loss: 0.4629 Average accuracy: 0.8519
+INFO:2020-11-23 09:01:58,331:[Train] Epoch: 70 [batch: 1854/6188 (29.96%)] Average loss: 0.3081  Average accuracy: 0.8883 lr: 0.0000978470
+INFO:2020-11-23 09:01:59,133:[Valid] Average loss: 0.3766 Average accuracy: 0.8626
+INFO:2020-11-23 09:05:40,966:[Train] Epoch: 70 [batch: 2472/6188 (39.95%)] Average loss: 0.3058  Average accuracy: 0.8886 lr: 0.0000978470
