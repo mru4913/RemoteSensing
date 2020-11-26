@@ -1,0 +1,5 @@
+# step1: trian dilate_ags_unet with data augment
+python train.py  ./data/train_list_19k.txt ./data/valid_list_1k --model dilate_ags_unet --name dilate_ags_unet_002_noshare_aug --batch_size 16 --loss ce --scheduler cosr --num_epochs 230 --log_num 10 --img_aug 1 --lr 0.000125 --cuda_device 0 --save_model 1 --pretrained 1 --deep 0 --concat 0
+
+# step2: retrain dilate_ags_unet with data augment, dilate_ags_unet_002_noshare_aug_best_220epoch.pth
+# python train.py  ./data/train_list_19k.txt ./data/valid_list_1k.txt --model dilate_ags_unet --name dilate_ags_unet_008_aug_epoch220_retrain --batch_size 16 --loss ce --scheduler cosr --num_epochs 260 --log_num 10 --img_aug 1 --lr 0.0001 --cuda_device 2 --save_model 1 --concat 0 --optimizer adamw --load ./checkpoints/dilate_ags_unet_002_noshare_aug_best_220epoch.pth
