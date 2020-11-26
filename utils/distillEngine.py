@@ -4,20 +4,70 @@ import copy
 import torch
 import numpy as np
 import torch.nn.functional as F
+import torch.nn as nn
 
 # from apex import amp
 from torch.utils.tensorboard import SummaryWriter
 
 from .tool import Accumulator, timer
 
-class finalEngine:
-    def __init__(self, model, train_loader, valid_loader, optimizer, criterion, device, num_epochs,
-                scheduler=None, log_num=20, logger=None, num_class=100, name='model', apex=False):
-        self.model = model 
+class CriterionPixelWise(nn.Module):
+    def __init__(self):
+    # def __init__(self, ignore_index=255, use_weight=True, reduce=True):
+        super(CriterionPixelWise, self).__init__()
+        # self.ignore_index = ignore_index
+        #self.criterion = torch.nn.CrossEntropyLoss(ignore_index=ignore_index, reduce=reduce)
+        # if not reduce:
+            # print("disabled the reduce.")
+
+    def forward(self, preds_S, preds_T):
+        preds_T.detach()
+        assert preds_S.shape == preds_T.shape,'the output dim of teacher and student differ'
+        N,C,W,H = preds_S.shape
+        softmax_pred_T = F.softmax(preds_T.permute(0,2,3,1).contiguous().view(-1,C), dim=1)
+        logsoftmax = nn.LogSoftmax(dim=1)
+        loss = (torch.sum( - softmax_pred_T * logsoftmax(preds_S.permute(0,2,3,1).contiguous().view(-1,C))))/W/H
+        loss /= C
+        return loss
+
+# def kd_loss(student_outputs, teacher_outputs, labels, criterion, teach_criterion, t, alpha):
+#     """
+#     kd loss
+#     """
+#     student_loss = criterion(student_outputs, labels)
+#     outputs_S = F.log_softmax(student_outputs/t, dim=1)
+#     outputs_T = F.softmax(teacher_outputs/t, dim=1)
+    
+#     teach_loss = teach_criterion(outputs_S,outputs_T)*t*t
+
+#     loss = student_loss*(1-alpha) + teach_loss*alpha
+#     return loss
+
+            
+def kd_loss(student_outputs, teacher_outputs, labels, criterion, teach_criterion, t, alpha):
+    """
+    kd loss
+    """
+    student_loss = criterion(student_outputs, labels)
+    teach_loss = teach_criterion(student_outputs, teacher_outputs)
+
+    loss = student_loss*(1-alpha) + teach_loss*alpha
+    return loss
+
+class DistillEngine:
+    def __init__(self, student_model, teacher_model, 
+                train_loader, valid_loader, optimizer, criterion, teach_criterion, 
+                device, num_epochs,
+                scheduler=None, log_num=20, logger=None, num_class=100, name='model', t=10,
+                alpha=0.5):
+        self.student_model = student_model 
+        self.teacher_model = teacher_model 
         self.train_loader = train_loader
         self.valid_loader = valid_loader 
         self.optimizer = optimizer
-        self.criterion = criterion 
+        self.criterion = criterion
+        # self.teach_criterion = teach_criterion
+        self.teach_criterion = CriterionPixelWise()
         self.device = device
         self.num_epochs = num_epochs
         self.scheduler = scheduler
@@ -25,7 +75,8 @@ class finalEngine:
         self.logger = logger
         self.num_class = num_class 
         self.name = name
-        self.apex = apex
+        self.t = t
+        self.alpha = alpha
        
         self.writer = SummaryWriter(comment=name)
 
@@ -39,7 +90,8 @@ class finalEngine:
         '''engine info'''
         engine_info = dict()
         engine_info['name'] = self.name 
-        engine_info['model'] = self.model.__class__.__name__
+        engine_info['student_model'] = self.student_model.__class__.__name__
+        engine_info['teacher_model'] = self.teacher_model.__class__.__name__
         engine_info['optimizer'] = self.optimizer.__class__.__name__
         engine_info['criterion'] = self.criterion.__class__.__name__
         engine_info['device'] = self.device
@@ -50,17 +102,21 @@ class finalEngine:
         # clear parameters gradients 
         self.optimizer.zero_grad()
         
+        # inputs = [i.to(self.device) for i in data[:-1]]
+        inputs = data[0].to(self.device)
+        labels = data[-1].to(self.device)
         with torch.set_grad_enabled(phase == 'train'):
-            # inputs = [i.to(self.device) for i in data[:-1]]
-            inputs = data[0].to(self.device)
-            labels = data[-1].to(self.device)
+            student_outputs = self.student_model(inputs) # forward the acquire the outputs from NN
+        
+        with torch.no_grad():
+            teacher_outputs = self.teacher_model(inputs)
+        
+        self.loss = kd_loss(student_outputs, teacher_outputs, labels.long(), self.criterion,
+                            self.teach_criterion, self.t, self.alpha)
             
-            outputs = self.model(inputs) # forward the acquire the outputs from NN
-            self.loss = self.criterion(outputs, labels.long()) # calculate the mean loss
-            
-            avg_loss = self.loss.item()
+        avg_loss = self.loss.item()
             # current_batch_size = len(labels)
-            avg_pixel_acc = (outputs.argmax(dim=1) == labels).float().mean().item() #TODO
+        avg_pixel_acc = (student_outputs.argmax(dim=1) == labels).float().mean().item() #TODO
         
         return avg_loss, avg_pixel_acc
             
@@ -96,7 +152,7 @@ class finalEngine:
         valid_log_interval = 1 if self.num_valid_batch // self.log_num == 0 else self.num_valid_batch // self.log_num
         factor = 2
         # set model to evaluate mode to disable batchnorm or dropout layers
-        self.model.eval()
+        self.student_model.eval()
         for _ in range(valid_log_interval*factor):
             try:
                 data = next(self.valid_iter)
@@ -125,7 +181,7 @@ class finalEngine:
         # record the best state
         best_acc = 0
         # best_at_epoch = 0
-        # best_model_wts = copy.deepcopy(self.model.state_dict())
+        # best_model_wts = copy.deepcopy(self.student_model.state_dict())
         # best_optimizer_wts = copy.deepcopy(self.optimizer.state_dict())
         
         self.logger.info('Engine starts......\n')
@@ -144,7 +200,7 @@ class finalEngine:
             # epoch_f = float(epoch-1)         
 
             # set to training mode to enable BN and dropout 
-            self.model.train()
+            self.student_model.train()
             for batch_idx, data in enumerate(self.train_loader):
                 # forward computation
                 result = self._forward(data, phase='train')
@@ -177,11 +233,11 @@ class finalEngine:
                         best_acc = valid_acc
                         self.save_state(epoch, best=True) 
                         # best_at_epoch = epoch 
-                        # best_model_wts = copy.deepcopy(self.model.state_dict())
+                        # best_model_wts = copy.deepcopy(self.student_model.state_dict())
                         # best_optimizer_wts = copy.deepcopy(self.optimizer.state_dict())
                     
                     # set to training mode to enable BN and dropout 
-                    self.model.train()
+                    self.student_model.train()
             
             if save_model:
                 self.save_state(epoch)
@@ -194,7 +250,7 @@ class finalEngine:
         # save the best model
         # if save_best_model:
         #     self.save_state(epoch, best=False)
-            # self.model.load_state_dict(best_model_wts)
+            # self.student_model.load_state_dict(best_model_wts)
             # self.optimizer.load_state_dict(best_optimizer_wts)
             # self.save_state(best_at_epoch, best=True)
 
@@ -203,11 +259,11 @@ class finalEngine:
         filename = self.name + ('_best' if best else '') + '.pth'
         # torch.save({'epoch': epoch,
         #             'optimizer': self.optimizer.state_dict(),
-        #             'state_dict': self.model.state_dict()}, 
+        #             'state_dict': self.student_model.state_dict()}, 
         #             filename)
-        torch.save({'state_dict': self.model.state_dict()}, 
+        torch.save({'state_dict': self.student_model.state_dict()}, 
                     filename)
-        # torch.save({'state_dict': self.model.module.state_dict()}, 
+        # torch.save({'state_dict': self.student_model.module.state_dict()}, 
         #             filename)
         self.logger.info('Saved current model as: {}'.format(filename))
 
@@ -219,6 +275,6 @@ class finalEngine:
             # interprets the file
             checkpoint = torch.load(f)
             # load network parameters
-            self.model.load_state_dict(checkpoint['state_dict'], strict=False)
+            self.student_model.load_state_dict(checkpoint['state_dict'], strict=False)
             # self.optimizer.load_state_dict(checkpoint['optimizer'])
         self.logger.info('Loading completed...')

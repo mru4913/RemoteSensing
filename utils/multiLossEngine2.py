@@ -4,13 +4,20 @@ import copy
 import torch
 import numpy as np
 import torch.nn.functional as F
+import torch.nn as nn
 
-# from apex import amp
+#from apex import amp
 from torch.utils.tensorboard import SummaryWriter
 
 from .tool import Accumulator, timer
 
-class finalEngine:
+def criterion_fusion(outputs, labels, criterion):
+    loss = 0
+    for o in outputs:
+        loss += criterion(o,labels)
+    return loss
+
+class MultiLossEngine2:
     def __init__(self, model, train_loader, valid_loader, optimizer, criterion, device, num_epochs,
                 scheduler=None, log_num=20, logger=None, num_class=100, name='model', apex=False):
         self.model = model 
@@ -55,12 +62,10 @@ class finalEngine:
             inputs = data[0].to(self.device)
             labels = data[-1].to(self.device)
             
-            outputs = self.model(inputs) # forward the acquire the outputs from NN
-            self.loss = self.criterion(outputs, labels.long()) # calculate the mean loss
-            
-            avg_loss = self.loss.item()
-            # current_batch_size = len(labels)
-            avg_pixel_acc = (outputs.argmax(dim=1) == labels).float().mean().item() #TODO
+            outputs = self.model(inputs)
+            self.loss = criterion_fusion(outputs,labels.long(),self.criterion)
+            avg_loss = self.loss.item()/len(outputs)
+            avg_pixel_acc = (outputs[0].argmax(dim=1) == labels).float().mean().item()
         
         return avg_loss, avg_pixel_acc
             

@@ -5,12 +5,12 @@ import torch
 import numpy as np
 import torch.nn.functional as F
 
-# from apex import amp
+#from apex import amp
 from torch.utils.tensorboard import SummaryWriter
 
 from .tool import Accumulator, timer
 
-class finalEngine:
+class MultiLossEngine:
     def __init__(self, model, train_loader, valid_loader, optimizer, criterion, device, num_epochs,
                 scheduler=None, log_num=20, logger=None, num_class=100, name='model', apex=False):
         self.model = model 
@@ -55,12 +55,15 @@ class finalEngine:
             inputs = data[0].to(self.device)
             labels = data[-1].to(self.device)
             
-            outputs = self.model(inputs) # forward the acquire the outputs from NN
-            self.loss = self.criterion(outputs, labels.long()) # calculate the mean loss
-            
+            outputs = self.model(inputs)
+            loss = 0
+            acc = 0
+            for output in outputs:
+                loss += self.criterion(output, labels.long())
+                acc += (output.argmax(dim=1) == labels).float().mean().item() #TODO
+            self.loss = loss / len(outputs)
             avg_loss = self.loss.item()
-            # current_batch_size = len(labels)
-            avg_pixel_acc = (outputs.argmax(dim=1) == labels).float().mean().item() #TODO
+            avg_pixel_acc = acc / len(outputs)
         
         return avg_loss, avg_pixel_acc
             
@@ -94,10 +97,10 @@ class finalEngine:
         # accumulate running loss, running true predicted, running fwiou 
         running_stat = Accumulator(3)
         valid_log_interval = 1 if self.num_valid_batch // self.log_num == 0 else self.num_valid_batch // self.log_num
-        factor = 2
+        
         # set model to evaluate mode to disable batchnorm or dropout layers
         self.model.eval()
-        for _ in range(valid_log_interval*factor):
+        for _ in range(valid_log_interval):
             try:
                 data = next(self.valid_iter)
             except StopIteration:
@@ -110,8 +113,8 @@ class finalEngine:
             result = self._forward(data, phase='valid') # train != valid
             running_stat.add(*result)
          
-        avg_loss = running_stat[0]/valid_log_interval/factor
-        avg_pixel_acc = running_stat[1]/valid_log_interval/factor
+        avg_loss = running_stat[0]/valid_log_interval
+        avg_pixel_acc = running_stat[1]/valid_log_interval
         
         self.logger.info('[Valid] Average loss: {:.4f} Average pixAcc: {:.4f}'.format(avg_loss, avg_pixel_acc))
 

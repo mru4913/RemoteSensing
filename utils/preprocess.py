@@ -6,9 +6,11 @@ import cv2
 import torch
 import numpy as np
 
-from scipy import ndimage
-from skimage import transform
-from skimage import exposure
+# from scipy import ndimage
+# from skimage import transform
+# from skimage import exposure
+import torchvision.transforms.functional as F
+from torchvision import transforms
 
 MAX_IMG_VALUE = 255
 
@@ -47,27 +49,47 @@ def get_img_path(images_path):
             res.append(os.path.join(images_path, file_name+".tif"))
     return res
 
-def get_img_array(img):
+def get_img_array(img, std=False):
     img = np.float32(img) / 127.5 - 1
-    img = np.transpose(img, (2,0,1))
+    img = np.transpose(img, (2,0,1)) # CxHxW
+
+    if std:
+        mean = np.array([-0.19934376983522895, -0.16459220809876685, -0.165464061726888]).reshape(3,1,1)
+        std = np.array([0.17162799434448567, 0.16814594406089878, 0.1812044246744799]).reshape(3,1,1)
+        img = (img - mean)/std 
     return img
     
-def get_seg_array(img):
-    img = np.int32(img / 100) - 1
-    img = np.float32(img)
-    return img
+# def get_seg_array(img):
+#     img = np.int32(img / 100) - 1
+#     img = np.float32(img)
+#     return img
+
+def get_seg_array(seg):
+    seg = np.int32(seg) - 1
+    out = np.where(seg < 0, 0, seg)
+    out = np.float32(out)
+    return out
 
 def flipud(img):
     return np.flipud(img)
     
 def fliplr(img):
     return np.fliplr(img)
+
+class cusAffine(transforms.RandomAffine):
+    def __call__(self, img1, img2):
+        assert img1.size == img2.size
+        # fix parameter
+        ret = self.get_params(self.degrees, self.translate, self.scale, self.shear, img1.size)
+        img1 = F.affine(img1, *ret, resample=self.resample, fillcolor=self.fillcolor)
+        img2 = F.affine(img2, *ret, resample=self.resample, fillcolor=self.fillcolor)
+        return img1, img2 
     
-def rotate90(img, seg):
-    angle = np.random.randint(0, 4)
-    img = np.rot90(img, angle)
-    seg = np.rot90(seg, angle)
-    return img, seg
+# def rotate90(img, seg):
+#     angle = np.random.randint(0, 4)
+#     img = np.rot90(img, angle)
+#     seg = np.rot90(seg, angle)
+#     return img, seg
 
 # def gaussian_noise(img, loc=0, scale=0.1*MAX_IMG_VALUE):
 #     img = img.copy().astype(np.float32)
@@ -85,45 +107,45 @@ def rotate90(img, seg):
 #     img[:] = np.clip(img[:], 0, MAX_IMG_VALUE)
 #     return img
 
-def adjust_gamma(img, gamma=1.):
-    return exposure.adjust_gamma(img, gamma)
+# def adjust_gamma(img, gamma=1.):
+#     return exposure.adjust_gamma(img, gamma)
 
-def noisy(image):
-    # row,col,ch = image.shape
-    s_vs_p = 0.5
-    amount = 0.004
-    out = np.copy(image)
-    # Salt mode
-    num_salt = np.ceil(amount * image.size * s_vs_p)
-    coords = [np.random.randint(0, i - 1, int(num_salt))
-            for i in image.shape]
-    out[coords] = 1
+# def noisy(image):
+#     # row,col,ch = image.shape
+#     s_vs_p = 0.5
+#     amount = 0.004
+#     out = np.copy(image)
+#     # Salt mode
+#     num_salt = np.ceil(amount * image.size * s_vs_p)
+#     coords = [np.random.randint(0, i - 1, int(num_salt))
+#             for i in image.shape]
+#     out[coords] = 1
 
-    # Pepper mode
-    num_pepper = np.ceil(amount* image.size * (1. - s_vs_p))
-    coords = [np.random.randint(0, i - 1, int(num_pepper))
-            for i in image.shape]
-    out[coords] = 0
-    return out
+#     # Pepper mode
+#     num_pepper = np.ceil(amount* image.size * (1. - s_vs_p))
+#     coords = [np.random.randint(0, i - 1, int(num_pepper))
+#             for i in image.shape]
+#     out[coords] = 0
+#     return out
 
-def rotate(img, seg, angle):
-    image_center = tuple(np.array(img.shape[1::-1]) / 2)
-    rot_mat = cv2.getRotationMatrix2D(image_center, angle, 1.0)
-    img = cv2.warpAffine(img, rot_mat, img.shape[1::-1], flags=cv2.INTER_LINEAR)
-    seg = cv2.warpAffine(seg, rot_mat, seg.shape[1::-1], flags=cv2.INTER_LINEAR)
-    return img, seg
+# def rotate(img, seg, angle):
+#     image_center = tuple(np.array(img.shape[1::-1]) / 2)
+#     rot_mat = cv2.getRotationMatrix2D(image_center, angle, 1.0)
+#     img = cv2.warpAffine(img, rot_mat, img.shape[1::-1], flags=cv2.INTER_LINEAR)
+#     seg = cv2.warpAffine(seg, rot_mat, seg.shape[1::-1], flags=cv2.INTER_LINEAR)
+#     return img, seg
 
-def blur(img):
-    img = cv2.blur(img, (3, 3))
-    return img
+# def blur(img):
+#     img = cv2.blur(img, (3, 3))
+#     return img
 
-def adjust_gamma(img, gamma=1.0):
-    # build a lookup table mapping the pixel values [0, 255] to
-    # their adjusted gamma values
-    invGamma = 1.0 / gamma
-    table = np.array([((i / 255.0) ** invGamma) * 255
-        for i in np.arange(0, 256)]).astype("uint8")
-    # apply gamma correction using the lookup table
-    return cv2.LUT(img, table)
+# def adjust_gamma(img, gamma=1.0):
+#     # build a lookup table mapping the pixel values [0, 255] to
+#     # their adjusted gamma values
+#     invGamma = 1.0 / gamma
+#     table = np.array([((i / 255.0) ** invGamma) * 255
+#         for i in np.arange(0, 256)]).astype("uint8")
+#     # apply gamma correction using the lookup table
+#     return cv2.LUT(img, table)
 
 
